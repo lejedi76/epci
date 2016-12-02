@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="competence">
+        <SrcDataSource relativeToVRT="1">competence.xls</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Compétences des groupements - Eure</SrcLayer>
+        <Field name="Région siège" src="Région siège" type="String"/>
+        <Field name="Département siège" src="Département siège" type="String"/>
+        <Field name="Arrondissement siège" src="Arrondissement siège" type="String"/>
+        <Field name="Commune siège" src="Commune siège" type="String"/>
+        <Field name="N° SIREN" src="N° SIREN" type="Integer"/>
+        <Field name="Nom du groupement" src="Nom du groupement" type="String"/>
+        <Field name="Nature juridique" src="Nature juridique" type="String"/>
+        <Field name="Syndicat à la carte" src="Syndicat à la carte" type="Integer"/>
+        <Field name="Groupement interdépartemental" src="Groupement interdépartemental" type="Integer"/>
+        <Field name="Date de création" src="Date de création" type="String"/>
+        <Field name="Date d'effet" src="Date d'effet" type="String"/>
+        <Field name="Mode de répartition des sièges" src="Mode de répartition des sièges" type="String"/>
+        <Field name="Autre mode de répartition des sièges" src="Autre mode de répartition des sièges" type="String"/>
+        <Field name="Nombre de membres" src="Nombre de membres" type="Integer"/>
+        <Field name="Population" src="Population" type="Integer"/>
+        <Field name="Nombre de compétences exercées" src="Nombre de compétences exercées" type="Integer"/>
+        <Field name="Mode de financement" src="Mode de financement" type="String"/>
+        <Field name="DGF Bonifiée" src="DGF Bonifiée" type="Integer"/>
+        <Field name="DSC" src="DSC" type="Integer"/>
+        <Field name="REOM" src="REOM" type="Integer"/>
+        <Field name="Autre redevance" src="Autre redevance" type="String"/>
+        <Field name="TEOM" src="TEOM" type="Integer"/>
+        <Field name="Autre taxe" src="Autre taxe" type="String"/>
+        <Field name="Civilité Président" src="Civilité Président" type="String"/>
+        <Field name="Prénom Président" src="Prénom Président" type="String"/>
+        <Field name="Nom Président" src="Nom Président" type="String"/>
+        <Field name="Adresse du siège_1" src="Adresse du siège_1" type="String"/>
+        <Field name="Adresse du siège_2" src="Adresse du siège_2" type="String"/>
+        <Field name="Adresse du siège_3" src="Adresse du siège_3" type="String"/>
+        <Field name="Code postal du siège Ville du siège" src="Code postal du siège Ville du siège" type="String"/>
+        <Field name="Téléphone du siège" src="Téléphone du siège" type="String"/>
+        <Field name="Fax du siège" src="Fax du siège" type="String"/>
+        <Field name="Courriel du siège" src="Courriel du siège" type="String"/>
+        <Field name="Site internet" src="Site internet" type="String"/>
+        <Field name="Adresse annexe_1" src="Adresse annexe_1" type="String"/>
+        <Field name="Adresse annexe_2" src="Adresse annexe_2" type="String"/>
+        <Field name="Adresse annexe_3" src="Adresse annexe_3" type="String"/>
+        <Field name="Code postal annexe Ville annexe" src="Code postal annexe Ville annexe" type="String"/>
+        <Field name="Téléphone annexe" src="Téléphone annexe" type="String"/>
+        <Field name="Fax annexe" src="Fax annexe" type="String"/>
+        <Field name="C1004" src="C1004" type="Integer"/>
+        <Field name="C1010" src="C1010" type="Integer"/>
+        <Field name="C1015" src="C1015" type="Integer"/>
+        <Field name="C1020" src="C1020" type="Integer"/>
+        <Field name="C1025" src="C1025" type="Integer"/>
+        <Field name="C1030" src="C1030" type="Integer"/>
+        <Field name="C1502" src="C1502" type="Integer"/>
+        <Field name="C1505" src="C1505" type="Integer"/>
+        <Field name="C1507" src="C1507" type="Integer"/>
+        <Field name="C1510" src="C1510" type="Integer"/>
+        <Field name="C1515" src="C1515" type="Integer"/>
+        <Field name="C1520" src="C1520" type="Integer"/>
+        <Field name="C1525" src="C1525" type="Integer"/>
+        <Field name="C1530" src="C1530" type="Integer"/>
+        <Field name="C1540" src="C1540" type="Integer"/>
+        <Field name="C2005" src="C2005" type="Integer"/>
+        <Field name="C2010" src="C2010" type="Integer"/>
+        <Field name="C2015" src="C2015" type="Integer"/>
+        <Field name="C2510" src="C2510" type="Integer"/>
+        <Field name="C2515" src="C2515" type="Integer"/>
+        <Field name="C2520" src="C2520" type="Integer"/>
+        <Field name="C2525" src="C2525" type="Integer"/>
+        <Field name="C3005" src="C3005" type="Integer"/>
+        <Field name="C3015" src="C3015" type="Integer"/>
+        <Field name="C3020" src="C3020" type="Integer"/>
+        <Field name="C3025" src="C3025" type="Integer"/>
+        <Field name="C3210" src="C3210" type="Integer"/>
+        <Field name="C3220" src="C3220" type="Integer"/>
+        <Field name="C3505" src="C3505" type="Integer"/>
+        <Field name="C3510" src="C3510" type="Integer"/>
+        <Field name="C3515" src="C3515" type="Integer"/>
+        <Field name="C4005" src="C4005" type="Integer"/>
+        <Field name="C4006" src="C4006" type="Integer"/>
+        <Field name="C4007" src="C4007" type="Integer"/>
+        <Field name="C4010" src="C4010" type="Integer"/>
+        <Field name="C4015" src="C4015" type="Integer"/>
+        <Field name="C4017" src="C4017" type="Integer"/>
+        <Field name="C4020" src="C4020" type="Integer"/>
+        <Field name="C4025" src="C4025" type="Integer"/>
+        <Field name="C4505" src="C4505" type="Integer"/>
+        <Field name="C4510" src="C4510" type="Integer"/>
+        <Field name="C4515" src="C4515" type="Integer"/>
+        <Field name="C4520" src="C4520" type="Integer"/>
+        <Field name="C4525" src="C4525" type="Integer"/>
+        <Field name="C4530" src="C4530" type="Integer"/>
+        <Field name="C4531" src="C4531" type="Integer"/>
+        <Field name="C4532" src="C4532" type="Integer"/>
+        <Field name="C4535" src="C4535" type="Integer"/>
+        <Field name="C4540" src="C4540" type="Integer"/>
+        <Field name="C4545" src="C4545" type="Integer"/>
+        <Field name="C4550" src="C4550" type="Integer"/>
+        <Field name="C4555" src="C4555" type="Integer"/>
+        <Field name="C4560" src="C4560" type="Integer"/>
+        <Field name="C5005" src="C5005" type="Integer"/>
+        <Field name="C5010" src="C5010" type="Integer"/>
+        <Field name="C5015" src="C5015" type="Integer"/>
+        <Field name="C5210" src="C5210" type="Integer"/>
+        <Field name="C5220" src="C5220" type="Integer"/>
+        <Field name="C5505" src="C5505" type="Integer"/>
+        <Field name="C5510" src="C5510" type="Integer"/>
+        <Field name="C5515" src="C5515" type="Integer"/>
+        <Field name="C5520" src="C5520" type="Integer"/>
+        <Field name="C5525" src="C5525" type="Integer"/>
+        <Field name="C5530" src="C5530" type="Integer"/>
+        <Field name="C5535" src="C5535" type="Integer"/>
+        <Field name="C5540" src="C5540" type="Integer"/>
+        <Field name="C5545" src="C5545" type="Integer"/>
+        <Field name="C5550" src="C5550" type="Integer"/>
+        <Field name="C5555" src="C5555" type="Integer"/>
+        <Field name="C7005" src="C7005" type="Integer"/>
+        <Field name="C7010" src="C7010" type="Integer"/>
+        <Field name="C7015" src="C7015" type="Integer"/>
+        <Field name="C7020" src="C7020" type="Integer"/>
+        <Field name="C7025" src="C7025" type="Integer"/>
+        <Field name="C7030" src="C7030" type="Integer"/>
+        <Field name="C9905" src="C9905" type="Integer"/>
+        <Field name="C9910" src="C9910" type="Integer"/>
+        <Field name="C9915" src="C9915" type="Integer"/>
+        <Field name="C9920" src="C9920" type="Integer"/>
+        <Field name="C9922" src="C9922" type="Integer"/>
+        <Field name="C9925" src="C9925" type="Integer"/>
+        <Field name="C9930" src="C9930" type="Integer"/>
+        <Field name="C9935" src="C9935" type="Integer"/>
+        <Field name="C9950" src="C9950" type="Integer"/>
+        <Field name="C9999" src="C9999" type="Integer"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

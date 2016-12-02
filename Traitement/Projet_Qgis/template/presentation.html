@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Présentation de l'EPCI</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../styles/bs/css/bootstrap.css">
+</head>
+<script src="../styles/bs/js/jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#custom").load("../styles/bs/css/custom.css"); 
+    });
+    </script> 
+<style id="custom">
+/*load with jquery the content of custom.css because add an other stylesheets link in the
+header does not work
+<link rel="stylesheet" href="../styles/bs/css/bootstrap.css">
+<link rel="stylesheet" href="../styles/bs/css/custom.css">
+*/
+</style>
+  <body>
+    <h1>[% "nom" %]</h1>
+    <div class="container-fluid"> 
+      <h2 class="theme1">présentation de l'EPCI</h1>
+      <div class="col-sm-7">
+       <div class="panel panel-info">
+          <div class="panel-heading"><strong>Le territoire</strong></div>
+            <div class="panel-body" id="carte">
+               <img class="img-responsive img-rounded" src="[% @project_folder || '/' || 'test.jpg' %]" alt="Carte de présentation"> 
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="panel panel-info">
+          <div class="panel-heading"><strong>Informations générales</strong></div>
+            <div class="panel-body">
+              <li>[% CASE WHEN attribute(get_feature( 'banatic', 'N° SIREN',   "siren" ), 'Civilité Président')= 'M.' THEN '<strong>Nom du président :</strong>' ELSE '<strong>Nom de la présidente :</strong>' END %]
+                [% attribute(get_feature( 'banatic', 'N° SIREN',   "siren" ), 'Nom Président') %] 
+                [% attribute(get_feature( 'banatic', 'N° SIREN',   "siren" ), 'Prénom Président')%]
+              </li>
+              <li><strong>Date de création :</strong>  [% attribute(get_feature( 'banatic', 'N° SIREN',   "siren" ), 'Date de création') %] </li>
+              <li><strong>Coordonnées :</strong><span class="text-capitalize">
+              [% attribute(get_feature( 'banatic', 'N° SIREN',   "siren" ), 'Adresse du siège_1') %] 
+              [% attribute(get_feature( 'banatic', 'N° SIREN',   "siren" ), 'Adresse du siège_2') %] 
+              [% attribute(get_feature( 'banatic', 'N° SIREN',   "siren" ), 'Adresse du siège_3') %]
+              [% attribute(get_feature( 'banatic', 'N° SIREN',   "siren" ), 'Code postal du siège Ville du siège') %]</span>
+              </li>
+              <li> <strong>Nombre de communes :</strong>
+                [% attribute(get_feature( 'presentation', 'siren',   "siren" ), 'nb_com')%]
+                 dont
+                 [% attribute(get_feature( 'presentation', 'siren',   "siren" ), 'nb_com_inf_2000')%]
+                 communes comprenant moins de 2000 habitants
+              </li>
+              <li><strong>Nombre d'habitants :</strong> [% attribute(get_feature( 'banatic', 'N° SIREN',   "siren" ), 'Population') %] </li>
+              <li><strong>Surface :</strong> [% round($area / 10000) %] ha</li>
+            </div>
+        </div>
+        <div class="panel panel-info">
+          <div class="panel-heading"><strong>Compétences</strong></div>
+            <div class="panel-body">
+              [% attribute(get_feature( 'competence', 'siren',   "siren" ), 'competence') %]
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

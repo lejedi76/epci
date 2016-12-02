@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="1_synthese_demographie_27">
+        <SrcDataSource relativeToVRT="1">1_synthese_demographie_27.xls</SrcDataSource>
+        <!--Header=True-->
+        <SrcSql dialect="sqlite">SELECT * FROM 'démographie_communale27' LIMIT 678 OFFSET 1</SrcSql>
+        <Field name="Code insee" src="Field1" type="String"/>
+        <Field name="Commune" src="Field2" type="String"/>
+        <Field name="COMMUNE_2016" src="Field3" type="String"/>
+        <Field name="INSEE_2016" src="Field4" type="String"/>
+        <Field name="Canton-2015" src="Field5" type="String"/>
+        <Field name="Libellé EPCI" src="Field6" type="String"/>
+        <Field name="Superficie km2 (2006)" src="Field7" type="String"/>
+        <Field name="POP_SDC_1962" src="Field8" type="String"/>
+        <Field name="POP_SDC_1968" src="Field9" type="String"/>
+        <Field name="POP_SDC_1975" src="Field10" type="String"/>
+        <Field name="POP_SDC_1982" src="Field11" type="String"/>
+        <Field name="POP_SDC_1990" src="Field12" type="String"/>
+        <Field name="Pop statistique 1999" src="Field13" type="String"/>
+        <Field name="POP_SDC_2000" src="Field14" type="String"/>
+        <Field name="POP_SDC_2001" src="Field15" type="String"/>
+        <Field name="POP_SDC_2002" src="Field16" type="String"/>
+        <Field name="POP_SDC_2003" src="Field17" type="String"/>
+        <Field name="POP_2006" src="Field18" type="String"/>
+        <Field name="POP_MUN _2010" src="Field19" type="String"/>
+        <Field name="POP_2011" src="Field20" type="String"/>
+        <Field name="Pop_2012" src="Field21" type="String"/>
+        <Field name="Pop2013" src="Field22" type="String"/>
+        <Field name="Field23" src="Field23" type="String"/>
+        <Field name="TVAR62_68" src="Field24" type="String"/>
+        <Field name="TVAR68_75" src="Field25" type="String"/>
+        <Field name="TVAR75_82" src="Field26" type="String"/>
+        <Field name="TVAR82_90" src="Field27" type="String"/>
+        <Field name="TVAR90_99" src="Field28" type="String"/>
+        <Field name="TVAR 99_2006" src="Field29" type="String"/>
+        <Field name="TVAR 2006_12" src="Field30" type="String"/>
+        <Field name="TVAR 2006_13" src="Field31" type="String"/>
+        <Field name="Densité 90km²" src="Field32" type="String"/>
+        <Field name="Densité 99km²" src="Field33" type="String"/>
+        <Field name="Densité 2012km²" src="Field34" type="String"/>
+        <Field name="Indice jeunesse 1975" src="Field35" type="String"/>
+        <Field name="Indice jeunesse 1982" src="Field36" type="String"/>
+        <Field name="Indice jeunesse 1990" src="Field37" type="String"/>
+        <Field name="Indice jeunesse 1999" src="Field38" type="String"/>
+        <Field name="Indice jeunesse 2006" src="Field39" type="String"/>
+        <Field name="Indice jeunesse 2011" src="Field40" type="String"/>
+        <Field name="TX90_moins 20ans" src="Field41" type="String"/>
+        <Field name="TX90_plusde60ans" src="Field42" type="String"/>
+        <Field name="Tx99 moins20" src="Field43" type="String"/>
+        <Field name="Tx99 60etPlus" src="Field44" type="String"/>
+        <Field name="TX 2006 moins20a" src="Field45" type="String"/>
+        <Field name="TX 2006 60 et+" src="Field46" type="String"/>
+        <Field name="Tx2011 moins20" src="Field47" type="String"/>
+        <Field name="Tx2011 60etPlus" src="Field48" type="String"/>
+        <Field name="SNAT68_75" src="Field49" type="String"/>
+        <Field name="SNAT75_82" src="Field50" type="String"/>
+        <Field name="SNAT82_90" src="Field51" type="String"/>
+        <Field name="SNAT90_99" src="Field52" type="String"/>
+        <Field name="Solde naturel 1999-2006" src="Field53" type="String"/>
+        <Field name="Solde naturel 2006-2012" src="Field54" type="String"/>
+        <Field name="SMIG68_75" src="Field55" type="String"/>
+        <Field name="SMIG75_82" src="Field56" type="String"/>
+        <Field name="SMIG82_90" src="Field57" type="String"/>
+        <Field name="SMIG90_99" src="Field58" type="String"/>
+        <Field name="SMIG apparent 1999-2006" src="Field59" type="String"/>
+        <Field name="SMIG apparent 2006-2012" src="Field60" type="String"/>
+        <Field name="Field61" src="Field61" type="String"/>
+        <Field name="Field62" src="Field62" type="String"/>
+        <Field name="Field63" src="Field63" type="String"/>
+        <Field name="Field64" src="Field64" type="String"/>
+        <Field name="Field65" src="Field65" type="String"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

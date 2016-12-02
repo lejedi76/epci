@@ -1,4 +1,6 @@
-Navettes_dom_travail/
+Navettes_dom_travail/*
+Traitement/Export/*
+Traitement/EPCI/*
 *.ods#
 *.xls#
 *.pyc

@@ -1,0 +1,41 @@
+/*the override style does not work
+<link rel="stylesheet" href="../styles/bs/css/bootstrap.css"
+<link rel="stylesheet" href="../styles/bs/css/custom.css">*/
+html * {
+    font-family: Garamond !important;
+}
+h1 {
+    font-size: 18pt;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+  font-size: 14pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  padding:10px;
+}
+
+/*remove bullet
+*/
+li {
+    list-style-type: none;
+}
+.theme1 {
+  background: -webkit-linear-gradient(left, #93BE28 , white 90%); /*vert du theme*/
+}
+
+/*class to have column with same heigth*/
+.custompanel {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+    margin:0;
+}
+
+#carte {
+  padding:0;
+}

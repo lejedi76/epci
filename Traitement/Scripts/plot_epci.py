@@ -26,9 +26,13 @@ import pandas as pd
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
+import matplotlib.patheffects as pe
 import re
 import unicodedata
 import textwrap
+
+from qgis.utils import iface
+from qgis.gui import QgsMessageBar
 
 #path settings
 from config_path import (
@@ -126,6 +130,10 @@ def find_siren(df, i):
     except Exception as e:
         raise ExecutionException(str(e))
 
+#cleanup and format label
+def wrap(label, size):
+    return '\n'.join(textwrap.wrap(label.replace('\n',' '),size)).strip()
+
 def to_percent(df):
     return df.apply(lambda c: c / c.sum() * 100, axis=0)
 
@@ -133,9 +141,18 @@ def to_percent(df):
 def add_value_label(ax, df, i):
     '''
     add a label on the value
+    http://composition.al/blog/2015/11/29/a-better-way-to-add-labels-to-bar-charts-with-matplotlib/
     '''
-    for k, label in enumerate(df.iloc[i]):
-        ax.annotate(str(label), (k , label + 0.2), horizontalalignment='center')
+    # Get y-axis height to calculate label position from.
+    (y_bottom, y_top) = ax.get_ylim()
+    y_height = y_top - y_bottom
+
+    for k, height in enumerate(df.iloc[i]):
+        ax.annotate(str(height), (k , height+ y_height*0.02),
+             size=10,
+             path_effects=[pe.withStroke(linewidth=2, foreground="white")],
+            #bbox=dict(boxstyle='round,pad=0.2', fc='yellow', alpha=0.3),
+            horizontalalignment='center')
 
 
 class Diagram(object):
@@ -161,26 +178,34 @@ class Diagram(object):
     def output_name(self, output_name):
         self._output_name = urlify(output_name)
 
+    @property
+    def labels(self):
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        self._labels = [wrap(label, 15) for label in labels]
+
     def __init__(self, filepath, kind, title, **kwargs):
         
         self.filepath = filepath
         self.kind = kind
-        self.title = title
+        self.title = title.upper()
         
         #construct the dataframe
         self.df = self.dataframe(**kwargs)
         
         #default values
-        self.erase_y_label = None
-        self.annotate_value_label = None
+        self.erase_y_label = True
+        self.annotate_value_label = False
+        self.rot = 0
         self.output_name = self.title
-        self.labels = ['\n'.join(textwrap.wrap(label.replace('\n',''),15))
-                                         for label in self.df.columns.tolist()] 
+        self.labels = self.df.columns.tolist()
         #legend = True => legend in plot
         #legend = False => legend outside the plot
         self.legend = False
         self.fontsize = 9
-        self.figsize = cm2inch(13, 13)
+        self.figsize = cm2inch(14, 14)
         self.source = None
 
              
@@ -203,14 +228,16 @@ class Diagram(object):
         '''
         Return dictionary of options according to the kind of plot
         '''
-        if self.kind == 'pie':
+        if self.kind == 'line':
+            options = {'linewidth': 4, 'marker': 'o' , 'markersize' : 10}
+        elif self.kind == 'pie':
             options = {
             'autopct' : '%1.1f%%',
             'startangle' : 180,
-            'shadow' : True }
+            'shadow' : False }
             # if legend = True put the label in legend
         elif self.kind in ('bar', 'barh'):
-            options = { 'width': 1, 
+            options = { 'width': 0.3, 
                         'stacked' : False}
         else:
             return None
@@ -219,30 +246,55 @@ class Diagram(object):
         options.update(plot_options)
 
         if self.kind == 'pie':
-            if self.legend:
-                print self.legend
+            if self.annotate_value_label:
                 options['labels']= self.labels
             else:
-                options['labels']= None
+                options['labels']=['' for columns in self.df.columns.tolist()]
+
         return options
 
     def plot(self, i):
         df = self.df
         self.current_siren = find_siren(df, i)
 
+        if self.current_siren is None:
+            return None
+
         fig, ax = plt.subplots(figsize=self.figsize)
+        # plt.subplots_adjust(top=0.85)
 
-        df.iloc[i].plot(
-            ax=ax,
-            rot=0, 
-            kind = self.kind, 
-            title= self.title,
-            legend=True,
-            fontsize=9, 
-            **self.plot_options)
+        #stest if stacked options is True
+        #transform the pandas series to dataframe
+        has_stacked = self.plot_options.get('stacked', False)
+        if not has_stacked:
+            df.iloc[i].plot(
+                ax=ax,
+                rot=self.rot, 
+                kind = self.kind, 
+                title= self.title,
+                legend=True,
+                fontsize=9, 
+                **self.plot_options)
+        else:
+            df.iloc[i:i+1].plot(
+                ax=ax,
+                rot=self.rot, 
+                kind = self.kind, 
+                title= self.title,
+                legend=True,
+                fontsize=9, 
+                **self.plot_options)
 
+        #legend must be create otherwise
+        #legend can not be create in separate file
         if not self.legend:
-            pass
+            for axes in fig.get_axes():
+                legend = axes.get_legend()
+                legend.set_visible(False)
+
+        # plt.gca().set_xlim(left=-1)
+        # ylim = max(df.iloc[i]) + (max(df.iloc[i])-min(df.iloc[i]))*0.1
+        # plt.gca().set_ylim(top=ylim)
 
 
         if self.erase_y_label:
@@ -251,19 +303,18 @@ class Diagram(object):
         if self.source:
             ax.set_xlabel(self.source)
 
-        if self.annotate_value_label:
+        if self.annotate_value_label and self.kind <> 'pie':
             add_value_label(ax, df, i)
         return fig
 
     def plot_legend(self, fig):
         fig_legend_list = []
         for ax_number, ax in enumerate(fig.get_axes()):
-            fig_legend = plt.figure(figsize=cm2inch(4,4))
+            fig_legend = plt.figure(figsize=cm2inch(5,5))
             patches, labels = ax.get_legend_handles_labels()
             #delete \n and customize the label legend
             #to have nice print
-            labels_legend = ['\n'.join(textwrap.wrap(label.replace('\n',''),25))
-                                         for label in labels]
+            labels_legend = [ wrap(label, 25) for label in labels]
             plt.figlegend(patches, labels_legend, loc = 'center')
             fig_legend_list.append(fig_legend)
         return fig_legend_list
@@ -273,6 +324,7 @@ class Diagram(object):
         is_legend_plot : True means that only the legend
         is printed'''
         filepath = os.path.join(EPCI_SIREN_FOLDER, self.current_siren, self.output_name)
+        print filepath
         if is_legend_plot:
             filepath = '{}_legend_{}'.format(filepath, suffix)
         self.save_plot(fig, filepath)
@@ -282,9 +334,11 @@ class Diagram(object):
         try:
             #fig_filepath = os.path.join(EPCI_SIREN_FOLDER, self.current_siren, self.output_name)
             for format in formats:
+                #fig.tight_layout()
                 fig.savefig('{}.{}'.format(filepath, format), dpi=300, format=format)
+                print 'save'
         except Exception as e:
-            raise ExecutionException(str(e))
+            iface.messageBar().pushMessage('erreur', str(e), level=QgsMessageBar.CRITICAL)
         finally:
             if fig:
                 plt.close(fig)
@@ -293,6 +347,8 @@ class Diagram(object):
         df = self.df
         for i in range(len(df)):
             fig = self.plot(i)
+            if fig is None:
+                return None
             self.save_plot_default(fig)
             if not self.legend:
                 #print the legend of all potential axes in separate files
@@ -300,39 +356,54 @@ class Diagram(object):
                 for n, fig_legend in enumerate(fig_legend_list):
                     self.save_plot_default(fig_legend, is_legend_plot=True, suffix=n)
 
-
-def plot(df, dg):
-    self = dg
-    fig, ax = plt.subplots(figsize=self.figsize)
-    df.plot(
-    ax=ax,
-    rot=0, 
-    kind = self.kind, 
-    title= self.title,
-    legend=False,
-    fontsize=9, 
-    **self.plot_options)
-
-
-
-
+#emploi
 filepath = os.path.join(DATA_FOLDER, '3_Emploi_au_LT_par_NA.xls')
 
-diagram_property = { 'filepath' : filepath,
-                     'kind': 'pie',
-                     'title': u"Répartition des emplois \npar secteur d'activité",
-                     'parse_cols' : 'A:B, C:G',
-                     'index_col' : (0,1),
-                     # 'labels' : [u'Administration \npublique, \nenseignement, \nsanté humaine \net action sociale ', 
-                     #            u'Agriculture, \nsylviculture \net pêche ', 
-                     #            u'Commerce, \ntransports \net services \ndivers ', 
-                     #            u'Construction', 
-                     #            u'Industrie  \nmanufacturière, \nindustries \nextractives \net autres '],
-                    'legend': True,
-                    'shadow': False
+diagram_property = {'filepath' : filepath,
+                    'kind': 'pie',
+                    'title': u"Répartition des emplois \npar secteur d'activité",
+                    'parse_cols' : 'A:B, C:G',
+                    'index_col' : (0,1),
+                    'legend': False,
+                    'shadow': False,
+                    'erase_y_label': True,
+                    'figsize':cm2inch(15,15)
                     }
 
 dg = Diagram(**diagram_property)
+# dg.plot_and_save_all()
 
+# #évolution population
+# filepath = os.path.join(DATA_FOLDER, '1_denombrement_pop.xls')
+
+# diagram_property = {'filepath' : filepath,
+#                     'kind': 'line',
+#                     'figsize': cm2inch(13,6),
+#                     'title': u"Évolution de la population",
+#                     'parse_cols' : 'A:B, C:G',
+#                     'index_col' : (0,1),
+#                     'erase_y_label': True
+#                     }
+
+# dg = Diagram(**diagram_property)
+# dg.plot_and_save_all()
+
+# # répartition age
+# filepath = os.path.join(DATA_FOLDER, '1_population_age.xls')
+
+# diagram_property = {'filepath' : filepath,
+#                     'kind': 'bar',
+#                     'title': u"Répartition de l'âge",
+#                     'parse_cols' : 'A:B, C:H',
+#                     'index_col' : (0,1),
+#                     'erase_y_label': True,
+#                     'stacked':True,
+#                     'annotate_value_label': False,
+#                     'figsize':cm2inch(12,14),
+#                     'width' : 0.1
+#                     }
+
+# dg = Diagram(**diagram_property)
+# dg.plot_and_save_all()
 #liste = [ '\n'.join(textwrap(label.replace('\n',''),25)) for label in ax.get_legend_handles_labels()[1]]
 #plt.figlegend(*ax.get_legend_handles_labels(), loc = 'center')
