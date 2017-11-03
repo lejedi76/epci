@@ -1,0 +1,10 @@
+{
+   "infoBoxEnabled": true, 
+   "infoBoxTemplate": "voici", 
+   "infoLayerEnabled": true, 
+   "infoField": "[% 'essai' %]", 
+   "infoLayer": "Nouvelle couche en m\u00e9moire", 
+   "iconPath": "", 
+   "mapCommandsEnabled": true, 
+   "distanceBuffer": "100"
+}

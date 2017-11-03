@@ -1,0 +1,54 @@
+[% @base_graph%]
+<html>
+  <body>
+    <h3>Répartition de la population par catégories socio-professionnelles en 2013</h3>
+    <div id="categorie_socio"></div>
+    <div class="note">*cadres et professions intellectuelles supérieures</div>
+    <div class="source">Source : Insee, RP 2013</div>
+  </body>
+</html>
+
+<!-- graphique -->
+<script>
+  var chart = c3.generate({
+    bindto: '#categorie_socio',
+    size: {
+      height: 260,
+    },
+    padding:{
+      bottom:0,
+      top:0,
+      left:0,
+      right:0
+    },
+    data: {
+        rows: [
+            ['Agriculture exploitants ',
+            'Artisans, comerçants, chefs entreprise',
+            'Personnes sans activité professionnelle',
+            'Cadres*', 
+            'Employés', 
+            'Ouvriers ',
+            'Professions intermédiaires'],
+            [ [% "cat-socio1" %],
+              [% "cat-socio2" %],
+              [% "cat-socio3" %],
+              [% "cat-socio4" %],
+              [% "cat-socio5" %],
+              [% "cat-socio6" %],
+              [% "cat-socio7" %]],
+        ],
+        order:null,
+        type: 'pie'
+    },
+    color: {pattern: ['#CDE9E9','#B1C8C8','#95A7A7','#798787','#5D6666','#414545','#252525']},
+    pie : {
+      label: {
+        threshold: 0.05
+      }
+    },
+    legend: {
+      position: 'bottom'
+    }
+});
+</script>

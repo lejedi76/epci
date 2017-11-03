@@ -1,0 +1,17 @@
+[% @base%]
+<html>
+  <body>
+    <h3>Localisation des zones d'activité</h3>
+    <div>Surfaces réservées aux activités : 
+	    <span id="theme3">
+	    <!-- calcul des surfaces des géométrie de la couche zone_activité par rapport à l'epci -->
+	    [% format_number(
+		 aggregate('zone_activite', 
+		 'sum',  
+		 $area, filter:=intersects($geometry,  @atlas_geometry ))/10000
+	 	,0)  || ' ha'%]
+	 	</span>
+	</div>
+	<div class="lspacer"></div>
+  </body>
+</html>

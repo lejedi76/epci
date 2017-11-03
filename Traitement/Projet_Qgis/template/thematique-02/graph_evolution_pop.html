@@ -1,0 +1,78 @@
+[% @base_graph%]
+<html>
+  <body>
+    <h3>Évolution de la population sur plusieurs années</h3>
+    <div id="evolution_population"></div>
+    <div class="note">Note : L'évolution est cacluée en fonction des taux de variation annuels</div>
+    <span class="source">Source : Insee, RP 2013</span>
+  </body>
+</html>
+<!-- graphique -->
+<script>
+var chart = c3.generate({
+  bindto: '#evolution_population',
+    size: {
+        height: 280,
+        // width: 320
+    },
+    padding:{
+      bottom:0,
+      top:0,
+      right:10,
+      left:50,
+    },
+    data: {
+      x: 'x',
+      xFormat: '%Y',
+        columns: [
+            ['x', 
+            '1991', /*1990*/
+            '2000', /*1999*/
+            '2009', /*2008*/
+            '2015'],/*2014*/
+            ["[% nom %]",  [%  "tvar90" %], [%  "tvar99" %], [%  "tvar08" %], [% "tvar" %]],
+            ['Eure',  
+              [%  attribute(get_feature('2_demographie', 'Siren', '27'),'tvar90') %], 
+              [%  attribute(get_feature('2_demographie', 'Siren', '27'),'tvar99') %],
+              [%  attribute(get_feature('2_demographie', 'Siren', '27'),'tvar08') %],
+              [%  attribute(get_feature('2_demographie', 'Siren', '27'),'tvar') %]],
+            ['Normandie',  
+              [%  attribute(get_feature('2_demographie', 'Siren', '0'),'tvar90') %], 
+              [%  attribute(get_feature('2_demographie', 'Siren', '0'),'tvar99') %],
+              [%  attribute(get_feature('2_demographie', 'Siren', '0'),'tvar08') %],
+              [%  attribute(get_feature('2_demographie', 'Siren', '0'),'tvar') %]]
+        ]
+        ,type:'spline'
+        ,labels:{
+          format: {
+                "[% nom %]": function (d) { return d3.format(".2f")(d) + '%' ; }
+        }
+      }
+    },
+  //    grid: {
+  //     y: {
+  //         show: true
+  //       }
+  // },
+    axis: {
+        x: {
+            min: '1988',
+            max:'2017',
+            // max: 2015,
+            type: 'timeseries',
+            // if true, treat x value as localtime (Default)
+            // if false, convert to UTC internally
+            localtime: false,
+            tick: {
+                format: '%Y'
+            }
+          }
+      // ,y: {
+      //       tick: {
+      //         count : 4
+      //       }
+      //     }
+        
+    }
+});
+</script>

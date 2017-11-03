@@ -1,0 +1,24 @@
+Nom de la gare;Code UIC;Code postal;Segmentation;voyageurs 2015;Voyageurs 2014;latitude;longitude;result_label;result_score;result_type;result_id;result_housenumber;result_name;result_street;result_postcode;result_city;result_context;result_citycode
+Vernon;415604;27200;b;1733552;1720641;49,091273;1,484366;Vernon;0,37;municipality;27681;;Vernon;;27200;Vernon;27, Eure, Normandie (Haute-Normandie);27681
+Evreux Normandie;387001;27000;a;1113650;1143162;49,022755;1,151315;Évreux;0,39;municipality;27229;;Évreux;;27000;Évreux;27, Eure, Normandie (Haute-Normandie);27229
+Val de Reuil;415877;27100;b;485921;547938;49,27444;1,208859;Rue Payse 27100 Val-de-Reuil;0,27;street;27701_0190_188be0;;Rue Payse;;27100;Val-de-Reuil;27, Eure, Normandie (Haute-Normandie);27701
+Gaillon-Aubevoye;415620;27600;b;480487;466232;49,159984;1,246515;Ailly;0,37;municipality;27005;;Ailly;;27600;Ailly;27, Eure, Normandie (Haute-Normandie);27005
+Bernay;444299;27300;b;468866;472015;49,088502;0,597071;Bernay;0,38;municipality;27056;;Bernay;;27300;Bernay;27, Eure, Normandie (Haute-Normandie);27056
+Gisors Embranchement;381244;27140;b;391183;359479;49,279816;1,775674;Gisors;0,36;municipality;27284;;Gisors;;27140;Gisors;27, Eure, Normandie (Haute-Normandie);27284
+Bueil;387092;27730;b;128211;130061;48,929735;1,441296;Bueil;0,37;municipality;27119;;Bueil;;27730;Bueil;27, Eure, Normandie (Haute-Normandie);27119
+Verneuil sur Avre;393595;27130;b;102618;118668;48,773425;0,975037;Piseux;0,34;municipality;27457;;Piseux;;27130;Piseux;27, Eure, Normandie (Haute-Normandie);27457
+Conches;387159;27190;b;100413;101336;48,984412;0,950414;Burey;0,37;municipality;27120;;Burey;;27190;Burey;27, Eure, Normandie (Haute-Normandie);27120
+Serquigny;444315;27470;c;26946;26908;49,1021;0,741654;Launay;0,34;municipality;27364;;Launay;;27470;Launay;27, Eure, Normandie (Haute-Normandie);27364
+Nonancourt;393553;27320;c;14683;20314;48,805815;1,141301;Droisy;0,34;municipality;27206;;Droisy;;27320;Droisy;27, Eure, Normandie (Haute-Normandie);27206
+Beaumont le Roger;387183;27170;c;12056;11608;49,106632;0,841466;Bray;0,41;municipality;27109;;Bray;;27170;Bray;27, Eure, Normandie (Haute-Normandie);27109
+Romilly la Puthenaye;387175;27170;c;11665;11263;49,106632;0,841466;Bray;0,41;municipality;27109;;Bray;;27170;Bray;27, Eure, Normandie (Haute-Normandie);27109
+Pont de l'Arche;415661;27340;c;10809;11897;49,294785;1,064586;Martot;0,34;municipality;27394;;Martot;;27340;Martot;27, Eure, Normandie (Haute-Normandie);27394
+Brionne;415364;27800;c;8884;9250;49,169754;0,70441;Aclou;0,37;municipality;27001;;Aclou;;27800;Aclou;27, Eure, Normandie (Haute-Normandie);27001
+La Bonneville sur Iton;387142;27190;c;8878;9174;48,984412;0,950414;Burey;0,37;municipality;27120;;Burey;;27190;Burey;27, Eure, Normandie (Haute-Normandie);27120
+Bourgtheroulde Thuit Hébert;415323;27520;c;2492;3761;49,295205;0,775833;Thenouville;0,23;municipality;27089;;Thenouville;;27520;Thenouville;27, Eure, Normandie (Haute-Normandie);27089
+Tourville;411181;27370;c;2027;2110;49,199298;0,893868;La Pyle;0,31;municipality;27482;;La Pyle;;27370;La Pyle;27, Eure, Normandie (Haute-Normandie);27482
+Saint-Pierre du Vauvray;415646;27430;c;1695;3363;49,231828;1,239959;Andé;0,41;municipality;27015;;Andé;;27430;Andé;27, Eure, Normandie (Haute-Normandie);27015
+Glos-Montfort;415349;27290;c;1638;3288;49,230678;0,692091;Authou;0,34;municipality;27028;;Authou;;27290;Authou;27, Eure, Normandie (Haute-Normandie);27028
+Saint-Germain-Saint-Rémy;393520;27320;c;396;484;48,805815;1,141301;Droisy;0,34;municipality;27206;;Droisy;;27320;Droisy;27, Eure, Normandie (Haute-Normandie);27206
+Bourth;393603;27580;c;191;17;48,769547;0,806411;Bourth;0,34;municipality;27108;;Bourth;;27580;Bourth;27, Eure, Normandie (Haute-Normandie);27108
+Tillières sur Avre;393587;27570;c;;15;48,772631;1,090762;Acon;0,41;municipality;27002;;Acon;;27570;Acon;27, Eure, Normandie (Haute-Normandie);27002

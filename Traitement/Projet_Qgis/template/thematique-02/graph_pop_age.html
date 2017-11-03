@@ -1,0 +1,69 @@
+[% @base_graph%]
+<html>
+<body>
+  <h3>Répartition de la population par grande tranche d'âge en 2013</h3>
+  <div id="population_tranche_age"></div>
+  <span class="source">Source : Insee, RP 2013</span>
+</body>
+</html>
+
+<!-- graphique -->
+<script>
+var chart = c3.generate({
+  bindto: '#population_tranche_age',
+    size: {
+        height: 300,
+        // width: 400
+    },
+    padding:{
+      bottom:20,
+      top:10,
+      left:40,
+      right:0
+    },
+  data: {
+      columns: [
+          ["[% "nom" %]",  [% "p0_14_n" %],  [% "p15_29_n" %],  [% "p30_44_n" %],  [% "p45_59_n" %],  [% "p60_75_n" %], [% "pplus_75_n" %]],
+          ['Eure',
+            [%  attribute(get_feature('2_demographie', 'Siren', '27'),'p0_14_n') %],
+            [%  attribute(get_feature('2_demographie', 'Siren', '27'),'p15_29_n') %], 
+            [%  attribute(get_feature('2_demographie', 'Siren', '27'),'p30_44_n') %], 
+            [%  attribute(get_feature('2_demographie', 'Siren', '27'),'p45_59_n') %], 
+            [%  attribute(get_feature('2_demographie', 'Siren', '27'),'p60_75_n') %], 
+            [%  attribute(get_feature('2_demographie', 'Siren', '27'),'pplus_75_n') %]],
+          ['Normandie',
+            [%  attribute(get_feature('2_demographie', 'Siren', '0'),'p0_14_n') %],
+            [%  attribute(get_feature('2_demographie', 'Siren', '0'),'p15_29_n') %], 
+            [%  attribute(get_feature('2_demographie', 'Siren', '0'),'p30_44_n') %], 
+            [%  attribute(get_feature('2_demographie', 'Siren', '0'),'p45_59_n') %], 
+            [%  attribute(get_feature('2_demographie', 'Siren', '0'),'p60_75_n') %], 
+            [%  attribute(get_feature('2_demographie', 'Siren', '0'),'pplus_75_n') %]]
+        ]
+  , type: 'bar'
+  },
+  bar: {
+      width: {
+          ratio: 0.7 // this makes bar width 50% of length between ticks
+      }
+      // or
+      //width: 100 // this makes bar width 100px
+  },
+      grid: {
+      y: {
+          show: true
+        }
+  },
+   axis: {
+      x: {
+          type: 'category',
+          categories: ['0 à 14 ans', '15 à 29 ans', '30 à 44 ans', '45 à 59 ans', '60 à 75 ans', '+ de 75 ans'],
+      },
+      y:{
+        tick: {
+          count : 4,
+          format: function (d) { return Math.round(100*d) + '%' ; }
+            }
+      }
+  }
+});
+</script>

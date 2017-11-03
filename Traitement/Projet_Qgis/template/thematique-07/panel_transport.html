@@ -1,0 +1,78 @@
+[% @base %]
+	<body>
+		<div class="container">
+			<div class="panel-group">
+				<div class="panel panel-theme1">
+					<div class="panel-body">
+						<h3>Administration</h3>
+						<div class="row">
+							<div class="col-xs-12">Date de création : [%  format_date(  "date_creation", 'd MMM yyyy') %] </div>
+							<div class="col-xs-12">[%format('%1 : %2 %3 %4',
+													if ("president_civilite" = 'M.', 'Président', 'Présidente'),
+													 "president_civilite",
+													 "president_prenom" ,
+													 "president_nom" )%]
+							</div>
+							<div class="col-xs-12">Siren : [% code_epci %]</div>
+						</div>
+						<!-- espace -->
+						<div class="sspacer"></div>
+						<div class="row">
+							<div class="col-xs-1"><span class="glyphicon glyphicon-envelope"></span></div>
+							<div class="col-xs-10">
+								[% format('%1 %2 <br> %3',  coalesce("siege_adresse",'') , coalesce("siege_adresse2",'') , coalesce("siege_cp",''))%]
+							</div>
+						</div>
+						<!-- espace -->
+						<div class="sspacer"></div>
+						<div class="row">
+							[%if("siege_tel",
+							format('
+							<div class="col-xs-1"> <span class="glyphicon glyphicon-earphone"></span></div>
+							<div class="col-xs-10"> %1 </div>', "siege_tel"),'')%]
+						</div>
+
+						<div class="row">
+							[%if("siege_fax",
+							format('
+							<div class="col-xs-1"> <span class="fa fa-fax"></span></div>
+							<div class="col-xs-10"> %1 </div>', "siege_fax"),'')%]
+						</div>
+
+						<div class="sspacer"></div>
+						<div class="row">
+							[%if("siege_courriel",
+							format('
+							<div class="col-xs-1"> <span class="glyphicon glyphicon-inbox"></span></div>
+							<div class="col-xs-10"> %1 </div>', "siege_courriel"),'')%]
+						</div>
+						<div class="row">
+							[%if("siege_internet",
+							format('
+							<div class="col-xs-1"> <span class="glyphicon glyphicon-home"></span></div>
+							<div class="col-xs-10"> %1 </div>', "siege_internet"),'')%]
+						</div>
+						<div class="source">Source : Banatic (sept. 2017)</div>
+					</div>
+			  	</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="panel-group">
+				<div class="panel panel-theme1">
+					<div class="panel-body">
+							<h3>Quelques indicateurs</h3>
+							<div class="row">
+								<div class="col-xs-12">Nombre de communes : <span id="theme1">[%aggregate('commune_ade_s_027', 'count', 1,filter:="code_epci"=attribute( @atlas_feature,'code_epci'))%]</span>  dont <span id="theme1">[%aggregate('commune_ade_s_027', 'count', 1,filter:="code_epci"=attribute( @atlas_feature,'code_epci') AND "population" <= 2000) %]</span>
+								 ont moins de 2000 habitants</div>
+								<div class="col-xs-12">Nombre d'habitants : <span id="theme1">[%format_number(aggregate('commune_ade_s_027', 'sum',"population",filter:="code_epci"=attribute( @atlas_feature,'code_epci')),0) %]</span> hab.</div>
+								<div class="col-xs-12">Superficie : <span id="theme1"> [% format_number($area/1000000,1) %]</span> km²</div>
+							</div>
+							<div class="source">Source : IGN, Admin Express (2017)</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

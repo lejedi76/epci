@@ -1,0 +1,36 @@
+<h3>Taux de variation annuel entre 2008 et 2014</h3>
+[% @base_table %]
+<span class="source">Source : Insee, RP 2013</span>
+<!-- tableau -->
+<script>
+            //Sample Json data
+            var jsondata = [
+                {
+                	// epci
+                    "field1": "[% nom %]", /*nom*/
+                    "field2": "[% round(tvar,1)  || '%' %]", /*taux de variation annuel*/
+                    "field3": "[% round(tvas,1) || '%' %]", /*taux du solde naturel*/
+                    "field4": "[% round(tvam,1) || '%' %]" /*taux du solde migratoire*/
+                },
+                {
+                	// eure
+                	"field1": "Eure",
+                    "field2": "[%  round(attribute(get_feature('2_demographie', 'Siren', '27'),'tvar'),1) || '%' %]",
+                    "field3": "[%  round(attribute(get_feature('2_demographie', 'Siren', '27'),'tvas'),1) || '%' %]",
+                    "field4": "[%  round(attribute(get_feature('2_demographie', 'Siren', '27'),'tvam'),1) || '%' %]"
+                },
+                {
+                	// normandie
+                    "field1": "Normandie",
+                    "field2": "[%  round(attribute(get_feature('2_demographie', 'Siren', '0'),'tvar'),1) || '%' %]",
+                    "field3": "[%  round(attribute(get_feature('2_demographie', 'Siren', '0'),'tvas'),1) || '%' %]",
+                    "field4": "[%  round(attribute(get_feature('2_demographie', 'Siren', '0'),'tvam'),1) || '%' %]"
+                }];
+
+            $("#table").jsonTable({
+                // entete de colonne à compléter
+                head : ['Territoire','Taux de variation annuel','Dont solde naturel', 'Dont solde migratoire'],
+                json : ['field1', 'field2', 'field3', 'field4']
+            });
+</script>
+[% @fin_table %]

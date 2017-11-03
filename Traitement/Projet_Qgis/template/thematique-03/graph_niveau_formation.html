@@ -1,0 +1,94 @@
+[% @base_graph%]
+<html>
+  <body>
+    <h3>Diplôme le plus élevé de la population (+15 ans 2013)</h3>
+    <div id="niveau_formation"></div>
+    <div class="note">* ou au plus BEPC, brevet des collèges,diplôme national de brevet</div>
+    <div class="note">** général, technologie ou professionnel</div>
+    <div class="source">Source : Insee, RP 2013</div>
+  </body>
+</html>
+
+<!-- graphique -->
+<script>
+  var chart = c3.generate({
+    bindto: '#niveau_formation',
+
+    size: {
+      height: 260,
+    },
+    padding:{
+      bottom:20,
+      top:0,
+      left:100,
+      right:20
+    },
+    data: {
+        rows: [
+            ['Aucun diplôme *',
+            'CAP ou BEP',
+            'Baccalauréat **',
+            'Diplôme de l\'enseignement supérieur'],
+            [ 
+              [% "part_sans_diplome" %],
+              [% "part_niveau_cap_bep" %],
+              [% "part_niveau_bac" %],
+              [% "part_niveau_sup" %] 
+            ],
+            [
+              [% attribute(get_feature('3_economie', 'siren_territoire', '27'),'part_sans_diplome') %],
+              [% attribute(get_feature('3_economie', 'siren_territoire', '27'),'part_niveau_cap_bep') %],
+              [% attribute(get_feature('3_economie', 'siren_territoire', '27'),'part_niveau_bac') %],
+              [% attribute(get_feature('3_economie', 'siren_territoire', '27'),'part_niveau_sup') %]
+            ],
+            [
+              [% attribute(get_feature('3_economie', 'siren_territoire', '0'),'part_sans_diplome') %],
+              [% attribute(get_feature('3_economie', 'siren_territoire', '0'),'part_niveau_cap_bep') %],
+              [% attribute(get_feature('3_economie', 'siren_territoire', '0'),'part_niveau_bac') %],
+              [% attribute(get_feature('3_economie', 'siren_territoire', '0'),'part_niveau_sup') %]
+            ]
+
+        ],
+        type: 'bar',
+        groups : [
+            ['Aucun diplôme *',
+            'CAP ou BEP',
+            'Baccalauréat **',
+            'Diplôme de l\'enseignement supérieur']
+        ],
+        labels: {
+//            format: function (v, id, i, j) { return "Default Format"; },
+            format: function (d, id, i, j) { return Math.round(d) + '%' ; }
+        },
+        order:null
+    },
+    color : {
+      pattern : [/*'#3CAA32','#64BF5C','#8DD486','#B6E9B1'*/'#371C87','#54CD55','#7A193C','#FD6B00']
+    },
+    bar : {
+      width:20
+    },
+    axis: {
+      rotated:true,
+      x :{
+        type: 'category',
+        categories: ['[% nom %]', 'Eure', 'Normandie'],
+        show:true
+      },
+      y: {
+        tick : {
+          values: [0, /*10, */20, /*30, */40, /*50,*/ 60/*, 70*/, 80, /*90,*/ 100],
+          format: function (d) { return Math.round(d) + '%' ; }
+        }
+      }
+    },
+    grid: {
+      y: {
+          show: true
+        }
+    },
+    legend: {
+      position: 'bottom'
+    }
+});
+</script>

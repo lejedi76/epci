@@ -1,0 +1,22 @@
+.c3 svg{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	-webkit-tap-highlight-color:transparent}
+
+.c3-legend-item {
+	font-weight: normal;
+}
+.c3-axis-y text {
+ font-weight: normal;
+ font-size:10px;
+}
+
+.c3-axis-x text {
+  font-weight: normal;
+  font-size:10px;
+}
+
+.c3-texts .c3-text text {
+  transform: translate(0, -200px);
+}

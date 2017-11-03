@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css">  
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+
+  <meta charset="UTF-8">
+  <title>title </title>
+</head>
+<body>
+  <div id="chart"></div>
+  <script>
+  var chart = c3.generate({
+    bindto: '#chart',
+    size: {
+        height: 240,
+        width: 360
+    },
+    data: {
+      x: 'x',
+      xFormat: '%Y',
+      columns: [
+        ['x', '1982', '1990', '1999', '2008', '2013'],
+        ['[%  "siren" %]', [%  "1982" %], [%  "1990" %], [%  "1999" %], [%  "2008" %], [%  "2013" %]],
+        ['densité epci', null, [%  ("1990"-"1982")/"1982" %], [%  ("1999"-"1990")/"1990" %], [%  ("2008"-"1999")/"1999" %], [%  ("2013"-"2008")/"2008" %]]
+      ],
+      type:'spline',
+      axes : {
+        [%  "siren" %]: 'y',
+        'densité epci': 'y2'
+      }
+    },
+    axis: {
+        x: {
+            type: 'timeseries',
+            // if true, treat x value as localtime (Default)
+            // if false, convert to UTC internally
+            localtime: false,
+            tick: {
+                format: '%Y'
+            }
+        },
+        y2: {
+          show: true,
+          tick: {
+                format: function (d) { return Math.round(100*d) + '%'; }
+              }
+        }
+    }
+});
+</script>
+</body>
+</html>

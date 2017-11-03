@@ -1,0 +1,27 @@
+[% @base %]
+	<body>
+		<div class="container">
+			<div class="panel-group">
+				<div class="panel panel-theme1">
+					<div class="panel-body">
+							<h3>Liste des compétences</h3>
+							<div class="row">
+								<div class="col-xs-4">Obligatoires : </div>
+								<div class="col-xs-8" style="font-size: 10px">[% regexp_replace( competence_obligatoire, '-','<br>- ') %]</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-4">Optionnelles : </div>
+								<div class="col-xs-8" style="font-size: 10px">[% regexp_replace( competence_optionnelle, '-','<br>- ') %]</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-4">Facultatives : </div>
+								<div class="col-xs-8" style="font-size: 10px">[% regexp_replace( competence_facultative, '-','<br>- ') %]</div>
+							</div>
+						<div class="source">Source : http://www.eure.gouv.fr/</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

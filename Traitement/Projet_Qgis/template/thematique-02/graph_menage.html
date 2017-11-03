@@ -1,0 +1,42 @@
+[% @base_graph%]
+<html>
+<body>
+  <h3>Composition des ménages en 2013</h3>
+  <div id="composition_menage"></div>
+  <span class="source">Source : Insee, RP 2013</span>
+</body>
+</html>
+<!-- graphique -->
+<script>
+  var chart = c3.generate({
+    bindto: '#composition_menage',
+    // title : {
+    //   text:'Composition des ménages'
+    // },
+    size: {
+      height: 300,
+      // width: 400
+    },
+    padding:{
+      bottom:40,
+      top:20,
+      left:20,
+      right:20
+    },
+    data: {
+        rows: [
+            ['1 pers.', '2 pers.', '3 pers.',  '4 pers.',  '5 pers.',  '6 pers. et +'],
+            [[% "1 personne" %],  [% "2 personnes" %], [% "3 personnes" %], [% "4 personnes" %], [% "5 personnes" %], [% "6 personnes ou +" %]],
+        ],
+        type: 'pie'
+    },
+    pie : {
+      label: {
+        threshold: 0.05
+      }
+    },
+    legend: {
+      position: 'right'
+    }
+});
+</script>

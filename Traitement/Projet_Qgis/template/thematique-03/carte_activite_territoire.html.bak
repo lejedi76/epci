@@ -1,0 +1,6 @@
+[% @base%]
+<html>
+  <body>
+    <h3>Répartition de la population par catégories socio-professionnelles en 2013</h3>
+  </body>
+</html>

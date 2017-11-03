@@ -1,0 +1,10 @@
+﻿[% @base %]
+<body>
+	<div class="col-sm-2">[%  title(format_date(now(), 'dd MMM yy')) %]</div>
+	<div class="col-sm-8" style="text-align: center;"> 
+		[% CASE WHEN regexp_match("nom_epci", '.*CC.*')
+		THEN replace("nom_epci",'CC', 'Communauté de communes') 
+		ELSE replace("nom_epci",'CA', 'Communauté d\'agglomération') END %]
+	</div>
+	<div class="col-sm-2" style="text-align: right;"> [% '#' %]</div>
+</body>

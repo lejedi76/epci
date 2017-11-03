@@ -1,0 +1,2206 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="2.18.9">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+    <customproperties/>
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="couverture">
+      <customproperties/>
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="epci20161122111229304" source="dbname='gb' host=10.27.8.64 port=8765 user='ddtm_admin' sslmode=disable key='id' srid=2154 type=MultiPolygon table=&quot;donnee_generique&quot;.&quot;l_epci_bdp_s_027&quot; (geom) sql=" name="epci couverture">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded_project" value="../0_couverture.qgs"/>
+        </customproperties>
+      </layer-tree-layer>
+    </layer-tree-group>
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="PROTECTIONS ENVIRONNEMENTALES">
+      <customproperties>
+        <property key="embedded" value="1"/>
+        <property key="embedded-invisible-layers">
+          <value>N_ENP_RAMSAR_S_R2820170427074810604</value>
+          <value>N_FORET_PROTECTION_ZINF_S_R2320160616160439378</value>
+          <value>N_APPB_ZINF_S_02720150316104940149</value>
+          <value>N_ZNIEFF1_ZINF_S_02720150316111752315</value>
+          <value>N_ZNIEFF2_ZINF_S_02720150316111752472</value>
+          <value>L_NATURA_2000_S_02720160913144708737</value>
+          <value>N_RES_BIOLOGIQUE_ONF_ZINF_S_R2320150316110241326</value>
+          <value>N_RES_NATURELLE_ZINF_S_02720150316110241486</value>
+        </property>
+        <property key="embedded_project" value="./protection_environnementales.qgs"/>
+      </customproperties>
+    </layer-tree-group>
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="PAYSAGE ET PATRIMOINE">
+      <customproperties>
+        <property key="embedded" value="1"/>
+        <property key="embedded-invisible-layers">
+          <value>N_AC4_ASSIETTE_SUP_S_02720160624145351843</value>
+          <value>N_SITE_CLASSE_S_02720150316143854844</value>
+          <value>N_SITE_INSCRIT_S_02720150316143854921</value>
+          <value>N_ARCHEOLOGIQUE_ZINF_S_02720160624152034205</value>
+          <value>N_AC1_ASSIETTE_SUP_S_02720160624145351579</value>
+        </property>
+        <property key="embedded_project" value="./paysage_connaissance.qgs"/>
+      </customproperties>
+    </layer-tree-group>
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="SRCE">
+      <customproperties>
+        <property key="embedded" value="1"/>
+        <property key="embedded-invisible-layers">
+          <value>C_Enjeux_ContInterreg_02720170427083022494</value>
+          <value>C_EnjeuxInterreg_EntiteetConti_region_02720170427083022545</value>
+          <value>N_SRCE_DISCIDENT_OBSTECOUL_S_R2320160627135149718</value>
+          <value>C_Corridor_02720160616105130215</value>
+          <value>RB_02720160616105130667</value>
+          <value>DiscontinuiteIdentifiee_02720160616105130464</value>
+          <value>F_Obstacles_02720160616105130542</value>
+        </property>
+        <property key="embedded_project" value="./srce.qgs"/>
+      </customproperties>
+    </layer-tree-group>
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="PROTECTION DE LA RESSOURCE EN EAU POTABLE">
+      <customproperties>
+        <property key="embedded" value="1"/>
+        <property key="embedded-invisible-layers">
+          <value>N_PROTECTION_AAC_AEP_S_02720150316153737411</value>
+          <value>N_PRELEV_AEP_P_02720150402174656059</value>
+          <value>N_PROTECTION_AEP_AS1_02720150316153737530</value>
+          <value>N_AAC_AEP_S_02720150409181502640</value>
+        </property>
+        <property key="embedded_project" value="./protection_ressources_eau.qgs"/>
+      </customproperties>
+    </layer-tree-group>
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="HABILLAGE">
+      <customproperties/>
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="commune_etiquette_copier20170515153628885" source="dbname='ref' host=10.27.8.64 port=8765 user='ddtm_admin' sslmode=disable key='id' srid=2154 type=Point table=&quot;admin_express&quot;.&quot;v_commune_ade_p_027&quot; (geom) sql=" name="commune_hors_epci">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded_project" value="../0_couverture.qgs"/>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="commune_etiquette_copier20170515151453475" source="dbname='ref' host=10.27.8.64 port=8765 user='ddtm_admin' sslmode=disable key='id' srid=2154 type=Point table=&quot;admin_express&quot;.&quot;v_commune_ade_p_027&quot; (geom) sql=" name="commune_hors_epci">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded_project" value="../0_couverture.qgs"/>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="L_Autoroutes_bdc20170515154344389" source="\\10.27.8.61\gb_cons\TRANSPORT_INFRASTRUCTURE\N_ROUTIER\L_Autoroutes_bdc.TAB" name="L_Autoroutes_bdc">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded_project" value="../0_couverture.qgs"/>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="L_Nationales_bdc20170515154344509" source="\\10.27.8.61\gb_cons\TRANSPORT_INFRASTRUCTURE\N_ROUTIER\L_Nationales_bdc.TAB" name="L_Nationales_bdc">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded_project" value="../0_couverture.qgs"/>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="N_ROUTE_PRIMAIRE_BDT_02720170516133921858" source="\\10.27.8.61\gb_ref\BDTOPO\A_VOIES_COMM_ROUTE\N_ROUTE_PRIMAIRE_BDT_027.tab" name="N_ROUTE_PRIMAIRE_BDT_027">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded_project" value="../0_couverture.qgs"/>
+        </customproperties>
+      </layer-tree-layer>
+    </layer-tree-group>
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="THEME">
+      <customproperties/>
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="3_pop_active_totale_repartition20170509105437317" source="U:/5_Patrimoine_commun/ETUDES/1_fiches_territoriales_EPCI/Extraction_donnees/3_pop_active_totale_repartition.xls|layerid=0|subset=&quot;SIREN&quot; = '200035665'" name="pop_active">
+        <customproperties/>
+      </layer-tree-layer>
+    </layer-tree-group>
+  </layer-tree-group>
+  <relations/>
+  <mapcanvas>
+    <units>meters</units>
+    <extent>
+      <xmin>529276.78410878172144294</xmin>
+      <ymin>6900723.53214921988546848</ymin>
+      <xmax>588099.16625394253060222</xmax>
+      <ymax>6946344.67003077454864979</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <projections>1</projections>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>145</srsid>
+        <srid>2154</srid>
+        <authid>EPSG:2154</authid>
+        <description>RGF93 / Lambert-93</description>
+        <projectionacronym>lcc</projectionacronym>
+        <ellipsoidacronym>GRS80</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <layer_coordinate_transform_info>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_ENP_RAMSAR_S_R2820170427074810604"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="L_Departementales_bdc_02720170515155541131"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_PROTECTION_AEP_AS1_02720150316153737530"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100007" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_ZNIEFF1_ZINF_S_02720150316111752315"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_SITE_INSCRIT_S_02720150316143854921"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100000" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_RES_NATURELLE_ZINF_S_02720150316110241486"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="C_Enjeux_ContInterreg_02720170427083022494"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_FORET_PROTECTION_ZINF_S_R2320160616160439378"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="L_NATURA_2000_S_02720160913144708737"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="C_Corridor_02720160616105130215"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_PRELEV_AEP_P_02720150402174656059"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_PROTECTION_AAC_AEP_S_02720150316153737411"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_SITE_CLASSE_S_02720150316143854844"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="epci20161122111229304"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="L_Autoroutes_bdc20170515154344389"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="DiscontinuiteIdentifiee_02720160616105130464"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_AAC_AEP_S_02720150409181502640"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_SRCE_DISCIDENT_OBSTECOUL_S_R2320160627135149718"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100000" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_AC4_ASSIETTE_SUP_S_02720160624145351843"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="L_Nationales_bdc20170515154344509"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="C_EnjeuxInterreg_EntiteetConti_region_02720170427083022545"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="F_Obstacles_02720160616105130542"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_ROUTE_PRIMAIRE_BDT_02720170516133921858"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_AC1_ASSIETTE_SUP_S_02720160624145351579"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100007" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_RES_BIOLOGIQUE_ONF_ZINF_S_R2320150316110241326"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="RB_02720160616105130667"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="commune_etiquette_copier20170515153628885"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_ARCHEOLOGIQUE_ZINF_S_02720160624152034205"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100007" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_ZNIEFF2_ZINF_S_02720150316111752472"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="commune_etiquette_copier20170515151453475"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="commune_ade_s_02720170515154646076"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100000" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_APPB_ZINF_S_02720150316104940149"/>
+    </layer_coordinate_transform_info>
+  </mapcanvas>
+  <layer-tree-canvas>
+    <custom-order enabled="0">
+      <item>3_pop_active_totale_repartition20170509105437317</item>
+      <item>N_ENP_RAMSAR_S_R2820170427074810604</item>
+      <item>N_FORET_PROTECTION_ZINF_S_R2320160616160439378</item>
+      <item>N_APPB_ZINF_S_02720150316104940149</item>
+      <item>N_ZNIEFF1_ZINF_S_02720150316111752315</item>
+      <item>N_ZNIEFF2_ZINF_S_02720150316111752472</item>
+      <item>L_NATURA_2000_S_02720160913144708737</item>
+      <item>N_RES_BIOLOGIQUE_ONF_ZINF_S_R2320150316110241326</item>
+      <item>N_RES_NATURELLE_ZINF_S_02720150316110241486</item>
+      <item>N_AC4_ASSIETTE_SUP_S_02720160624145351843</item>
+      <item>N_SITE_CLASSE_S_02720150316143854844</item>
+      <item>N_SITE_INSCRIT_S_02720150316143854921</item>
+      <item>N_ARCHEOLOGIQUE_ZINF_S_02720160624152034205</item>
+      <item>N_AC1_ASSIETTE_SUP_S_02720160624145351579</item>
+      <item>C_Enjeux_ContInterreg_02720170427083022494</item>
+      <item>C_EnjeuxInterreg_EntiteetConti_region_02720170427083022545</item>
+      <item>N_SRCE_DISCIDENT_OBSTECOUL_S_R2320160627135149718</item>
+      <item>C_Corridor_02720160616105130215</item>
+      <item>RB_02720160616105130667</item>
+      <item>DiscontinuiteIdentifiee_02720160616105130464</item>
+      <item>F_Obstacles_02720160616105130542</item>
+      <item>N_PROTECTION_AAC_AEP_S_02720150316153737411</item>
+      <item>N_PRELEV_AEP_P_02720150402174656059</item>
+      <item>N_PROTECTION_AEP_AS1_02720150316153737530</item>
+      <item>N_AAC_AEP_S_02720150409181502640</item>
+      <item>L_Autoroutes_bdc20170515154344389</item>
+      <item>L_Nationales_bdc20170515154344509</item>
+      <item>N_ROUTE_PRIMAIRE_BDT_02720170516133921858</item>
+      <item>commune_etiquette_copier20170515151453475</item>
+      <item>commune_etiquette_copier20170515153628885</item>
+      <item>epci20161122111229304</item>
+    </custom-order>
+  </layer-tree-canvas>
+  <legend updateDrawingOrder="true">
+    <legendgroup open="true" checked="Qt::Checked" name="couverture">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="epci couverture" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="epci20161122111229304" visible="1"/>
+        </filegroup>
+      </legendlayer>
+    </legendgroup>
+    <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="PROTECTIONS ENVIRONNEMENTALES" project="./protection_environnementales.qgs"/>
+    <legendgroup embedded="1" open="true" checked="Qt::Unchecked" name="PAYSAGE ET PATRIMOINE" project="./paysage_connaissance.qgs"/>
+    <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="SRCE" project="./srce.qgs"/>
+    <legendgroup embedded="1" open="true" checked="Qt::Unchecked" name="PROTECTION DE LA RESSOURCE EN EAU POTABLE" project="./protection_ressources_eau.qgs"/>
+    <legendgroup open="true" checked="Qt::Unchecked" name="HABILLAGE">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="commune_hors_epci" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="commune_etiquette_copier20170515153628885" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="commune_hors_epci" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="commune_etiquette_copier20170515151453475" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="L_Autoroutes_bdc" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="L_Autoroutes_bdc20170515154344389" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="L_Nationales_bdc" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="L_Nationales_bdc20170515154344509" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="N_ROUTE_PRIMAIRE_BDT_027" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="N_ROUTE_PRIMAIRE_BDT_02720170516133921858" visible="0"/>
+        </filegroup>
+      </legendlayer>
+    </legendgroup>
+    <legendgroup open="true" checked="Qt::Unchecked" name="THEME">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="pop_active" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="3_pop_active_totale_repartition20170509105437317" visible="0"/>
+        </filegroup>
+      </legendlayer>
+    </legendgroup>
+  </legend>
+  <Composer title="atlas_epci" visible="1">
+    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="210" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="2" snapGridResolution="10" resizeToContentsMarginBottom="0">
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="color" v="255,255,255,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <SnapLine y1="0" x1="0" y2="604" x2="0"/>
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="&lt;!DOCTYPE html>&#xa;&lt;html>&#xa;&lt;head>&#xa;&lt;style>&#xa;table, th, td {&#xa;&#x9;font:verdana;&#xa;}&#xa;td.style1 {&#xa;font-size:11px;&#xa;}&#xa;&lt;/style>&#xa;&lt;/head>&#xa;&lt;br>&#xa;&lt;table>&#xa;  &lt;tr>&#xa;&#x9;&lt;td class=&quot;style1&quot; align=&quot;left&quot; width=20% >Dernière maj : [% upper(format_date( now(), 'd MMM yy'))%]&lt;/td>&#xa;    &lt;td align=&quot;center&quot; width=10%>[% &quot;nom&quot; %]&lt;/td>&#xa;    &lt;td class=&quot;style1&quot; align=&quot;right&quot; width=20%>[% @layout_page %]&lt;/td>&#xa;  &lt;/tr>&#xa;&lt;/table>&#xa;&lt;/html>&#xa;" htmlState="2" halign="1">
+        <LabelFont description="Verdana,10,-1,5,50,0,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="278.5" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="-1.55431e-15" y="585.5" visibility="1" zValue="33" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{ab34a7fe-5a4f-484e-9baa-1e12c5dbb264}" height="18.5" itemRotation="0" frame="false" pagex="-1.55431e-15">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerPicture resizeMode="4" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="16.51" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="//10.27.8.62/DDT_commun/5_Patrimoine_commun/LOGO/logoMarianne_75.png" northOffset="0" pictureHeight="9.82133" mapId="4" anchorPoint="4">
+        <ComposerItem pagey="265.189" page="2" id="" lastValidViewScaleFactor="2.50308" positionMode="6" positionLock="false" x="6" y="572.189" visibility="1" zValue="32" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="16.51" outlineWidth="0.3" excludeFromExports="0" uuid="{affc0ec1-5858-428c-847e-4cca612d64a3}" height="9.82133" itemRotation="0" frame="false" pagex="6">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerLabel valign="32" marginX="5" marginY="0" labelText="[% @service %] - $CURRENT_DATE(MMM yyyy)&#xa;Sources : © OSM ® 2017&#xa;© DDTM 27 ® 2017&#xa;&#xa;" htmlState="0" halign="1">
+        <LabelFont description="Verdana,6,-1,5,50,0,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="265.189" page="2" id="" lastValidViewScaleFactor="1.9327" positionMode="7" positionLock="false" x="22.51" y="572.189" visibility="1" zValue="31" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="58.49" outlineWidth="0.3" excludeFromExports="0" uuid="{77e50f30-4170-43d5-9fa1-9933c652990b}" height="15" itemRotation="0" frame="false" pagex="22.51">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerPicture resizeMode="4" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="16.51" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="//10.27.8.62/DDT_commun/5_Patrimoine_commun/LOGO/logoMarianne_75.png" northOffset="0" pictureHeight="9.82133" mapId="4" anchorPoint="4">
+        <ComposerItem pagey="125.96" page="2" id="" lastValidViewScaleFactor="2.50308" positionMode="6" positionLock="false" x="56.745" y="432.96" visibility="1" zValue="30" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="16.51" outlineWidth="0.3" excludeFromExports="0" uuid="{9029d047-24b9-4203-b393-524ed7b8080c}" height="9.82133" itemRotation="0" frame="false" pagex="56.745">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerLabel valign="32" marginX="5" marginY="0" labelText="[% @service %] - $CURRENT_DATE(MMM yyyy)&#xa;Sources : © OSM ® 2017&#xa;© DREAL NORMANDIE ® 2015&#xa;&#xa;" htmlState="0" halign="1">
+        <LabelFont description="Verdana,6,-1,5,50,0,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="125.61" page="2" id="" lastValidViewScaleFactor="1.9327" positionMode="0" positionLock="false" x="73.154" y="432.61" visibility="1" zValue="29" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="58.49" outlineWidth="0.3" excludeFromExports="0" uuid="{835c3b0e-8cf3-4bb3-abb8-5d7970d501d4}" height="12.5856" itemRotation="0" frame="false" pagex="73.154">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLegend symbolWidth="7" title="" rasterBorderWidth="0" titleAlignment="1" map="0" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="$" fontColor="#000000" columnCount="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="4" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="2" rasterBorder="0">
+        <styles>
+          <style marginBottom="2" name="title">
+            <styleFont description="Verdana,10,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="Verdana,8,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="Verdana,8,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="symbol">
+            <styleFont description="Verdana,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" marginLeft="2" name="symbolLabel">
+            <styleFont description="Verdana,8,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
+          <customproperties/>
+          <layer-tree-group expanded="1" checked="Qt::Unchecked" name="PROTECTION DE LA RESSOURCE EN EAU$POTABLE">
+            <customproperties>
+              <property key="embedded" value="1"/>
+              <property key="embedded_project" value="U:/5_Patrimoine_commun/ETUDES/1_fiches_territoriales_EPCI/Traitement/Projet_Qgis/9_paysage_biodiversite/protection_ressources_eau.qgs"/>
+            </customproperties>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="N_PROTECTION_AAC_AEP_S_02720150316153737411" source="\\10.27.8.61\gb_cons\EAU\N_ZONAGES_EAU\N_PROTECTION_AAC_AEP_S_027.TAB" name="Zone de protection d'une aire$d'alimentation de captages (AAC)$destinés à l'AEP">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="N_PRELEV_AEP_P_02720150402174656059" source="\\10.27.8.61\gb_cons\EAU\N_AEP\N_PRELEV_AEP_P_027.TAB" name="Captages Alimentation en Eau$Potable (AEP)">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="N_PROTECTION_AEP_AS1_02720150316153737530" source="\\10.27.8.61\gb_cons\EAU\N_ZONAGES_EAU\N_PROTECTION_AEP_AS1_027.TAB" name="Zone de protection des points de$prélèvement pour l'AEP">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="N_AAC_AEP_S_02720150409181502640" source="\\10.27.8.61\gb_cons\EAU\N_AEP\N_AAC_AEP_S_027.TAB" name="Bassin d'Alimentation de Captage (BAC)">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+          </layer-tree-group>
+        </layer-tree-group>
+        <ComposerItem pagey="148.5" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="6" y="455.5" visibility="1" zValue="28" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="67.5" outlineWidth="0.3" excludeFromExports="0" uuid="{9f887a51-7674-4c7b-81f3-37fe1f2a1112}" height="65.6" itemRotation="0" frame="false" pagex="6">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerLabel valign="32" marginX="3" marginY="1" labelText="&lt;!DOCTYPE html>&#xa;&lt;html>&#xa;&lt;head>&#xa;&lt;style>&#xa;table, th, td {&#xa;&#x9;font:verdana;&#xa;}&#xa;td.style1 {&#xa;font-size:11px;&#xa;}&#xa;&lt;/style>&#xa;&lt;/head>&#xa;&lt;br>&#xa;&lt;table>&#xa;  &lt;tr>&#xa;&#x9;&lt;td class=&quot;style1&quot; align=&quot;left&quot; width=20% >Dernière maj : [% upper(format_date( now(), 'd MMM yy'))%]&lt;/td>&#xa;    &lt;td align=&quot;center&quot; width=10%>[% &quot;nom&quot; %]&lt;/td>&#xa;    &lt;td class=&quot;style1&quot; align=&quot;right&quot; width=20%>[% @layout_page %]&lt;/td>&#xa;  &lt;/tr>&#xa;&lt;/table>&#xa;&lt;/html>&#xa;" htmlState="2" halign="1">
+        <LabelFont description="Verdana,10,-1,5,50,0,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="280" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="-1.5847e-15" y="280" visibility="1" zValue="27" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{3960f69c-b375-48c8-afeb-1a762d9815a1}" height="17" itemRotation="0" frame="false" pagex="-1.5847e-15">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerPicture resizeMode="4" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="16.51" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="//10.27.8.62/DDT_commun/5_Patrimoine_commun/LOGO/logoMarianne_75.png" northOffset="0" pictureHeight="9.82133" mapId="4" anchorPoint="4">
+        <ComposerItem pagey="265" page="1" id="" lastValidViewScaleFactor="2.50308" positionMode="6" positionLock="false" x="135" y="265" visibility="1" zValue="26" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="16.51" outlineWidth="0.3" excludeFromExports="0" uuid="{0577539b-0a17-4152-9ea8-d8f650411cfc}" height="9.82133" itemRotation="0" frame="false" pagex="135">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="9.93902" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="C:/OSGeo4W64/apps/qgis/svg/arrows/NorthArrow_10.svg" northOffset="0" pictureHeight="10" mapId="4" anchorPoint="6">
+        <ComposerItem pagey="260" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="5" y="260" visibility="1" zValue="25" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="10" outlineWidth="0.3" excludeFromExports="0" uuid="{42586871-7459-4f9a-a234-a5a1ff4cd80c}" height="10" itemRotation="0" frame="false" pagex="5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="1" alignment="0" numSegments="2" segmentMillimeters="14.3767" lineJoinStyle="miter" minBarWidth="20" numUnitsPerSegment="6000" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="30" height="1" boxContentSpace="1" mapId="4" unitLabel=" km">
+        <scaleBarFont description="Verdana,7,-1,5,75,0,0,0,0,0" style=""/>
+        <fillColor alpha="255" red="50" blue="50" green="50"/>
+        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+        <strokeColor alpha="255" red="43" blue="43" green="43"/>
+        <textColor alpha="255" red="50" blue="50" green="50"/>
+        <ComposerItem pagey="270" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="270" visibility="1" zValue="24" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="39.9533" outlineWidth="0.3" excludeFromExports="0" uuid="{8310e6c5-2370-4f62-9e61-df2f1c36bb8f}" height="10" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerScaleBar>
+      <ComposerLabel valign="32" marginX="5" marginY="0" labelText="[% @service %] - $CURRENT_DATE(MMM yyyy)&#xa;Sources : © OSM ® 2017&#xa;© DDTM 27 ® 2015&#xa;&#xa;" htmlState="0" halign="1">
+        <LabelFont description="Verdana,6,-1,5,50,0,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="265" page="1" id="" lastValidViewScaleFactor="1.9327" positionMode="7" positionLock="false" x="151.51" y="265" visibility="1" zValue="23" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="58.49" outlineWidth="0.3" excludeFromExports="0" uuid="{f6449c84-09cd-45f6-83a8-2c60931525ec}" height="15" itemRotation="0" frame="false" pagex="151.51">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="1" alignment="0" numSegments="2" segmentMillimeters="11.9806" lineJoinStyle="miter" minBarWidth="20" numUnitsPerSegment="5000" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="0" maxBarWidth="25" height="1" boxContentSpace="1" mapId="6" unitLabel=" km">
+        <scaleBarFont description="Verdana,8,-1,5,75,0,0,0,0,0" style=""/>
+        <fillColor alpha="255" red="0" blue="0" green="0"/>
+        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+        <strokeColor alpha="255" red="0" blue="0" green="0"/>
+        <textColor alpha="255" red="0" blue="0" green="0"/>
+        <ComposerItem pagey="261.278" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="80" y="568.278" visibility="1" zValue="22" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="36.4611" outlineWidth="0.3" excludeFromExports="0" uuid="{82d535ab-c764-4899-a121-b6fe8b6c8d08}" height="12.5856" itemRotation="0" frame="false" pagex="80">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerScaleBar>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="9.93902" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="C:/OSGeo4W64/apps/qgis/svg/arrows/NorthArrow_10.svg" northOffset="0" pictureHeight="10" mapId="4" anchorPoint="0">
+        <ComposerItem pagey="251.278" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="82.9907" y="558.278" visibility="1" zValue="21" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="10" outlineWidth="0.3" excludeFromExports="0" uuid="{9247821a-3ca4-4734-a3a9-60f223dccd42}" height="10" itemRotation="0" frame="false" pagex="82.9907">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="1" alignment="0" numSegments="2" segmentMillimeters="11.9806" lineJoinStyle="miter" minBarWidth="20" numUnitsPerSegment="5000" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="0" maxBarWidth="25" height="1" boxContentSpace="1" mapId="5" unitLabel=" km">
+        <scaleBarFont description="Verdana,8,-1,5,75,0,0,0,0,0" style=""/>
+        <fillColor alpha="255" red="0" blue="0" green="0"/>
+        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+        <strokeColor alpha="255" red="0" blue="0" green="0"/>
+        <textColor alpha="255" red="0" blue="0" green="0"/>
+        <ComposerItem pagey="123.196" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="15.4198" y="430.196" visibility="1" zValue="20" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="36.4611" outlineWidth="0.3" excludeFromExports="0" uuid="{565135c1-eddf-42bb-9d66-1477ffde5297}" height="12.5856" itemRotation="0" frame="false" pagex="15.4198">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerScaleBar>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="9.93902" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="C:/OSGeo4W64/apps/qgis/svg/arrows/NorthArrow_10.svg" northOffset="0" pictureHeight="10" mapId="4" anchorPoint="0">
+        <ComposerItem pagey="121.903" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="3.06965" y="428.903" visibility="1" zValue="19" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="10" outlineWidth="0.3" excludeFromExports="0" uuid="{6d23d440-e340-475e-80d7-162bff1b6bbd}" height="10" itemRotation="0" frame="false" pagex="3.06965">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerLegend symbolWidth="7" title="" rasterBorderWidth="0" titleAlignment="1" map="0" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="$" fontColor="#000000" columnCount="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="3.5" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="2" rasterBorder="1">
+        <styles>
+          <style marginBottom="2" name="title">
+            <styleFont description="Verdana,10,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="Verdana,8,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="Verdana,8,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="1" name="symbol">
+            <styleFont description="Verdana,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="1" marginLeft="2" name="symbolLabel">
+            <styleFont description="Verdana,8,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+          <customproperties/>
+          <layer-tree-group expanded="1" checked="Qt::Checked" name="SRCE">
+            <customproperties>
+              <property key="embedded" value="1"/>
+              <property key="embedded_project" value="U:/5_Patrimoine_commun/ETUDES/1_fiches_territoriales_EPCI/Traitement/Projet_Qgis/9_paysage_biodiversite/srce.qgs"/>
+            </customproperties>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="C_Enjeux_ContInterreg_02720170427083022494" source="\\10.27.8.61\gb_cons\AMENAGEMENT_URBANISME\N_ZONAGES_AMENAGEMENT\SRCE\C_Enjeux_ContInterreg_027.shp" name="Continuités écologiques inter-régionales">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="C_EnjeuxInterreg_EntiteetConti_region_02720170427083022545" source="\\10.27.8.61\gb_cons\AMENAGEMENT_URBANISME\N_ZONAGES_AMENAGEMENT\SRCE\C_EnjeuxInterreg_EntiteetConti_region_027.shp" name="">
+              <customproperties>
+                <property key="embedded" value="1"/>
+                <property key="legend/node-order" value="0"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="N_SRCE_DISCIDENT_OBSTECOUL_S_R2320160627135149718" source="\\10.27.8.61\gb_cons\AMENAGEMENT_URBANISME\N_ZONAGES_AMENAGEMENT\SRCE\N_SRCE_DISCIDENT_OBSTECOUL_S_R23.shp" name="">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="C_Corridor_02720160616105130215" source="\\10.27.8.61\gb_cons\AMENAGEMENT_URBANISME\N_ZONAGES_AMENAGEMENT\SRCE\C_Corridor_027.shp" name="Corridors">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="RB_02720160616105130667" source="\\10.27.8.61\gb_cons\AMENAGEMENT_URBANISME\N_ZONAGES_AMENAGEMENT\SRCE\RB_027.shp" name="Réservoirs biologiques">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="DiscontinuiteIdentifiee_02720160616105130464" source="\\10.27.8.61\gb_cons\AMENAGEMENT_URBANISME\N_ZONAGES_AMENAGEMENT\SRCE\DiscontinuiteIdentifiee_027.shp" name="Discontinuités identifiées">
+              <customproperties>
+                <property key="embedded" value="1"/>
+                <property key="legend/label-1" value="Infrastructures routières et ferroviaires"/>
+                <property key="legend/node-order" value="0,1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="F_Obstacles_02720160616105130542" source="\\10.27.8.61\gb_cons\AMENAGEMENT_URBANISME\N_ZONAGES_AMENAGEMENT\SRCE\F_Obstacles_027.shp" name="Obstacles à la continuité">
+              <customproperties>
+                <property key="embedded" value="1"/>
+                <property key="legend/label-0" value="Autoroutes et liaisons routières"/>
+                <property key="legend/node-order" value="0,2,3,4,5"/>
+              </customproperties>
+            </layer-tree-layer>
+          </layer-tree-group>
+        </layer-tree-group>
+        <ComposerItem pagey="10" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="130" y="317" visibility="1" zValue="18" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="77.7" outlineWidth="0.3" excludeFromExports="0" uuid="{1dc711b4-8f1b-4529-b58b-0363cfbf0be6}" height="129.5" itemRotation="0" frame="false" pagex="130">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerLegend symbolWidth="7" title="" rasterBorderWidth="0" titleAlignment="1" map="0" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="$" fontColor="#000000" columnCount="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="4" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="2" rasterBorder="0">
+        <styles>
+          <style marginBottom="2" name="title">
+            <styleFont description="Verdana,10,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="Verdana,8,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="Verdana,8,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="symbol">
+            <styleFont description="Verdana,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" marginLeft="2" name="symbolLabel">
+            <styleFont description="Verdana,8,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
+          <customproperties/>
+          <layer-tree-group expanded="1" checked="Qt::Unchecked" name="PAYSAGE ET PATRIMOINE">
+            <customproperties>
+              <property key="embedded" value="1"/>
+              <property key="embedded_project" value="U:/5_Patrimoine_commun/ETUDES/1_fiches_territoriales_EPCI/Traitement/Projet_Qgis/9_paysage_biodiversite/paysage_connaissance.qgs"/>
+            </customproperties>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="N_AC4_ASSIETTE_SUP_S_02720160624145351843" source="\\10.27.8.61\gb_cons\AMENAGEMENT_URBANISME\N_ASSIETTE_SERVITUDE\N_AC4_ASSIETTE_SUP_S_027.TAB" name="Protection du patrimoine$architectural et urbain">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Unchecked" id="N_SITE_CLASSE_S_02720150316143854844" source="\\10.27.8.61\gb_cons\NATURE_PAYSAGE_BIODIVERSITE\N_ZONAGES_PAYSAGE\N_SITE_CLASSE_S_027.TAB" name="Site classé">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Unchecked" id="N_SITE_INSCRIT_S_02720150316143854921" source="\\10.27.8.61\gb_cons\NATURE_PAYSAGE_BIODIVERSITE\N_ZONAGES_PAYSAGE\N_SITE_INSCRIT_S_027.TAB" name="Site inscrit">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="N_ARCHEOLOGIQUE_ZINF_S_02720160624152034205" source="//10.27.8.61/gb_cons/CULTURE_SOCIETE_SERVICE/N_PATRIMOINE_CULTUREL/N_ARCHEOLOGIQUE_ZINF_S_027.TAB" name="Zone de présomption de$prescriptions archéologiques">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="N_AC1_ASSIETTE_SUP_S_02720160624145351579" source="\\10.27.8.61\gb_cons\AMENAGEMENT_URBANISME\N_ASSIETTE_SERVITUDE\N_AC1_ASSIETTE_SUP_S_027.TAB" name="Servitudes des monuments$historiques">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+          </layer-tree-group>
+        </layer-tree-group>
+        <ComposerItem pagey="150" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="140" y="150" visibility="1" zValue="17" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="53.9" outlineWidth="0.3" excludeFromExports="0" uuid="{bd2c6533-64a8-4e37-afa3-00bcfbbe5dce}" height="45.4" itemRotation="0" frame="false" pagex="140">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="Paysage et patrimoine" id="4" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="6699137.9644276537001133" xmin="366351.20637224637903273" ymax="7040044.04757822584360838" xmax="707257.28952281852252781"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{b5e0cde3-b9a0-4999-813c-fcddbb9dad7f}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="Verdana,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="150" page="1" id="Carte : paysage et patrimoine" lastValidViewScaleFactor="1.45469" positionMode="2" positionLock="false" x="0" y="150" visibility="1" zValue="16" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="130" outlineWidth="0.3" excludeFromExports="0" uuid="{32ccabdd-002a-418e-928a-18a5fe15e567}" height="130" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerPicture resizeMode="4" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="16.51" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="//10.27.8.62/DDT_commun/5_Patrimoine_commun/LOGO/logoMarianne_75.png" northOffset="0" pictureHeight="9.82133" mapId="4" anchorPoint="4">
+        <ComposerItem pagey="125.271" page="1" id="" lastValidViewScaleFactor="2.50308" positionMode="0" positionLock="false" x="5" y="125.271" visibility="1" zValue="15" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="16.51" outlineWidth="0.3" excludeFromExports="0" uuid="{94f91c6d-bfec-41f8-8475-72c4875f9f0e}" height="9.82133" itemRotation="0" frame="false" pagex="5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="srce" id="5" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="6881311.27234044298529625" xmin="495276.30309169582324103" ymax="6919377.76659062039107084" xmax="538993.78650562453549355"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{a1693f07-76d2-4ef1-85f5-55a4dab07e89}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="Verdana,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="10" page="2" id="Carte : srce" lastValidViewScaleFactor="1.45469" positionMode="0" positionLock="false" x="6.42254e-16" y="317" visibility="1" zValue="14" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="130" outlineWidth="0.3" excludeFromExports="0" uuid="{a0c6d44b-976b-40dd-9d2d-0145317d15b6}" height="113.196" itemRotation="0" frame="false" pagex="6.42254e-16">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="Protection ressource eau" id="6" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="6881311.27234044298529625" xmin="495276.30309169582324103" ymax="6925028.7557543721050024" xmax="538993.78650562453549355"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2655a694-c566-4f30-bf46-02c25c0e7baf}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="Verdana,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="148.5" page="2" id="Carte : protection ressource eau" lastValidViewScaleFactor="1.45469" positionMode="0" positionLock="false" x="80" y="455.5" visibility="1" zValue="13" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="130" outlineWidth="0.3" excludeFromExports="0" uuid="{3130dfde-703e-4fd7-b20c-36ad26d9fe45}" height="130" itemRotation="0" frame="false" pagex="80">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerLabel valign="32" marginX="5" marginY="0" labelText="[% @service %] - $CURRENT_DATE(MMM yyyy)&#xa;Sources : © OSM ® 2017&#xa;© DDTM 27 ® 2015&#xa;&#xa;" htmlState="0" halign="1">
+        <LabelFont description="Verdana,6,-1,5,50,0,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="125" page="1" id="" lastValidViewScaleFactor="1.9327" positionMode="0" positionLock="false" x="21.51" y="125" visibility="1" zValue="12" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="58.49" outlineWidth="0.3" excludeFromExports="0" uuid="{6aaf7a00-9255-42cc-8d0c-bfc3751be9d8}" height="15" itemRotation="0" frame="false" pagex="21.51">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="9.93902" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="C:/OSGeo4W64/apps/qgis/svg/arrows/NorthArrow_10.svg" northOffset="0" pictureHeight="10" mapId="4" anchorPoint="6">
+        <ComposerItem pagey="120" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="85" y="120" visibility="1" zValue="11" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="10" outlineWidth="0.3" excludeFromExports="0" uuid="{5f6b644d-d4ac-407d-8871-e9677c3a747b}" height="10" itemRotation="0" frame="false" pagex="85">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerLabel valign="128" marginX="4" marginY="1" labelText="[% upper('9 - Paysages, biodiversité, eau')%]" htmlState="0" halign="1">
+        <LabelFont description="SansSerif,14,-1,5,75,0,0,0,0,0" style=""/>
+        <FontColor red="255" blue="255" green="255"/>
+        <ComposerItem pagey="0" page="2" id="theme" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0.079" y="307" visibility="1" zValue="10" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="105" outlineWidth="0.3" excludeFromExports="0" uuid="{10111861-60c7-482b-b1e4-76ba80e774d9}" height="10" itemRotation="0" frame="false" pagex="0.079">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="210" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="D:/Test/atlas_epci/ressources/bar.svg" northOffset="0" pictureHeight="9.87903" mapId="-1" anchorPoint="0">
+        <ComposerItem pagey="0" page="2" id="theme_img" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="307" visibility="1" zValue="9" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{44d494cf-799f-424f-8964-183a0a2210b8}" height="10" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="@bar_01_presentation" field="" active="true" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="1" alignment="0" numSegments="2" segmentMillimeters="14.3767" lineJoinStyle="miter" minBarWidth="20" numUnitsPerSegment="6000" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="30" height="1" boxContentSpace="1" mapId="4" unitLabel=" km">
+        <scaleBarFont description="Verdana,7,-1,5,75,0,0,0,0,0" style=""/>
+        <fillColor alpha="255" red="50" blue="50" green="50"/>
+        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+        <strokeColor alpha="255" red="43" blue="43" green="43"/>
+        <textColor alpha="255" red="50" blue="50" green="50"/>
+        <ComposerItem pagey="130" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="80" y="130" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="39.9533" outlineWidth="0.3" excludeFromExports="0" uuid="{4b0abf28-1c35-4e0d-94df-54036b1638bd}" height="10" itemRotation="0" frame="false" pagex="80">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerScaleBar>
+      <ComposerItemGroup>
+        <ComposerItem pagey="0" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="6" y="307" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="205" outlineWidth="0.3" excludeFromExports="0" uuid="{9eb3e617-4eb0-4040-98be-ac6ef250fe48}" height="7.5875" itemRotation="0" frame="false" pagex="6">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerItemGroup>
+      <ComposerLegend symbolWidth="7" title="" rasterBorderWidth="0" titleAlignment="1" map="0" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="$" fontColor="#000000" columnCount="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="4" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="2" rasterBorder="1">
+        <styles>
+          <style marginBottom="2" name="title">
+            <styleFont description="Verdana,10,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="Verdana,8,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="Verdana,8,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="symbol">
+            <styleFont description="Verdana,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" marginLeft="2" name="symbolLabel">
+            <styleFont description="Verdana,8,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+          <customproperties/>
+          <layer-tree-group expanded="1" checked="Qt::Checked" name="PROTECTIONS ENVIRONNEMENTALES">
+            <customproperties>
+              <property key="embedded" value="1"/>
+              <property key="embedded_project" value="U:/5_Patrimoine_commun/ETUDES/1_fiches_territoriales_EPCI/Traitement/Projet_Qgis/9_paysage_biodiversite/protection_environnementales.qgs"/>
+            </customproperties>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="N_ENP_RAMSAR_S_R2820170427074810604" source="\\10.27.8.61\gb_cons\MER_LITTORAL\N_ECOLOGIE_LITTORAL\N_ENP_RAMSAR_S_R28.shp" name="Ramsar">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="N_FORET_PROTECTION_ZINF_S_R2320160616160439378" source="\\10.27.8.61\gb_cons\FORET\N_REGLEMENT\N_FORET_PROTECTION_ZINF_S_R23.TAB" name="Forêts de protection">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="N_APPB_ZINF_S_02720150316104940149" source="\\10.27.8.61\gb_cons\NATURE_PAYSAGE_BIODIVERSITE\N_ZONAGES_NATURE\N_APPB_ZINF_S_027.TAB" name="Arrêtés de protection biotopes">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="N_ZNIEFF1_ZINF_S_02720150316111752315" source="\\10.27.8.61\gb_cons\NATURE_PAYSAGE_BIODIVERSITE\N_INVENTAIRE_NATURE_BIODIVERSITE\N_ZNIEFF1_ZINF_S_027.TAB" name="ZNIEFF1">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="N_ZNIEFF2_ZINF_S_02720150316111752472" source="\\10.27.8.61\gb_cons\NATURE_PAYSAGE_BIODIVERSITE\N_INVENTAIRE_NATURE_BIODIVERSITE\N_ZNIEFF2_ZINF_S_027.TAB" name="ZNIEFF2">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="L_NATURA_2000_S_02720160913144708737" source="\\10.27.8.61\gb_cons\NATURE_PAYSAGE_BIODIVERSITE\N_ZONAGES_NATURE\L_NATURA_2000_S_027.shp" name="Sites Natura 2000">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="N_RES_BIOLOGIQUE_ONF_ZINF_S_R2320150316110241326" source="\\10.27.8.61\gb_cons\NATURE_PAYSAGE_BIODIVERSITE\N_ZONAGES_NATURE\N_RES_BIOLOGIQUE_ONF_ZINF_S_R23.TAB" name="Réserve biologiques naturelles">
+              <customproperties>
+                <property key="embedded" value="1"/>
+              </customproperties>
+            </layer-tree-layer>
+          </layer-tree-group>
+        </layer-tree-group>
+        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="5" y="10" visibility="1" zValue="6" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="63.7" outlineWidth="0.3" excludeFromExports="0" uuid="{62cca1a4-4e4e-4580-a1be-e64bc05366b3}" height="52.3" itemRotation="0" frame="false" pagex="5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerItemGroup>
+        <ComposerItem pagey="0" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="6" y="307" visibility="1" zValue="5" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="205" outlineWidth="0.3" excludeFromExports="0" uuid="{03e8f680-dceb-4c44-8298-49d6748b5cc4}" height="7.5875" itemRotation="0" frame="false" pagex="6">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerItemGroup>
+      <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="Protection environnementales" id="0" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="6699137.9644276537001133" xmin="366351.20637224637903273" ymax="7040044.04757822584360838" xmax="707257.28952281852252781"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{b5e0cde3-b9a0-4999-813c-fcddbb9dad7f}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="Verdana,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="10" page="1" id="Carte : protection environnementales" lastValidViewScaleFactor="1.45469" positionMode="0" positionLock="false" x="80" y="10" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="130" outlineWidth="0.3" excludeFromExports="0" uuid="{5e2efdd9-2618-4322-974d-d9b76aa01bf4}" height="130" itemRotation="0" frame="false" pagex="80">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerLegend symbolWidth="4" title="" rasterBorderWidth="0" titleAlignment="1" map="6" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#000000" columnCount="5" wmsLegendHeight="25" columnSpace="1" symbolHeight="3" equalColumnWidth="0" resizeToContents="1" splitLayer="1" boxSpace="0" rasterBorder="0">
+        <styles>
+          <style name="title">
+            <styleFont description="MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="symbol">
+            <styleFont description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" marginLeft="2" name="symbolLabel">
+            <styleFont description="SansSerif,8,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+          <customproperties/>
+          <layer-tree-layer expanded="1" checked="Qt::Checked" id="L_Communes_urba_02720160331101603719" name="Docs urbanisme-État d'avancement">
+            <customproperties>
+              <property key="legend/label-0" value=" "/>
+              <property key="legend/node-order" value="1,2,3,4"/>
+              <property key="legend/title-label" value=""/>
+              <property key="legend/title-style" value="hidden"/>
+            </customproperties>
+          </layer-tree-layer>
+        </layer-tree-group>
+        <ComposerItem pagey="282.644" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="20.1374" y="589.644" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="0" outlineWidth="0.3" excludeFromExports="0" uuid="{dc0fa8cb-6757-4496-956b-a0426daa90e7}" height="0" itemRotation="0" frame="false" pagex="20.1374">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerLabel valign="128" marginX="0" marginY="0" labelText="&lt;style>&#xa;html, body, p, div {&#xa;&#x9;margin:0;&#xa;}&#xa;div {&#xa;padding : 10;&#xa;vertical-align:center;&#xa;background-image:&#xa;    -webkit-linear-gradient(left, [% @couleur_theme09%] ,#ffffff);&#xa;}&#xa;&lt;/style>&#xa;&lt;body>&#xa;&lt;div class=&quot;gradient&quot;>&#xa;  &lt;p>[% upper('9 - Paysages, biodiversité, eau')%]&lt;/p>&#xa;&lt;/div>&#xa;&lt;/body>&#xa;&#xa;&#xa;" htmlState="2" halign="1">
+        <LabelFont description="SansSerif,14,-1,5,75,0,0,0,0,0" style=""/>
+        <FontColor red="255" blue="255" green="255"/>
+        <ComposerItem pagey="0" page="1" id="theme" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0.079" y="0" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="209.921" outlineWidth="0.3" excludeFromExports="0" uuid="{a4d4eeab-bc56-40ba-93ce-eb0cf6ffcfd0}" height="10" itemRotation="0" frame="false" pagex="0.079">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <customproperties/>
+    </Composition>
+    <Atlas hideCoverage="false" coverageLayer="epci20161122111229304" singleFile="false" filenamePattern="attribute( @atlas_feature , 'siren')" enabled="true" coverageLayerName="epci couverture" filterFeatures="false" coverageLayerProvider="postgres" sortFeatures="false" pageNameExpression="&quot;nom&quot;" coverageLayerSource="dbname='gb' host=10.27.8.64 port=8765 user='ddtm_admin' sslmode=disable key='id' srid=2154 type=MultiPolygon table=&quot;donnee_generique&quot;.&quot;l_epci_bdp_s_027&quot; (geom) sql="/>
+  </Composer>
+  <Composer title="atlas_epcicopier" visible="0">
+    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="210" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="color" v="255,255,255,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <ComposerLabel valign="128" marginX="4" marginY="1" labelText="[% upper(  &quot;COMMUNE&quot; )%]" htmlState="0" halign="4">
+        <LabelFont description="Liberation Sans,14,-1,5,75,0,0,0,0,0" style=""/>
+        <FontColor red="168" blue="1" green="35"/>
+        <ComposerItem pagey="20.8521" page="1" id="connaissance_territoire" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="50.1188" y="20.8521" visibility="1" zValue="9" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="105" outlineWidth="0.3" excludeFromExports="0" uuid="{aeab2d3f-57ea-4160-82a0-841c95a9893b}" height="22.4638" itemRotation="0" frame="false" pagex="50.1188">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLabel valign="128" marginX="4" marginY="1" labelText="[% upper('Connaissance du territoire')%]" htmlState="0" halign="1">
+        <LabelFont description="Liberation Sans,14,-1,5,75,0,0,0,0,0" style=""/>
+        <FontColor red="168" blue="1" green="35"/>
+        <ComposerItem pagey="61" page="1" id="connaissance_territoire" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="105" y="61" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="105" outlineWidth="0.3" excludeFromExports="0" uuid="{24ea81d0-493a-4d59-b1f1-f1e5eb2531c6}" height="10" itemRotation="0" frame="false" pagex="105">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLabel valign="128" marginX="1" marginY="1" labelText="Fiche «connaissance et stratégie des territoires»" htmlState="0" halign="1">
+        <LabelFont description="Liberation Sans,16,-1,5,75,0,0,0,0,0" style=""/>
+        <FontColor red="153" blue="40" green="190"/>
+        <ComposerItem pagey="0.774753" page="1" id="titre" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="55.9759" y="0.774753" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="134.226" outlineWidth="0.3" excludeFromExports="0" uuid="{ce5f781b-0898-4543-bd73-b0a355b982ff}" height="11.815" itemRotation="0" frame="false" pagex="55.9759">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Direction&#xa;départementale&#xa;des Territoires&#xa;et de la Me&#xa;&#xa;&#xa;$CURRENT_DATE(MMMM yyyy)&#xa;" htmlState="0" halign="1">
+        <LabelFont description="Liberation Sans,12,-1,5,75,0,0,0,0,0" style=""/>
+        <FontColor red="255" blue="255" green="255"/>
+        <ComposerItem pagey="5.12233" page="1" id="service_date" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="6.08277" y="5.12233" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="36.3366" outlineWidth="0.3" excludeFromExports="0" uuid="{f9e8ca58-12a9-49cb-be12-35332ea39a32}" height="38.1936" itemRotation="0" frame="false" pagex="6.08277">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLabel valign="128" marginX="4" marginY="1" labelText="[% upper('Géographie/Démographie')%]" htmlState="0" halign="1">
+        <LabelFont description="Liberation Sans,14,-1,5,75,0,0,0,0,0" style=""/>
+        <FontColor red="255" blue="255" green="255"/>
+        <ComposerItem pagey="61" page="1" id="theme" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="61" visibility="1" zValue="5" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="105" outlineWidth="0.3" excludeFromExports="0" uuid="{26108102-79ed-4ec2-b6f2-2dcbf94a373a}" height="10" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="9.93902" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="D:/Test/atlas_epci/ressources/bar.svg" northOffset="0" pictureHeight="10" mapId="-1" anchorPoint="0">
+        <ComposerItem pagey="61" page="1" id="theme_img" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="61" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{760642c5-2fad-4d73-a4f9-b0544f2f76dc}" height="10" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="@bar" field="" active="true" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="true" followPresetName="" id="1" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="6831180.40583998337388039" xmin="458298.52543635276379064" ymax="6948180.40595932304859161" xmax="647298.52562913275323808"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{15b2014e-32c2-433e-9dcd-42d3454642d5}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <ComposerMapOverview frameMap="0" centered="0" inverted="0" uuid="{df9fd85b-12ab-4c26-a626-04ffb92f9baf}" name="Aperçu 1" show="1" blendMode="0">
+          <symbol alpha="0.596078" clip_to_extent="1" type="fill" name="">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </ComposerMapOverview>
+        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+        <ComposerItem pagey="10.85" page="1" id="carte_situation" lastValidViewScaleFactor="2.71739" positionMode="0" positionLock="false" x="146.85" y="10.85" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="63" outlineWidth="0.3" excludeFromExports="0" uuid="{41c45b29-10b4-404a-989b-002e5b47c51d}" height="39" itemRotation="0" frame="false" pagex="146.85">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="true" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="6900015.21811234578490257" xmin="560089.50310406880453229" ymax="6903340.23093771003186703" xmax="563580.76657070079818368"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{e90918d8-8094-4aea-a330-43466985b7fb}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <ComposerMapOverview frameMap="-1" centered="0" inverted="0" uuid="{b139775e-44ac-4a90-af02-ae144d7a67b2}" name="Mon apercu" show="1" blendMode="0">
+          <symbol alpha="0.3" clip_to_extent="1" type="fill" name="">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </ComposerMapOverview>
+        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+        <ComposerItem pagey="70" page="1" id="carte_demographie" lastValidViewScaleFactor="2.71739" positionMode="0" positionLock="false" x="0" y="70" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="105" outlineWidth="0.3" excludeFromExports="0" uuid="{912aa5d2-e2ad-4e72-ae61-0fae7603d064}" height="100" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="210" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="D:/Test" northOffset="0" pictureHeight="49.9597" mapId="1" anchorPoint="0">
+        <ComposerItem pagey="0" page="1" id="entete_principale_img" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{2007c22f-b706-4712-a96a-10a7156ecbb3}" height="50" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="153" blue="61" green="202"/>
+          <dataDefinedSource expr="@entete_principale" field="" active="true" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <customproperties/>
+    </Composition>
+  </Composer>
+  <Composer title="carte_thematique" visible="0">
+    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="0" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="297" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="210" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="color" v="255,255,255,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <ComposerLegend symbolWidth="7" title="Légende" rasterBorderWidth="0" titleAlignment="1" map="0" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#000000" columnCount="1" legendFilterByMap="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="4" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="2" rasterBorder="1">
+        <styles>
+          <style marginBottom="2" name="title">
+            <styleFont description="Liberation Sans,16,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="Liberation Sans,14,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="Liberation Sans,12,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="symbol">
+            <styleFont description="Liberation Sans,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" marginLeft="2" name="symbolLabel">
+            <styleFont description="Liberation Sans,12,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <ComposerItem pagey="38.1278" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="4.81847" y="38.1278" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="26.7" outlineWidth="0.3" excludeFromExports="0" uuid="{5613d3b9-ad3d-4d5b-84e1-63c9ddd924dd}" height="13.7" itemRotation="0" frame="false" pagex="4.81847">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="6870299.25963829271495342" xmin="513099.81096709618577734" ymax="6895892.46169026289135218" xmax="546638.71790227852761745"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{f3333000-e392-4679-b599-43a2309a3aa2}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="Liberation Sans,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.05"/>
+        <ComposerItem pagey="27" page="1" id="" lastValidViewScaleFactor="2.07632" positionMode="0" positionLock="false" x="83.4713" y="27" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="204.432" outlineWidth="0.3" excludeFromExports="0" uuid="{31db33b4-45b7-408b-bd76-79e50b3cc50a}" height="156" itemRotation="0" frame="false" pagex="83.4713">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <customproperties>
+        <property key="imageCropMarginBottom" value="0"/>
+        <property key="imageCropMarginLeft" value="0"/>
+        <property key="imageCropMarginRight" value="0"/>
+        <property key="imageCropMarginTop" value="0"/>
+        <property key="imageCropToContents" value="false"/>
+      </customproperties>
+    </Composition>
+    <Atlas hideCoverage="false" coverageLayer="" singleFile="false" filenamePattern="'famille_dominante_' ||  &quot;F_epci&quot; " enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="&quot;F_epci&quot;"/>
+  </Composer>
+  <projectlayers>
+    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+      <id>3_pop_active_totale_repartition20170509105437317</id>
+      <datasource>../../../Extraction_donnees/3_pop_active_totale_repartition.xls|layerid=0|subset="SIREN" = '200035665'</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>pop_active</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="SIREN">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nom">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Actifs ayant emploi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Autres inactifs">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Chômeurs">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Elèv, étud, stag non rém">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fem ou hom au foyer">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Retraités, préretraités">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Somme :">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="SIREN" index="0" name=""/>
+        <alias field="nom" index="1" name=""/>
+        <alias field="Actifs ayant emploi" index="2" name=""/>
+        <alias field="Autres inactifs" index="3" name=""/>
+        <alias field="Chômeurs" index="4" name=""/>
+        <alias field="Elèv, étud, stag non rém" index="5" name=""/>
+        <alias field="Fem ou hom au foyer" index="6" name=""/>
+        <alias field="Retraités, préretraités" index="7" name=""/>
+        <alias field="Somme :" index="8" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="SIREN"/>
+          <column width="102" hidden="0" type="field" name="nom"/>
+          <column width="149" hidden="0" type="field" name="Actifs ayant emploi"/>
+          <column width="-1" hidden="0" type="field" name="Autres inactifs"/>
+          <column width="-1" hidden="0" type="field" name="Fem ou hom au foyer"/>
+          <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="Chômeurs"/>
+          <column width="171" hidden="0" type="field" name="Elèv, étud, stag non rém"/>
+          <column width="-1" hidden="0" type="field" name="Retraités, préretraités"/>
+          <column width="-1" hidden="0" type="field" name="Somme :"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="SIREN" expression=""/>
+        <default field="nom" expression=""/>
+        <default field="Actifs ayant emploi" expression=""/>
+        <default field="Autres inactifs" expression=""/>
+        <default field="Chômeurs" expression=""/>
+        <default field="Elèv, étud, stag non rém" expression=""/>
+        <default field="Fem ou hom au foyer" expression=""/>
+        <default field="Retraités, préretraités" expression=""/>
+        <default field="Somme :" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE("SIREN", '&lt;NULL>')||', '||COALESCE("nom", '&lt;NULL>')||', '||COALESCE("Actifs ayant emploi", '&lt;NULL>')||', '||COALESCE("Autres inactifs", '&lt;NULL>')||', '||COALESCE("ChÃ´meurs", '&lt;NULL>')||', '||COALESCE("ElÃ¨v, Ã©tud, stag non rÃ©m", '&lt;NULL>')||', '||COALESCE("Fem ou hom au foyer", '&lt;NULL>')||', '||COALESCE("RetraitÃ©s, prÃ©retraitÃ©s", '&lt;NULL>')||', '||COALESCE("SommeÂ :", '&lt;NULL>')</previewExpression>
+    </maplayer>
+    <maplayer embedded="1" id="L_Autoroutes_bdc20170515154344389" project="../0_couverture.qgs"/>
+    <maplayer embedded="1" id="L_Nationales_bdc20170515154344509" project="../0_couverture.qgs"/>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>N_INOND_HORSPPRI_ZINF_S_02720150316145124433</id>
+      <datasource>\\10.27.8.61\gb_cons\RISQUE\N_INONDATION\N_INOND_HORSPPRI_ZINF_S_027.TAB</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>N_INOND_HORSPPRI_ZINF_S_027</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=44 +lat_2=49.00000000001 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>100000</srsid>
+          <srid>0</srid>
+          <authid>USER:100000</authid>
+          <description> * SCR généré (+proj=lcc +lat_1=44 +lat_2=49.00000000001 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs)</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="ISO-8859-1">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="ID_MAAPAR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="RIVIERE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ORIGINE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="TYPE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="182,246,102,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>ID_MAAPAR</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>T:/ASTER/Travaux en cours/RR</annotationform>
+      <aliases>
+        <alias field="ID_MAAPAR" index="0" name=""/>
+        <alias field="RIVIERE" index="1" name=""/>
+        <alias field="ORIGINE" index="2" name=""/>
+        <alias field="TYPE" index="3" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="0"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>T:/ASTER/Travaux en cours/RR</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>D:/Test</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="ID_MAAPAR" expression=""/>
+        <default field="RIVIERE" expression=""/>
+        <default field="ORIGINE" expression=""/>
+        <default field="TYPE" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>N_RD_LNC_02720150317114030460</id>
+      <datasource>\\10.27.8.61\gb_cons\NUISANCE\N_BRUIT\N_RD_LNC_027.TAB</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>N_RD_LNC_027</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="ISO-8859-1">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="ID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="66,233,71,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>ID</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>T:/ASTER/Travaux en cours/RR</annotationform>
+      <aliases>
+        <alias field="ID" index="0" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="0"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>T:/ASTER/Travaux en cours/RR</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>D:/Test</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="ID" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer embedded="1" id="N_ROUTE_PRIMAIRE_BDT_02720170516133921858" project="../0_couverture.qgs"/>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>ZONES_HUMIDES_02720150317093820922</id>
+      <datasource>\\10.27.8.61\gb_cons\NATURE_PAYSAGE_BIODIVERSITE\N_ZONAGES_NATURE\L_ZONES_HUMIDES_027.TAB</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ZONES_HUMIDES_027</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=44 +lat_2=49.00000000001 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>100000</srsid>
+          <srid>0</srid>
+          <authid>USER:100000</authid>
+          <description> * SCR généré (+proj=lcc +lat_1=44 +lat_2=49.00000000001 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs)</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="ISO-8859-1">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="ID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="162,228,230,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>ID</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>T:/ASTER/Travaux en cours/RR</annotationform>
+      <aliases>
+        <alias field="ID" index="0" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="0"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>T:/ASTER/Travaux en cours/RR</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>D:/Test</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="ID" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer embedded="1" id="commune_etiquette_copier20170515151453475" project="../0_couverture.qgs"/>
+    <maplayer embedded="1" id="commune_etiquette_copier20170515153628885" project="../0_couverture.qgs"/>
+    <maplayer embedded="1" id="epci20161122111229304" project="../0_couverture.qgs"/>
+  </projectlayers>
+  <properties>
+    <WMSUrl type="QString"></WMSUrl>
+    <Mask>
+      <layer_id type="QString"></layer_id>
+      <parameters type="QString">KGxwMApJMDAKYUkxCmFJNQphSTAxCmFGMS4wCmFJMDAKYU5hTmEobHAxCmFOYUkyCmFJMAphTmFOYS4=</parameters>
+    </Mask>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=lcc +lat_1=44 +lat_2=49 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">USER:100005</ProjectCrs>
+      <ProjectCRSID type="int">100005</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <Legend>
+      <filterByMap type="bool">true</filterByMap>
+    </Legend>
+    <DefaultStyles>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <RandomColors type="bool">true</RandomColors>
+      <AlphaInt type="int">255</AlphaInt>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSRestrictedComposers type="QStringList"/>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
+    <WCSLayers type="QStringList"/>
+    <WMSRestrictedLayers type="QStringList"/>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <Digitizing>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <LayerSnappingList type="QStringList">
+        <value>C_Corridor_02720160616105130215</value>
+        <value>C_EnjeuxInterreg_EntiteetConti_region_02720170427083022545</value>
+        <value>C_Enjeux_ContInterreg_02720170427083022494</value>
+        <value>DiscontinuiteIdentifiee_02720160616105130464</value>
+        <value>F_Obstacles_02720160616105130542</value>
+        <value>L_NATURA_2000_S_02720160913144708737</value>
+        <value>N_AAC_AEP_S_02720150409181502640</value>
+        <value>N_AC1_ASSIETTE_SUP_S_02720160624145351579</value>
+        <value>N_AC4_ASSIETTE_SUP_S_02720160624145351843</value>
+        <value>N_APPB_ZINF_S_02720150316104940149</value>
+        <value>N_ARCHEOLOGIQUE_ZINF_S_02720160624152034205</value>
+        <value>N_ENP_RAMSAR_S_R2820170427074810604</value>
+        <value>N_FORET_PROTECTION_ZINF_S_R2320160616160439378</value>
+        <value>N_INOND_HORSPPRI_ZINF_S_02720150316145124433</value>
+        <value>N_PRELEV_AEP_P_02720150402174656059</value>
+        <value>N_PROTECTION_AAC_AEP_S_02720150316153737411</value>
+        <value>N_PROTECTION_AEP_AS1_02720150316153737530</value>
+        <value>N_RD_LNC_02720150317114030460</value>
+        <value>N_RES_BIOLOGIQUE_ONF_ZINF_S_R2320150316110241326</value>
+        <value>N_RES_NATURELLE_ZINF_S_02720150316110241486</value>
+        <value>N_SITE_CLASSE_S_02720150316143854844</value>
+        <value>N_SITE_INSCRIT_S_02720150316143854921</value>
+        <value>N_SRCE_DISCIDENT_OBSTECOUL_S_R2320160627135149718</value>
+        <value>N_ZNIEFF1_ZINF_S_02720150316111752315</value>
+        <value>N_ZNIEFF2_ZINF_S_02720150316111752472</value>
+        <value>RB_02720160616105130667</value>
+        <value>ZONES_HUMIDES_02720150317093820922</value>
+        <value>L_Autoroutes_bdc20170515154344389</value>
+        <value>L_Nationales_bdc20170515154344509</value>
+        <value>N_ROUTE_PRIMAIRE_BDT_02720170516133921858</value>
+        <value>commune_etiquette_copier20170515151453475</value>
+        <value>commune_etiquette_copier20170515153628885</value>
+        <value>epci20161122111229304</value>
+      </LayerSnappingList>
+      <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>enabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>enabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+      </LayerSnappingEnabledList>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <AvoidIntersectionsList type="QStringList"/>
+      <LayerSnappingToleranceUnitList type="QStringList">
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>1</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>1</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>1</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+      </LayerSnappingToleranceUnitList>
+      <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+      </LayerSnapToList>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>1.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>1.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>8.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+      </LayerSnappingToleranceList>
+    </Digitizing>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <Variables>
+      <variableNames type="QStringList">
+        <value>bar_01_color</value>
+        <value>bar_01_presentation</value>
+        <value>bar_02_demographie</value>
+        <value>bar_03_economie</value>
+        <value>couleur_primaire</value>
+        <value>couleur_theme09</value>
+        <value>couleur_theme9</value>
+        <value>entete_principale</value>
+        <value>style</value>
+        <value>titre</value>
+      </variableNames>
+      <variableValues type="QStringList">
+        <value>#0191e8</value>
+        <value>D:/Projet/1_fiches_territoriales_EPCI/atlas/style/bar01.svg</value>
+        <value>D:/Projet/1_fiches_territoriales_EPCI/atlas/style/bar02.svg</value>
+        <value>D:/Projet/1_fiches_territoriales_EPCI/atlas/style/bar03.svg</value>
+        <value>#cc0006</value>
+        <value>#33a02c</value>
+        <value></value>
+        <value>D:/Test/atlas_epci/ressources/entete.svg</value>
+        <value>&lt;head>
+&lt;style>
+body {
+    font-family: "SansSerif", "Liberation Sans", Arial;
+    font-size: 10px;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 0px;
+    display:inline;
+    font-size:11px;
+    font-family: "SansSerif", "Liberation Sans", Arial;
+    text-decoration:underline;
+}
+p {
+    font-size: 10px;
+    align:justify;
+    margin:0px;
+    /*display:inline;*/
+/*    line-height: 90%;
+*/}
+
+div {
+    margin: 0px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.theme1{
+    border-color: green;
+}
+
+.rouge {
+    color : red;
+}
+&lt;/style>
+&lt;/head></value>
+        <value>Fiche «connaissance et stratégie des territoires»</value>
+      </variableValues>
+    </Variables>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">D</DegreeFormat>
+    </PositionPrecision>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <Measure>
+      <Ellipsoid type="QString">NONE</Ellipsoid>
+    </Measure>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WFSLayers type="QStringList"/>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+  </properties>
+  <visibility-presets>
+    <visibility-preset name="Paysage et patrimoine">
+      <layer style="" id="epci20161122111229304"/>
+      <layer style="" id="N_AC4_ASSIETTE_SUP_S_02720160624145351843"/>
+      <layer style="" id="N_SITE_CLASSE_S_02720150316143854844"/>
+      <layer style="" id="N_SITE_INSCRIT_S_02720150316143854921"/>
+      <layer style="" id="N_ARCHEOLOGIQUE_ZINF_S_02720160624152034205"/>
+      <layer style="" id="N_AC1_ASSIETTE_SUP_S_02720160624145351579"/>
+      <layer style="" id="commune_etiquette_copier20170515153628885"/>
+      <layer style="" id="commune_etiquette_copier20170515151453475"/>
+      <layer style="" id="L_Autoroutes_bdc20170515154344389"/>
+      <layer style="" id="L_Nationales_bdc20170515154344509"/>
+      <layer style="" id="N_ROUTE_PRIMAIRE_BDT_02720170516133921858"/>
+    </visibility-preset>
+    <visibility-preset name="Protection environnementales">
+      <layer style="" id="epci20161122111229304"/>
+      <layer style="" id="N_ENP_RAMSAR_S_R2820170427074810604"/>
+      <layer style="" id="N_FORET_PROTECTION_ZINF_S_R2320160616160439378"/>
+      <layer style="" id="N_APPB_ZINF_S_02720150316104940149"/>
+      <layer style="" id="N_ZNIEFF1_ZINF_S_02720150316111752315"/>
+      <layer style="" id="N_ZNIEFF2_ZINF_S_02720150316111752472"/>
+      <layer style="" id="L_NATURA_2000_S_02720160913144708737"/>
+      <layer style="" id="N_RES_BIOLOGIQUE_ONF_ZINF_S_R2320150316110241326"/>
+      <layer style="" id="N_RES_NATURELLE_ZINF_S_02720150316110241486"/>
+      <layer style="" id="commune_etiquette_copier20170515153628885"/>
+      <layer style="" id="commune_etiquette_copier20170515151453475"/>
+      <layer style="" id="L_Autoroutes_bdc20170515154344389"/>
+      <layer style="" id="L_Nationales_bdc20170515154344509"/>
+      <layer style="" id="N_ROUTE_PRIMAIRE_BDT_02720170516133921858"/>
+    </visibility-preset>
+    <visibility-preset name="Protection ressource eau">
+      <layer style="" id="epci20161122111229304"/>
+      <layer style="" id="N_PROTECTION_AAC_AEP_S_02720150316153737411"/>
+      <layer style="" id="N_PRELEV_AEP_P_02720150402174656059"/>
+      <layer style="" id="N_PROTECTION_AEP_AS1_02720150316153737530"/>
+      <layer style="" id="N_AAC_AEP_S_02720150409181502640"/>
+      <layer style="" id="commune_etiquette_copier20170515153628885"/>
+      <layer style="" id="commune_etiquette_copier20170515151453475"/>
+      <layer style="" id="L_Autoroutes_bdc20170515154344389"/>
+      <layer style="" id="L_Nationales_bdc20170515154344509"/>
+      <layer style="" id="N_ROUTE_PRIMAIRE_BDT_02720170516133921858"/>
+    </visibility-preset>
+    <visibility-preset name="srce">
+      <layer style="" id="epci20161122111229304"/>
+      <layer style="" id="C_Enjeux_ContInterreg_02720170427083022494"/>
+      <layer style="" id="C_EnjeuxInterreg_EntiteetConti_region_02720170427083022545"/>
+      <layer style="" id="N_SRCE_DISCIDENT_OBSTECOUL_S_R2320160627135149718"/>
+      <layer style="" id="C_Corridor_02720160616105130215"/>
+      <layer style="" id="RB_02720160616105130667"/>
+      <layer style="" id="DiscontinuiteIdentifiee_02720160616105130464"/>
+      <layer style="" id="F_Obstacles_02720160616105130542"/>
+      <layer style="" id="commune_etiquette_copier20170515153628885"/>
+      <layer style="" id="commune_etiquette_copier20170515151453475"/>
+      <layer style="" id="L_Autoroutes_bdc20170515154344389"/>
+      <layer style="" id="L_Nationales_bdc20170515154344509"/>
+      <layer style="" id="N_ROUTE_PRIMAIRE_BDT_02720170516133921858"/>
+    </visibility-preset>
+  </visibility-presets>
+</qgis>

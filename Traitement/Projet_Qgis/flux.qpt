@@ -1,0 +1,276 @@
+<Composer title="Composeur 1" visible="1">
+ <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="210" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="10" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+  <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+   <layer pass="0" class="SimpleFill" locked="0">
+    <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+    <prop k="color" v="255,255,255,255"/>
+    <prop k="joinstyle" v="bevel"/>
+    <prop k="offset" v="0,0"/>
+    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+    <prop k="offset_unit" v="MM"/>
+    <prop k="outline_color" v="0,0,0,255"/>
+    <prop k="outline_style" v="no"/>
+    <prop k="outline_width" v="0.26"/>
+    <prop k="outline_width_unit" v="MM"/>
+    <prop k="style" v="solid"/>
+   </layer>
+  </symbol>
+  <ComposerPicture resizeMode="0" svgBorderWidth="0" pictureRotation="0" pictureWidth="6.5609" svgFillColor="0,0,0,255" svgBorderColor="0,0,0,255" northMode="0" file="//10.27.8.62/DDT_commun/5_Patrimoine_commun/LOGO/NorthArrow_02.svg" northOffset="0" pictureHeight="10.4329" mapId="0" anchorPoint="4">
+   <ComposerItem pagey="161.341" page="1" id="" lastValidViewScaleFactor="2.50308" positionMode="0" positionLock="false" x="180.602" y="161.341" visibility="1" zValue="10" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="10.6613" outlineWidth="0.3" excludeFromExports="0" uuid="{929aef86-579d-4ff7-b6a3-7f193d1b52bc}" height="10.4329" itemRotation="0" frame="false" pagex="180.602">
+    <FrameColor alpha="255" red="101" blue="101" green="101"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerPicture>
+  <ComposerLabel valign="128" marginX="1" marginY="1" labelText="Flux de travailleurs entrants" htmlState="0" halign="1">
+   <LabelFont description="Arial,10,-1,5,75,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="149.851" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="15.963" y="149.851" visibility="1" zValue="9" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="86.174" outlineWidth="0.3" excludeFromExports="0" uuid="{967b04d6-136e-4a91-ae2c-3202cab8678c}" height="8.44085" itemRotation="0" frame="false" pagex="15.963">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="Flux entrant" id="1" previewMode="Cache" drawCanvasItems="true">
+   <Extent ymin="6832719.19418575707823038" xmin="493874.19083919125841931" ymax="6953029.13378542847931385" xmax="655829.87876182561740279"/>
+   <LayerSet/>
+   <Grid/>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{ce2a213e-11e0-4f7f-a75a-fcd92e5afb28}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="10000" gridFrameSideFlags="15" intervalY="10000" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="flat"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0.3"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="diameter"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+      </layer>
+     </symbol>
+    </markerStyle>
+    <annotationFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+   </ComposerMapGrid>
+   <ComposerMapOverview frameMap="-1" centered="0" inverted="0" uuid="{80787672-831e-43b0-bb52-e0d52d120165}" name="Aperçu 1" show="1" blendMode="0">
+    <symbol alpha="0.3" clip_to_extent="1" type="fill" name="">
+     <layer pass="0" class="SimpleFill" locked="0">
+      <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+      <prop k="color" v="255,0,0,255"/>
+      <prop k="joinstyle" v="bevel"/>
+      <prop k="offset" v="0,0"/>
+      <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+      <prop k="offset_unit" v="MM"/>
+      <prop k="outline_color" v="0,0,0,255"/>
+      <prop k="outline_style" v="no"/>
+      <prop k="outline_width" v="0.26"/>
+      <prop k="outline_width_unit" v="MM"/>
+      <prop k="style" v="solid"/>
+     </layer>
+    </symbol>
+   </ComposerMapOverview>
+   <AtlasMap scalingMode="2" atlasDriven="0" margin="0.20000000000000001"/>
+   <ComposerItem pagey="161.491" page="1" id="" lastValidViewScaleFactor="1.57143" positionMode="0" positionLock="false" x="16.113" y="161.491" visibility="1" zValue="8" background="false" transparency="6" frameJoinStyle="miter" blendMode="0" width="175" outlineWidth="0.3" excludeFromExports="0" uuid="{e75e58b2-ad31-49e6-b09d-3eca9ff7b58a}" height="130" itemRotation="0" frame="true" pagex="16.113">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="127" green="255"/>
+    <dataDefinedMapXMin expr="aggregate( 'flux_dt', 'min', &#xd;&#xa;x_min($geometry), &#xd;&#xa;&quot;ORIGINE&quot;= attribute(@atlas_feature,'code_epci')&#xd;&#xa;OR&#xd;&#xa;&quot;DEST&quot; = attribute(@atlas_feature,'code_epci') )" field="" active="true" useExpr="true"/>
+    <dataDefinedMapYMin expr="aggregate( 'flux_dt', 'min', &#xd;&#xa;y_min($geometry), &#xd;&#xa;&quot;ORIGINE&quot;= attribute(@atlas_feature,'code_epci')&#xd;&#xa;OR&#xd;&#xa;&quot;DEST&quot; = attribute(@atlas_feature,'code_epci') )" field="" active="true" useExpr="true"/>
+    <dataDefinedMapXMax expr="aggregate( 'flux_dt', 'max', &#xd;&#xa;x_max($geometry), &#xd;&#xa;&quot;ORIGINE&quot;= attribute(@atlas_feature,'code_epci')&#xd;&#xa;OR&#xd;&#xa;&quot;DEST&quot; = attribute(@atlas_feature,'code_epci') )" field="" active="true" useExpr="true"/>
+    <dataDefinedMapYMax expr="aggregate( 'flux_dt', 'max', &#xd;&#xa;y_max($geometry), &#xd;&#xa;&quot;ORIGINE&quot;= attribute(@atlas_feature,'code_epci')&#xd;&#xa;OR&#xd;&#xa;&quot;DEST&quot; = attribute(@atlas_feature,'code_epci') )" field="" active="true" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerMap>
+  <ComposerLabel valign="32" marginX="1" marginY="1" labelText="[% &quot;nom_epci&quot; %]" htmlState="0" halign="1">
+   <LabelFont description="Arial,16,-1,5,75,1,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="2.11667" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="16.1396" y="2.11667" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="129.381" outlineWidth="0.3" excludeFromExports="0" uuid="{cfd2d8d8-0020-4ffc-92c9-76b30fa8e3d8}" height="8.99583" itemRotation="0" frame="false" pagex="16.1396">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerLabel valign="128" marginX="1" marginY="1" labelText="Flux de travailleurs sortants" htmlState="0" halign="1">
+   <LabelFont description="Arial,10,-1,5,75,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="11.1097" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="15.963" y="11.1097" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="86.174" outlineWidth="0.3" excludeFromExports="0" uuid="{f5e1400d-3e30-415f-9996-98d1b716e287}" height="8.44085" itemRotation="0" frame="false" pagex="15.963">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerLegend symbolWidth="7" title="" rasterBorderWidth="0" titleAlignment="1" map="1" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#000000" legendFilterByAtlas="0" columnCount="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="4" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="0" rasterBorder="1">
+   <styles>
+    <style marginBottom="2" name="title">
+     <styleFont description="Arial,16,-1,5,50,0,0,0,0,0" style=""/>
+    </style>
+    <style marginTop="2" name="group">
+     <styleFont description="Arial,14,-1,5,50,0,0,0,0,0" style=""/>
+    </style>
+    <style marginTop="2" name="subgroup">
+     <styleFont description="Arial,12,-1,5,50,0,0,0,0,0" style=""/>
+    </style>
+    <style marginTop="2" name="symbol">
+     <styleFont description="Arial,8.25,-1,5,50,0,0,0,0,0" style=""/>
+    </style>
+    <style marginTop="2" marginLeft="2" name="symbolLabel">
+     <styleFont description="Arial,10,-1,5,50,0,0,0,0,0" style=""/>
+    </style>
+   </styles>
+   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Oursins_7_flux_domicile_travail20171003100828879" name="flux_dt">
+     <customproperties>
+      <property key="legend/node-order" value="2"/>
+      <property key="legend/title-style" value="hidden"/>
+     </customproperties>
+    </layer-tree-layer>
+   </layer-tree-group>
+   <ComposerItem pagey="92.026" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="192.985" y="92.026" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="0" outlineWidth="0.3" excludeFromExports="0" uuid="{047d18d6-6c48-446a-8f78-23b20a406a80}" height="2" itemRotation="0" frame="false" pagex="192.985">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLegend>
+  <ComposerLabel valign="128" marginX="1" marginY="1" labelText="[%'Flux interne : '  || &#xa;&#xa;format_number(aggregate( 'flux_dt','sum', to_int(&quot;FLUX&quot;),ORIGINE=attribute(@atlas_feature,'code_epci') AND DEST=attribute(@atlas_feature,'code_epci')),0)%]" htmlState="0" halign="1">
+   <LabelFont description="Arial,10,-1,5,50,0,0,0,0,0" style=""/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="11.1258" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="105" y="11.1258" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="48.8539" outlineWidth="0.3" excludeFromExports="0" uuid="{572ec91e-a317-4f4b-8cfc-5e20ec26b21d}" height="8.72872" itemRotation="0" frame="false" pagex="105">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerPicture resizeMode="0" svgBorderWidth="0" pictureRotation="0" pictureWidth="6.5609" svgFillColor="0,0,0,255" svgBorderColor="0,0,0,255" northMode="0" file="//10.27.8.62/DDT_commun/5_Patrimoine_commun/LOGO/NorthArrow_02.svg" northOffset="0" pictureHeight="10.4329" mapId="0" anchorPoint="4">
+   <ComposerItem pagey="23.7843" page="1" id="" lastValidViewScaleFactor="2.50308" positionMode="0" positionLock="false" x="176.263" y="23.7843" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="10.6613" outlineWidth="0.3" excludeFromExports="0" uuid="{3b87567c-ff7f-4ced-84df-87d284c41d1d}" height="10.4329" itemRotation="0" frame="false" pagex="176.263">
+    <FrameColor alpha="255" red="101" blue="101" green="101"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerPicture>
+  <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="Flux sortant" id="0" previewMode="Cache" drawCanvasItems="true">
+   <Extent ymin="6832719.19418575707823038" xmin="493874.19083919125841931" ymax="6953029.13378542847931385" xmax="655829.87876182561740279"/>
+   <LayerSet/>
+   <Grid/>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{ce2a213e-11e0-4f7f-a75a-fcd92e5afb28}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="10000" gridFrameSideFlags="15" intervalY="10000" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="flat"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0.3"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="diameter"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+      </layer>
+     </symbol>
+    </markerStyle>
+    <annotationFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+   </ComposerMapGrid>
+   <ComposerMapOverview frameMap="-1" centered="0" inverted="0" uuid="{80787672-831e-43b0-bb52-e0d52d120165}" name="Aperçu 1" show="1" blendMode="0">
+    <symbol alpha="0.3" clip_to_extent="1" type="fill" name="">
+     <layer pass="0" class="SimpleFill" locked="0">
+      <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+      <prop k="color" v="255,0,0,255"/>
+      <prop k="joinstyle" v="bevel"/>
+      <prop k="offset" v="0,0"/>
+      <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+      <prop k="offset_unit" v="MM"/>
+      <prop k="outline_color" v="0,0,0,255"/>
+      <prop k="outline_style" v="no"/>
+      <prop k="outline_width" v="0.26"/>
+      <prop k="outline_width_unit" v="MM"/>
+      <prop k="style" v="solid"/>
+     </layer>
+    </symbol>
+   </ComposerMapOverview>
+   <AtlasMap scalingMode="2" atlasDriven="0" margin="0.20000000000000001"/>
+   <ComposerItem pagey="19.701" page="1" id="" lastValidViewScaleFactor="1.57143" positionMode="0" positionLock="false" x="16.113" y="19.701" visibility="1" zValue="1" background="false" transparency="6" frameJoinStyle="miter" blendMode="0" width="175" outlineWidth="0.3" excludeFromExports="0" uuid="{99ac1d78-8e7b-40c8-b05f-701d62bf5eab}" height="130" itemRotation="0" frame="true" pagex="16.113">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="127" green="255"/>
+    <dataDefinedMapXMin expr="aggregate( 'flux_dt', 'min', &#xd;&#xa;x_min($geometry), &#xd;&#xa;&quot;ORIGINE&quot;= attribute(@atlas_feature,'code_epci')&#xd;&#xa;OR&#xd;&#xa;&quot;DEST&quot; = attribute(@atlas_feature,'code_epci') )" field="" active="true" useExpr="true"/>
+    <dataDefinedMapYMin expr="aggregate( 'flux_dt', 'min', &#xd;&#xa;y_min($geometry), &#xd;&#xa;&quot;ORIGINE&quot;= attribute(@atlas_feature,'code_epci')&#xd;&#xa;OR&#xd;&#xa;&quot;DEST&quot; = attribute(@atlas_feature,'code_epci') )" field="" active="true" useExpr="true"/>
+    <dataDefinedMapXMax expr="aggregate( 'flux_dt', 'max', &#xd;&#xa;x_max($geometry), &#xd;&#xa;&quot;ORIGINE&quot;= attribute(@atlas_feature,'code_epci')&#xd;&#xa;OR&#xd;&#xa;&quot;DEST&quot; = attribute(@atlas_feature,'code_epci') )" field="" active="true" useExpr="true"/>
+    <dataDefinedMapYMax expr="aggregate( 'flux_dt', 'max', &#xd;&#xa;y_max($geometry), &#xd;&#xa;&quot;ORIGINE&quot;= attribute(@atlas_feature,'code_epci')&#xd;&#xa;OR&#xd;&#xa;&quot;DEST&quot; = attribute(@atlas_feature,'code_epci') )" field="" active="true" useExpr="true"/>
+    <customproperties/>
+   </ComposerItem>
+  </ComposerMap>
+  <ComposerHtml maxBreakDistance="10" contentMode="1" resizeMode="0" url="" useSmartBreaks="true" evaluateExpressions="true" html="&lt;html> &lt;head> &lt;style type=&quot;text/css&quot;> &#xd;&#xa;.ramp { background: -webkit-linear-gradient(180deg, yellow,#41b6c4,#253494,#253494);&#xd;&#xa;width:300px;height:20px;}&#xd;&#xa;div { display:inline-block;}&#xd;&#xa;* { color: black;  font-family: Arial, sans; font-size: 13px; font-weight: bold; }&#xd;&#xa;&lt;/style>&lt;/head>&#xd;&#xa;&lt;body style=&quot;margin-top:0px;&quot;>&#xd;&#xa;&lt;div class=&quot;ramp&quot; >&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;div style=&quot;width:300px&quot;>&#xd;&#xa;&#x9;&#x9;&lt;div style=&quot;width:30%;color:grey;&quot;>40%&lt;/div>&#xd;&#xa;&#x9;&#x9;&lt;div style=&quot;width:30%;color:grey;&quot;>60%&lt;/div>&#xd;&#xa;&#x9;&#x9;&lt;div style=&quot;width:30%;color:grey;&quot;>80%&lt;/div>&#xd;&#xa;&#x9;&#x9;&lt;div style=&quot;width:5%;color:grey;&quot;>100%&lt;/div>&#xd;&#xa;&lt;/div>&#xd;&#xa;&lt;/body> &lt;/html>" stylesheetEnabled="false" stylesheet="">
+   <ComposerFrame sectionWidth="77.664" sectionHeight="9.36" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+    <ComposerItem pagey="151.023" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="100.005" y="151.023" visibility="1" zValue="5" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="77.664" outlineWidth="0.3" excludeFromExports="0" uuid="{45c8195b-6b84-4c86-99de-73b0c99c1a78}" height="10.3175" itemRotation="0" frame="false" pagex="100.005">
+     <FrameColor alpha="255" red="0" blue="0" green="0"/>
+     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+     <customproperties/>
+    </ComposerItem>
+   </ComposerFrame>
+   <customproperties/>
+  </ComposerHtml>
+  <customproperties/>
+ </Composition>
+ <Atlas hideCoverage="true" coverageLayer="epci_ade_s_02720170928161632478" singleFile="true" filenamePattern="&quot;code_epci&quot;" enabled="true" coverageLayerName="epci_ade_s_027" filterFeatures="false" coverageLayerProvider="postgres" sortFeatures="false" pageNameExpression="&quot;nom_epci&quot;" coverageLayerSource="dbname='ref' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='id' srid=2154 type=MultiPolygon table=&quot;admin_express&quot;.&quot;epci_ade_s_027&quot; (geom) sql="/>
+</Composer>
