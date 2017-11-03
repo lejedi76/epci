@@ -2,30 +2,134 @@
 <link rel="stylesheet" href="../styles/bs/css/bootstrap.css"
 <link rel="stylesheet" href="../styles/bs/css/custom.css">*/
 html * {
-    font-family: Garamond !important;
+    font-family: Arial;
+    color:black;
 }
+table * {
+  font-size:14px;
+}
+
 h1 {
     font-size: 18pt;
     text-transform: uppercase;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
+    margin:0px;
 }
 
 h2 {
-  font-size: 14pt;
+  font-size: 20pt;
   font-weight: bold;
-  text-transform: uppercase;
-  color: white;
+/*  text-transform: uppercase;
+*/  color: white;
   padding:10px;
+  margin-top:0px;
 }
 
+h3 {
+  font-size: 13pt;
+  font-weight: bold;
+  padding:10px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+h4 {
+  font-size: 11pt;
+  font-weight: normal;
+  text-decoration: underline;
+  padding:10px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
 /*remove bullet
 */
 li {
     list-style-type: none;
 }
+/* overide border */
+.panel {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel-body {
+  padding: 5px;
+  padding-top: 0px;
+  border: 5px solid transparent;
+}
+
+/*style theme bar */
 .theme1 {
-  background: -webkit-linear-gradient(left, #93BE28 , white 90%); /*vert du theme*/
+  background: -webkit-linear-gradient(left, grey , white 90%); /*gris clair*/
+}
+#theme1 {
+  font-size: 16px;
+  font-weight: bold;
+  color:grey;
+}
+
+.panel-theme1 {
+    border-color: grey;
+}
+
+
+.theme2 {
+  background: -webkit-linear-gradient(left, #E1BE53 , white 90%); /*jaune*/
+}
+
+
+/*theme3*/
+.theme3 {
+  background: -webkit-linear-gradient(left, #99005a , white 90%);/*bordeaux*/
+}
+
+#theme3 {
+  font-size: 16px;
+  font-weight: bold;
+  color:#99005a;
+}
+.panel-theme3 {
+    border-color: #99005a;
+}
+
+/*theme7*/
+.theme7 {
+  background: -webkit-linear-gradient(left, #9999ff , white 90%);/*violet*/
+}
+
+#theme7 {
+  font-size: 16px;
+  font-weight: bold;
+  color:#9999ff;
+}
+.panel-theme7 {
+    border-color: #9999ff;
+}
+
+
+
+
+.theme9 {
+  background: -webkit-linear-gradient(left, #ADD705 , white 90%); /*vert fluo*/
+}
+
+/*theme10*/
+.theme10 {
+  background: -webkit-linear-gradient(left, #ADD705 , white 90%);/*vert fluo*/
+}
+
+#theme10 {
+  font-size: 16px;
+  font-weight: bold;
+  color:#ADD705;
+}
+.panel-theme10 {
+    border-color: #ADD705;
 }
 
 /*class to have column with same heigth*/
@@ -36,6 +140,27 @@ li {
     margin:0;
 }
 
+table#padded {
+    border-collapse: separate;
+    border-spacing: 0 0.5em;
+}
+.sspacer { margin:0; padding:0; height:10px; }
+.mspacer { margin:0; padding:0; height:20px; }
+.lspacer { margin:0; padding:0; height:40px; }
+.xlspacer { margin:0; padding:0; height:60px; }
+
+.note {
+  font-size: 7pt;
+}
+
+/* class to definie sources : example INSEE */
+.source {
+  font-size: 7pt;
+  font-style: italic;
+}
+
 #carte {
   padding:0;
 }
+
+/*

@@ -1,16 +1,16 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.0">
+<qgis projectname="" version="2.18.11">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="0 - couverture">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="HABILLAGE">
       <customproperties>
         <property key="embedded" value="1"/>
         <property key="embedded-invisible-layers">
-          <value>commune_etiquette20161123103829230</value>
-          <value>commune20161122170507817</value>
+          <value>L_Departementales_bdc_02720170515155541131</value>
+          <value>commune_ade_s_02720170515154646076</value>
         </property>
         <property key="embedded_project" value="./0_couverture.qgs"/>
       </customproperties>
@@ -19,37 +19,40 @@
       <customproperties/>
       <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="cartes">
         <customproperties/>
-        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="carte de presentation">
+        <layer-tree-group expanded="1" checked="Qt::Checked" name="carte de presentation">
           <customproperties/>
-          <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="commune20161122145032562" name="commune">
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="L_Label_commune_fusion20170824124214570" source="\\10.27.8.61\gb_cons\DONNEE_GENERIQUE\N_HABILLAGE\L_Label_commune_fusion.shp" name="L_Label_commune_fusion">
+            <customproperties/>
+          </layer-tree-layer>
+          <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="commune20161122145032562" source="dbname='ref' host=10.27.8.64 port=8765 user='ddtm_admin' sslmode=disable key='id' srid=2154 type=MultiPolygon table=&quot;admin_express&quot;.&quot;commune_ade_s_027&quot; (geom) sql=" name="commune">
             <customproperties/>
           </layer-tree-layer>
         </layer-tree-group>
         <layer-tree-group expanded="1" checked="Qt::Unchecked" name="carte de situation">
           <customproperties/>
-          <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="epci_copier20161122134055894" name="epci couverture">
+          <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="epci_copier20161122134055894" source="dbname='gb' host=10.27.8.64 port=8765 user='ddtm_admin' sslmode=disable key='id' srid=2154 type=MultiPolygon table=&quot;donnee_generique&quot;.&quot;l_epci_bdp_s_027&quot; (geom) sql=" name="epci couverture">
             <customproperties/>
           </layer-tree-layer>
-          <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="N_DEP_BDC_02720161122142431501" name="département">
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="N_DEP_BDC_02720161122142431501" source="\\10.27.8.61\gb_ref\BDCARTO\ADMINISTRATIF\N_DEP_BDC_027.TAB" name="département">
             <customproperties/>
           </layer-tree-layer>
         </layer-tree-group>
-        <layer-tree-group expanded="1" checked="Qt::Checked" name="carte aire influence">
+        <layer-tree-group expanded="0" checked="Qt::Unchecked" name="carte aire influence">
           <customproperties/>
-          <layer-tree-layer expanded="1" checked="Qt::Checked" id="N_URBAINE_AIRE_ZSUP_027_201020161122161342011" name="aire urbaine">
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="N_URBAINE_AIRE_ZSUP_027_201020161122161342011" source="//10.27.8.61/gb_cons/FONCIER_SOL/N_OCCUPATION_SOL/N_URBAINE_AIRE_ZSUP_027_2010.TAB" name="aire urbaine">
             <customproperties/>
           </layer-tree-layer>
         </layer-tree-group>
       </layer-tree-group>
       <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="donnees">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="presentation20161122133842663" name="presentation">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="presentation20161122133842663" source="dbname='travail' host=10.27.9.30 port=5432 user='postgres' sslmode=disable key='id' table=&quot;fiche&quot;.&quot;presentation&quot; sql=" name="presentation">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="competence20161201142239932" name="banatic">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="competence20161201142239932" source="dbname='travail' host=10.27.9.30 port=5432 user='postgres' sslmode=disable key='id' table=&quot;fiche&quot;.&quot;banatic&quot; sql=&quot;Nature juridique&quot; &lt;> 'SIVU'" name="banatic">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="competence20161201154117976" name="competence">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="competence20161201154117976" source="dbname='travail' host=10.27.9.30 port=5432 user='postgres' sslmode=disable key='id' table=&quot;fiche&quot;.&quot;competence&quot; sql=" name="competence">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
@@ -59,10 +62,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>540420.22838661551941186</xmin>
-      <ymin>6889314.90667161159217358</ymin>
-      <xmax>598390.36744911700952798</xmax>
-      <ymax>6937877.40667161159217358</ymax>
+      <xmin>528531.36749951867386699</xmin>
+      <ymin>6880698.97925225552171469</ymin>
+      <xmax>586501.50656202016398311</xmax>
+      <ymax>6929261.47925225552171469</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -82,13 +85,21 @@
     <layer_coordinate_transform_info>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="epci20161122111229304"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_DEP_BDC_02720161122142431501"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="L_Autoroutes_bdc20170515154344389"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="Label20161122155906933"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="commune_etiquette_copier20170515153628885"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="L_deperiph20161122142327956"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_URBAINE_AIRE_ZSUP_027_201020161122161342011"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="commune20161122170507817"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="L_Label_commune_fusion20170824124214570"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="commune20161122145032562"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="L_Departementales_bdc_02720170515155541131"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="commune_etiquette_copier20170515151453475"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_ROUTE_PRIMAIRE_BDT_02720170516133921858"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="commune_ade_s_02720170515154646076"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="epci_copier20161122134055894"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="commune_etiquette20161123103829230"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="L_Nationales_bdc20170515154344509"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -98,21 +109,31 @@
       <item>N_DEP_BDC_02720161122142431501</item>
       <item>N_URBAINE_AIRE_ZSUP_027_201020161122161342011</item>
       <item>presentation20161122133842663</item>
-      <item>epci20161122111229304</item>
-      <item>commune_etiquette20161123103829230</item>
-      <item>commune20161122170507817</item>
       <item>competence20161201142239932</item>
       <item>competence20161201154117976</item>
+      <item>commune_etiquette_copier20170515151453475</item>
+      <item>commune_etiquette_copier20170515153628885</item>
+      <item>L_Autoroutes_bdc20170515154344389</item>
+      <item>L_Nationales_bdc20170515154344509</item>
+      <item>N_ROUTE_PRIMAIRE_BDT_02720170516133921858</item>
+      <item>L_Departementales_bdc_02720170515155541131</item>
+      <item>commune_ade_s_02720170515154646076</item>
+      <item>L_Label_commune_fusion20170824124214570</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup embedded="1" open="true" checked="Qt::PartiallyChecked" name="0 - couverture" project="./0_couverture.qgs"/>
+    <legendgroup embedded="1" open="true" checked="Qt::PartiallyChecked" name="HABILLAGE" project="./0_couverture.qgs"/>
     <legendgroup open="true" checked="Qt::PartiallyChecked" name="1 - presentation epci">
       <legendgroup open="true" checked="Qt::PartiallyChecked" name="cartes">
-        <legendgroup open="true" checked="Qt::Unchecked" name="carte de presentation">
-          <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="commune" showFeatureCount="0">
+        <legendgroup open="true" checked="Qt::Checked" name="carte de presentation">
+          <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="L_Label_commune_fusion" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-              <legendlayerfile isInOverview="0" layerid="commune20161122145032562" visible="0"/>
+              <legendlayerfile isInOverview="0" layerid="L_Label_commune_fusion20170824124214570" visible="1"/>
+            </filegroup>
+          </legendlayer>
+          <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="commune" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+              <legendlayerfile isInOverview="0" layerid="commune20161122145032562" visible="1"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
@@ -128,10 +149,10 @@
             </filegroup>
           </legendlayer>
         </legendgroup>
-        <legendgroup open="true" checked="Qt::Checked" name="carte aire influence">
-          <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="aire urbaine" showFeatureCount="0">
+        <legendgroup open="false" checked="Qt::Unchecked" name="carte aire influence">
+          <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="aire urbaine" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-              <legendlayerfile isInOverview="0" layerid="N_URBAINE_AIRE_ZSUP_027_201020161122161342011" visible="1"/>
+              <legendlayerfile isInOverview="0" layerid="N_URBAINE_AIRE_ZSUP_027_201020161122161342011" visible="0"/>
             </filegroup>
           </legendlayer>
         </legendgroup>
@@ -172,6 +193,75 @@
           <prop k="style" v="solid"/>
         </layer>
       </symbol>
+      <SnapLine y1="0" x1="0" y2="604" x2="0"/>
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="QGIS" htmlState="0" halign="1">
+        <LabelFont description="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="81.2388" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="145.31" y="81.2388" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="49.3564" outlineWidth="0.3" excludeFromExports="0" uuid="{48acad7b-6d72-4313-a9b4-4f1c645d52ce}" height="22.0724" itemRotation="0" frame="false" pagex="145.31">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="carte de présentation" id="1" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="6880698.97925225552171469" xmin="524703.18098238226957619" ymax="6939518.73813996836543083" xmax="590329.6930791565682739"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{e9b777b9-3189-42ad-8f31-3da57ad994c2}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.25"/>
+        <ComposerItem pagey="10.0542" page="1" id="" lastValidViewScaleFactor="3.77953" positionMode="0" positionLock="false" x="0" y="10.0542" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="120.498" outlineWidth="0.3" excludeFromExports="0" uuid="{31ee9686-6e05-4476-9e2d-ad908cd95d64}" height="108" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="carte de situation" id="0" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="6840222.5" xmin="491027.91155660373624414" ymax="6944715.86674528289586306" xmax="625376.52594339626375586"/>
         <LayerSet/>
@@ -225,317 +315,495 @@
           <annotationFontProperties description="Liberation Sans,8.25,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="7.49384" page="1" id="Carte de situation" lastValidViewScaleFactor="2.90938" positionMode="0" positionLock="false" x="165" y="7.49384" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="45" outlineWidth="0.3" excludeFromExports="0" uuid="{f396811d-a36a-4374-a090-25f38570f6c4}" height="35" itemRotation="0" frame="false" pagex="165">
+        <ComposerItem pagey="10.0542" page="1" id="Carte de situation" lastValidViewScaleFactor="3.77953" positionMode="0" positionLock="false" x="165" y="10.0542" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="45" outlineWidth="0.3" excludeFromExports="0" uuid="{f396811d-a36a-4374-a090-25f38570f6c4}" height="35" itemRotation="0" frame="false" pagex="165">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="&lt;html>&#xa;&lt;style>&#xa;.header {&#xa;  font-family: sans-serif;&#xa;  font-weight: bold;&#xa;  color:white;&#xa;  margin:0px;&#xa;  background: -webkit-linear-gradient(left, #d3d3d3 , white 90%);&#xa;  width:100%;&#xa;  height: 50%;&#xa;  position:absolute;&#xa; }&#xa;#header-cadre {&#xa;  border-radius: 0px 0px 100px 5px;&#xa;  background: #93BE28;&#xa;  margin: 0px;&#xa;  width:15%;&#xa;  padding: 20px 40px 10px 10px;&#xa;  position:absolute;&#xa;  top:0;&#xa;}&#xa;#header-titre {&#xa;text-align: center;&#xa;text-transform: uppercase;&#xa;vertical-align: text-top;&#xa;color:#93BE28;&#xa;font-size:16px;&#xa;float:None;&#xa;margin: 20px;&#xa;}&#xa;&#xa;&lt;/style>&#xa;&#xa;&lt;body>&#xa;&lt;div class=&quot;header&quot;>&#xa;  &lt;div id=&quot;header-titre&quot;>Fiche &quot;connaissance et stratégie des territoires&quot;&lt;/div>&#xa;  &lt;div id =&quot;header-cadre&quot;>Direction départementale des Territoires et de la Mer &lt;br>&lt;br>Novembre 2016&lt;/div>&#xa;&lt;/div>&#xa;&lt;/body>&#xa;&lt;/html>" htmlState="2" halign="1">
-        <LabelFont description="Liberation Sans,10,-1,5,50,0,0,0,0,0" style=""/>
-        <FontColor red="0" blue="0" green="0"/>
-        <ComposerItem pagey="4.38599" page="1" id="Header" lastValidViewScaleFactor="-1" positionMode="0" positionLock="true" x="2.6166" y="4.38599" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="200.767" outlineWidth="0.3" excludeFromExports="0" uuid="{f5768776-ed1e-42f3-bbfa-2b0af7e95a81}" height="34.7181" itemRotation="0" frame="false" pagex="2.6166">
-          <FrameColor alpha="255" red="0" blue="0" green="0"/>
-          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
-          <customproperties/>
-        </ComposerItem>
-      </ComposerLabel>
       <ComposerHtml maxBreakDistance="10" contentMode="0" resizeMode="0" url="file:///U:/Patrimoine_commun/ETUDES/1_fiches_territoriales_EPCI/Traitement/Projet_Qgis/template/presentation.html" useSmartBreaks="true" evaluateExpressions="true" html="" stylesheetEnabled="false" stylesheet="h1 { &#xd;&#xa;&#x9;font-size:90px;&#xd;&#xa;&#x9;}">
-        <ComposerFrame sectionWidth="210" sectionHeight="261.163" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
-          <ComposerItem pagey="21.7451" page="1" id="Contenu" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="-2.90665e-15" y="21.7451" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{0fe8c907-db3f-4d07-96d1-cfbdfa8446d0}" height="261.163" itemRotation="0" frame="false" pagex="-2.90665e-15">
+        <ComposerFrame sectionWidth="210" sectionHeight="2.88" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="0" page="1" id="Header" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{0fe8c907-db3f-4d07-96d1-cfbdfa8446d0}" height="10.0542" itemRotation="0" frame="false" pagex="0">
             <FrameColor alpha="255" red="0" blue="0" green="0"/>
             <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
             <customproperties/>
           </ComposerItem>
         </ComposerFrame>
-        <ComposerFrame sectionWidth="210" sectionHeight="275.255" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="261.163">
-          <ComposerItem pagey="0" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="-2.90665e-15" y="307" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{5bdad676-b53b-417a-9e84-e665f65ebdc4}" height="275.255" itemRotation="0" frame="false" pagex="-2.90665e-15">
+        <dataDefinedSourceUrl expr="'file:///' ||  @project_folder  || '/template/' || 'thematique-01/' || 'header.html'" field="" active="true" useExpr="true"/>
+        <customproperties/>
+      </ComposerHtml>
+      <ComposerHtml maxBreakDistance="10" contentMode="0" resizeMode="0" url="" useSmartBreaks="true" evaluateExpressions="true" html="" stylesheetEnabled="false" stylesheet="">
+        <ComposerFrame sectionWidth="210" sectionHeight="6.21769" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="291.288" page="1" id="Footer" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="-3.94201e-16" y="291.288" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{a2f2ba73-790a-48ec-9984-1967ebabd4d8}" height="6.21769" itemRotation="0" frame="false" pagex="-3.94201e-16">
             <FrameColor alpha="255" red="0" blue="0" green="0"/>
             <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
             <customproperties/>
           </ComposerItem>
         </ComposerFrame>
-        <dataDefinedSourceUrl expr="'file:///' ||  @project_folder  || '/template/'  || 'presentation.html'" field="" active="true" useExpr="true"/>
+        <dataDefinedSourceUrl expr="'file:///' ||  @project_folder  || '/template/' || 'thematique-01/' || 'footer.html'" field="" active="true" useExpr="true"/>
         <customproperties/>
       </ComposerHtml>
       <customproperties/>
     </Composition>
-    <Atlas hideCoverage="false" coverageLayer="epci20161122111229304" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="&quot;nom&quot;"/>
-  </Composer>
-  <Composer title="composeur-bl" visible="1">
-    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{4449890d-af97-4a2f-9750-fa03e6512ab3}" alignmentSnap="1" printResolution="300" paperWidth="70" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="60" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
-      <symbol alpha="1" clip_to_extent="1" type="fill" name="">
-        <layer pass="0" class="SimpleFill" locked="0">
-          <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-          <prop k="color" v="255,255,255,255"/>
-          <prop k="joinstyle" v="miter"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,0,0,255"/>
-          <prop k="outline_style" v="no"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
-        </layer>
-      </symbol>
-      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="1" alignment="0" numSegments="2" segmentMillimeters="9.58151" lineJoinStyle="bevel" minBarWidth="15" numUnitsPerSegment="10000" units="1" labelBarSpace="1" outlineWidth="0.11" numSegmentsLeft="0" maxBarWidth="20" height="1" boxContentSpace="0" mapId="2" unitLabel=" km">
-        <scaleBarFont description="Browallia New,6,-1,5,75,0,0,0,0,0" style=""/>
-        <fillColor alpha="255" red="0" blue="0" green="0"/>
-        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
-        <strokeColor alpha="255" red="0" blue="0" green="0"/>
-        <textColor alpha="255" red="0" blue="0" green="0"/>
-        <ComposerItem pagey="40" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="1" y="40" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="23.383" outlineWidth="0.3" excludeFromExports="0" uuid="{b2c76a29-9a4a-45e8-9873-cb1f4978057d}" height="5" itemRotation="0" frame="false" pagex="1">
-          <FrameColor alpha="255" red="0" blue="0" green="0"/>
-          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
-          <customproperties/>
-        </ComposerItem>
-      </ComposerScaleBar>
-      <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="carte aire influence" id="2" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="6889314.90667161159217358" xmin="494662.77718326909234747" ymax="6974734.93036829400807619" xmax="644147.81865246337838471"/>
-        <LayerSet/>
-        <Grid/>
-        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{8db035c9-6829-40dd-b232-04f3aa26f4de}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
-          <lineStyle>
-            <symbol alpha="1" clip_to_extent="1" type="line" name="">
-              <layer pass="0" class="SimpleLine" locked="0">
-                <prop k="capstyle" v="square"/>
-                <prop k="customdash" v="5;2"/>
-                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="customdash_unit" v="MM"/>
-                <prop k="draw_inside_polygon" v="0"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="0,0,0,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0"/>
-                <prop k="line_width_unit" v="MM"/>
-                <prop k="offset" v="0"/>
-                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="use_custom_dash" v="0"/>
-                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              </layer>
-            </symbol>
-          </lineStyle>
-          <markerStyle>
-            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
-              <layer pass="0" class="SimpleMarker" locked="0">
-                <prop k="angle" v="0"/>
-                <prop k="color" v="0,0,0,255"/>
-                <prop k="horizontal_anchor_point" v="1"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="name" v="circle"/>
-                <prop k="offset" v="0,0"/>
-                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="outline_color" v="0,0,0,255"/>
-                <prop k="outline_style" v="solid"/>
-                <prop k="outline_width" v="0"/>
-                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="outline_width_unit" v="MM"/>
-                <prop k="scale_method" v="diameter"/>
-                <prop k="size" v="2"/>
-                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="size_unit" v="MM"/>
-                <prop k="vertical_anchor_point" v="1"/>
-              </layer>
-            </symbol>
-          </markerStyle>
-          <annotationFontProperties description="Liberation Sans,8.25,-1,5,50,0,0,0,0,0" style=""/>
-        </ComposerMapGrid>
-        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.5"/>
-        <ComposerItem pagey="0" page="1" id="Carte aire influence" lastValidViewScaleFactor="10.5234" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="70" outlineWidth="0.3" excludeFromExports="0" uuid="{4449890d-af97-4a2f-9750-fa03e6512ab3}" height="40" itemRotation="0" frame="false" pagex="0">
-          <FrameColor alpha="255" red="0" blue="0" green="0"/>
-          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
-          <customproperties/>
-        </ComposerItem>
-      </ComposerMap>
-      <ComposerLegend symbolWidth="5" title="" rasterBorderWidth="0" titleAlignment="1" map="2" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#000000" columnCount="2" wmsLegendHeight="25" columnSpace="2" symbolHeight="3" equalColumnWidth="1" resizeToContents="0" splitLayer="1" boxSpace="1" rasterBorder="1">
-        <styles>
-          <style name="title">
-            <styleFont description="Liberation Sans,8.25,-1,5,50,0,0,0,0,0" style=""/>
-          </style>
-          <style name="group">
-            <styleFont description="Browallia New,6,-1,5,50,0,0,0,0,0" style=""/>
-          </style>
-          <style name="subgroup">
-            <styleFont description="Browallia New,6,-1,5,50,0,0,0,0,0" style=""/>
-          </style>
-          <style marginTop="1" name="symbol">
-            <styleFont description="Liberation Sans,8.25,-1,5,50,0,0,0,0,0" style=""/>
-          </style>
-          <style marginTop="1" marginLeft="1" name="symbolLabel">
-            <styleFont description="Browallia New,6,-1,5,50,0,0,0,0,0" style=""/>
-          </style>
-        </styles>
-        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
-          <customproperties/>
-          <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="N_URBAINE_AIRE_ZSUP_027_201020161122161342011" name="aire urbaine">
-            <customproperties>
-              <property key="legend/title-label" value=" "/>
-            </customproperties>
-          </layer-tree-layer>
-        </layer-tree-group>
-        <ComposerItem pagey="40" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="40" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="70" outlineWidth="0.3" excludeFromExports="0" uuid="{99735ca5-2824-43a4-aace-2c3c78877162}" height="20" itemRotation="0" frame="false" pagex="0">
-          <FrameColor alpha="255" red="0" blue="0" green="0"/>
-          <BackgroundColor alpha="153" red="231" blue="240" green="240"/>
-          <customproperties/>
-        </ComposerItem>
-      </ComposerLegend>
-      <customproperties>
-        <property key="imageCropMarginBottom" value="0"/>
-        <property key="imageCropMarginLeft" value="0"/>
-        <property key="imageCropMarginRight" value="0"/>
-        <property key="imageCropMarginTop" value="0"/>
-        <property key="imageCropToContents" value="false"/>
-        <property key="svgCropMarginBottom" value="0"/>
-        <property key="svgCropMarginLeft" value="0"/>
-        <property key="svgCropMarginRight" value="0"/>
-        <property key="svgCropMarginTop" value="0"/>
-        <property key="svgCropToContents" value="true"/>
-        <property key="svgGroupLayers" value="false"/>
-      </customproperties>
-    </Composition>
-    <Atlas hideCoverage="false" coverageLayer="epci20161122111229304" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression=""/>
-  </Composer>
-  <Composer title="composeur-sl" visible="1">
-    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{c26cc660-b3e8-472a-a1fc-e217e2969577}" alignmentSnap="1" printResolution="400" paperWidth="70" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="60" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
-      <symbol alpha="1" clip_to_extent="1" type="fill" name="">
-        <layer pass="0" class="SimpleFill" locked="0">
-          <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-          <prop k="color" v="255,255,255,255"/>
-          <prop k="joinstyle" v="miter"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,0,0,255"/>
-          <prop k="outline_style" v="no"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
-        </layer>
-      </symbol>
-      <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="1" alignment="0" numSegments="2" segmentMillimeters="9.36549" lineJoinStyle="bevel" minBarWidth="15" numUnitsPerSegment="20000" units="1" labelBarSpace="1" outlineWidth="0.11" numSegmentsLeft="0" maxBarWidth="20" height="1" boxContentSpace="0" mapId="2" unitLabel=" km">
-        <scaleBarFont description="Browallia New,6,-1,5,75,0,0,0,0,0" style=""/>
-        <fillColor alpha="255" red="0" blue="0" green="0"/>
-        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
-        <strokeColor alpha="255" red="0" blue="0" green="0"/>
-        <textColor alpha="255" red="0" blue="0" green="0"/>
-        <ComposerItem pagey="50" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="1" y="50" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="22.951" outlineWidth="0.3" excludeFromExports="0" uuid="{ad77d102-7e25-4621-9992-828e4048b5b1}" height="5" itemRotation="0" frame="false" pagex="1">
-          <FrameColor alpha="255" red="0" blue="0" green="0"/>
-          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
-          <customproperties/>
-        </ComposerItem>
-      </ComposerScaleBar>
-      <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="carte aire influence" id="2" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="6889314.90667161159217358" xmin="494662.77718326909234747" ymax="6996089.93629246484488249" xmax="644147.81865246337838471"/>
-        <LayerSet/>
-        <Grid/>
-        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{8db035c9-6829-40dd-b232-04f3aa26f4de}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
-          <lineStyle>
-            <symbol alpha="1" clip_to_extent="1" type="line" name="">
-              <layer pass="0" class="SimpleLine" locked="0">
-                <prop k="capstyle" v="square"/>
-                <prop k="customdash" v="5;2"/>
-                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="customdash_unit" v="MM"/>
-                <prop k="draw_inside_polygon" v="0"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="0,0,0,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0"/>
-                <prop k="line_width_unit" v="MM"/>
-                <prop k="offset" v="0"/>
-                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="use_custom_dash" v="0"/>
-                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              </layer>
-            </symbol>
-          </lineStyle>
-          <markerStyle>
-            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
-              <layer pass="0" class="SimpleMarker" locked="0">
-                <prop k="angle" v="0"/>
-                <prop k="color" v="0,0,0,255"/>
-                <prop k="horizontal_anchor_point" v="1"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="name" v="circle"/>
-                <prop k="offset" v="0,0"/>
-                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="outline_color" v="0,0,0,255"/>
-                <prop k="outline_style" v="solid"/>
-                <prop k="outline_width" v="0"/>
-                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="outline_width_unit" v="MM"/>
-                <prop k="scale_method" v="diameter"/>
-                <prop k="size" v="2"/>
-                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="size_unit" v="MM"/>
-                <prop k="vertical_anchor_point" v="1"/>
-              </layer>
-            </symbol>
-          </markerStyle>
-          <annotationFontProperties description="Liberation Sans,8.25,-1,5,50,0,0,0,0,0" style=""/>
-        </ComposerMapGrid>
-        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.5"/>
-        <ComposerItem pagey="0" page="1" id="Carte aire influence" lastValidViewScaleFactor="12.8873" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="70" outlineWidth="0.3" excludeFromExports="0" uuid="{c26cc660-b3e8-472a-a1fc-e217e2969577}" height="50" itemRotation="0" frame="false" pagex="0">
-          <FrameColor alpha="255" red="0" blue="0" green="0"/>
-          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
-          <customproperties/>
-        </ComposerItem>
-      </ComposerMap>
-      <ComposerLegend symbolWidth="5" title="" rasterBorderWidth="0" titleAlignment="1" map="2" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#000000" columnCount="3" wmsLegendHeight="25" columnSpace="2" symbolHeight="3" equalColumnWidth="1" resizeToContents="0" splitLayer="1" boxSpace="1" rasterBorder="1">
-        <styles>
-          <style name="title">
-            <styleFont description="Liberation Sans,8.25,-1,5,50,0,0,0,0,0" style=""/>
-          </style>
-          <style name="group">
-            <styleFont description="Browallia New,6,-1,5,50,0,0,0,0,0" style=""/>
-          </style>
-          <style name="subgroup">
-            <styleFont description="Browallia New,6,-1,5,50,0,0,0,0,0" style=""/>
-          </style>
-          <style marginTop="1" name="symbol">
-            <styleFont description="Liberation Sans,8.25,-1,5,50,0,0,0,0,0" style=""/>
-          </style>
-          <style marginTop="1" marginLeft="1" name="symbolLabel">
-            <styleFont description="Browallia New,6,-1,5,50,0,0,0,0,0" style=""/>
-          </style>
-        </styles>
-        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
-          <customproperties/>
-          <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="N_URBAINE_AIRE_ZSUP_027_201020161122161342011" name="aire urbaine">
-            <customproperties>
-              <property key="legend/title-label" value=" "/>
-            </customproperties>
-          </layer-tree-layer>
-        </layer-tree-group>
-        <ComposerItem pagey="50" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="50" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="70" outlineWidth="0.3" excludeFromExports="0" uuid="{f7512cd5-5530-4136-8b4d-e9be7892e3bb}" height="10" itemRotation="0" frame="false" pagex="0">
-          <FrameColor alpha="255" red="0" blue="0" green="0"/>
-          <BackgroundColor alpha="153" red="231" blue="240" green="240"/>
-          <customproperties/>
-        </ComposerItem>
-      </ComposerLegend>
-      <customproperties>
-        <property key="imageCropMarginBottom" value="0"/>
-        <property key="imageCropMarginLeft" value="0"/>
-        <property key="imageCropMarginRight" value="0"/>
-        <property key="imageCropMarginTop" value="0"/>
-        <property key="imageCropToContents" value="false"/>
-        <property key="svgCropMarginBottom" value="0"/>
-        <property key="svgCropMarginLeft" value="0"/>
-        <property key="svgCropMarginRight" value="0"/>
-        <property key="svgCropMarginTop" value="0"/>
-        <property key="svgCropToContents" value="true"/>
-        <property key="svgGroupLayers" value="false"/>
-      </customproperties>
-    </Composition>
-    <Atlas hideCoverage="false" coverageLayer="epci20161122111229304" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression=""/>
+    <Atlas hideCoverage="false" coverageLayer="epci20161122111229304" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" coverageLayerName="epci couverture" filterFeatures="false" coverageLayerProvider="postgres" sortFeatures="false" pageNameExpression="&quot;nom&quot;" coverageLayerSource="dbname='gb' host=10.27.8.64 port=8765 user='ddtm_admin' sslmode=disable key='id' srid=2154 type=MultiPolygon table=&quot;donnee_generique&quot;.&quot;l_epci_bdp_s_027&quot; (geom) sql="/>
   </Composer>
   <projectlayers>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>505225.78478400001768023</xmin>
+        <ymin>6844565.69976000022143126</ymin>
+        <xmax>610372.03017799998633564</xmax>
+        <ymax>6933157.4676299998536706</ymax>
+      </extent>
+      <id>L_Label_commune_fusion20170824124214570</id>
+      <datasource>\\10.27.8.61\gb_cons\DONNEE_GENERIQUE\N_HABILLAGE\L_Label_commune_fusion.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>L_Label_commune_fusion</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="Nom_com">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Code_dep">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Code_insee">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblField">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblX">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblY">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblAlignH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblAlignV">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblSize">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblRot">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblBold">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblItalic">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblColor">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblFont">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblUnder">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblStrike">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblShow">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblShowCO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LblAShow">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="round"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_dd_active" v="1"/>
+              <prop k="customdash_dd_expression" v="CASE WHEN LblShowCO = 1 THEN '2' ELSE '0;100' END"/>
+              <prop k="customdash_dd_field" v=""/>
+              <prop k="customdash_dd_useexpr" v="1"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="round"/>
+              <prop k="line_color" v="0,0,0,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.4"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="true"/>
+        <property key="labeling/bufferJoinStyle" value="64"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="0.5"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="13"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/dataDefined/AlwaysShow" value="0~~0~~~~LblAShow"/>
+        <property key="labeling/dataDefined/Bold" value="1~~0~~~~LblBold"/>
+        <property key="labeling/dataDefined/Color" value="1~~0~~~~LblColor"/>
+        <property key="labeling/dataDefined/Family" value="1~~0~~~~LblFont"/>
+        <property key="labeling/dataDefined/Hali" value="1~~0~~~~LblAlignH"/>
+        <property key="labeling/dataDefined/Italic" value="1~~0~~~~LblItalic"/>
+        <property key="labeling/dataDefined/PositionX" value="1~~0~~~~LblX"/>
+        <property key="labeling/dataDefined/PositionY" value="1~~0~~~~LblY"/>
+        <property key="labeling/dataDefined/Rotation" value="1~~0~~~~LblRot"/>
+        <property key="labeling/dataDefined/Show" value="1~~1~~intersects(centroid($geometry),  @atlas_geometry )~~LblShow"/>
+        <property key="labeling/dataDefined/Size" value="0~~0~~~~LblSize"/>
+        <property key="labeling/dataDefined/Strikeout" value="1~~0~~~~LblStrike"/>
+        <property key="labeling/dataDefined/Underline" value="1~~0~~~~LblUnder"/>
+        <property key="labeling/dataDefined/Vali" value="1~~0~~~~LblAlignV"/>
+        <property key="labeling/decimals" value="0"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitMaxScale" value="0"/>
+        <property key="labeling/distMapUnitMinScale" value="0"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="true"/>
+        <property key="labeling/enabled" value="true"/>
+        <property key="labeling/fieldName" value="LblField"/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontBold" value="false"/>
+        <property key="labeling/fontCapitals" value="1"/>
+        <property key="labeling/fontFamily" value="Arial"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="5"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multiLineLabels" value="true"/>
+        <property key="labeling/multilineAlign" value="1"/>
+        <property key="labeling/multilineHeight" value="1.2"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="false"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="4"/>
+        <property key="labeling/placementFlags" value="0"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="10"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="0"/>
+        <property key="labeling/shadowColorB" value="255"/>
+        <property key="labeling/shadowColorG" value="255"/>
+        <property key="labeling/shadowColorR" value="255"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="36"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="8"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="128"/>
+        <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0.2"/>
+        <property key="labeling/shapeSizeY" value="0.2"/>
+        <property key="labeling/shapeTransparency" value="5"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value="$"/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>64</layerTransparency>
+      <displayfield>oid</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="Nom_com" index="0" name=""/>
+        <alias field="Code_dep" index="1" name=""/>
+        <alias field="Code_insee" index="2" name=""/>
+        <alias field="LblField" index="3" name=""/>
+        <alias field="LblX" index="4" name=""/>
+        <alias field="LblY" index="5" name=""/>
+        <alias field="LblAlignH" index="6" name=""/>
+        <alias field="LblAlignV" index="7" name=""/>
+        <alias field="LblSize" index="8" name=""/>
+        <alias field="LblRot" index="9" name=""/>
+        <alias field="LblBold" index="10" name=""/>
+        <alias field="LblItalic" index="11" name=""/>
+        <alias field="LblColor" index="12" name=""/>
+        <alias field="LblFont" index="13" name=""/>
+        <alias field="LblUnder" index="14" name=""/>
+        <alias field="LblStrike" index="15" name=""/>
+        <alias field="LblShow" index="16" name=""/>
+        <alias field="LblShowCO" index="17" name=""/>
+        <alias field="LblAShow" index="18" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="Nom_com"/>
+          <column width="-1" hidden="0" type="field" name="Code_dep"/>
+          <column width="-1" hidden="0" type="field" name="Code_insee"/>
+          <column width="-1" hidden="0" type="field" name="LblField"/>
+          <column width="-1" hidden="0" type="field" name="LblX"/>
+          <column width="-1" hidden="0" type="field" name="LblY"/>
+          <column width="-1" hidden="0" type="field" name="LblAlignH"/>
+          <column width="-1" hidden="0" type="field" name="LblAlignV"/>
+          <column width="-1" hidden="0" type="field" name="LblSize"/>
+          <column width="-1" hidden="0" type="field" name="LblRot"/>
+          <column width="-1" hidden="0" type="field" name="LblBold"/>
+          <column width="-1" hidden="0" type="field" name="LblItalic"/>
+          <column width="-1" hidden="0" type="field" name="LblColor"/>
+          <column width="-1" hidden="0" type="field" name="LblFont"/>
+          <column width="-1" hidden="0" type="field" name="LblUnder"/>
+          <column width="-1" hidden="0" type="field" name="LblStrike"/>
+          <column width="-1" hidden="0" type="field" name="LblShow"/>
+          <column width="-1" hidden="0" type="field" name="LblShowCO"/>
+          <column width="-1" hidden="0" type="field" name="LblAShow"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="Nom_com" expression=""/>
+        <default field="Code_dep" expression=""/>
+        <default field="Code_insee" expression=""/>
+        <default field="LblField" expression=""/>
+        <default field="LblX" expression=""/>
+        <default field="LblY" expression=""/>
+        <default field="LblAlignH" expression=""/>
+        <default field="LblAlignV" expression=""/>
+        <default field="LblSize" expression=""/>
+        <default field="LblRot" expression=""/>
+        <default field="LblBold" expression=""/>
+        <default field="LblItalic" expression=""/>
+        <default field="LblColor" expression=""/>
+        <default field="LblFont" expression=""/>
+        <default field="LblUnder" expression=""/>
+        <default field="LblStrike" expression=""/>
+        <default field="LblShow" expression=""/>
+        <default field="LblShowCO" expression=""/>
+        <default field="LblAShow" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>503536</xmin>
         <ymin>6842996</ymin>
@@ -561,26 +829,13 @@
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">ogr</provider>
-      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="ID_BDCARTO" expression=""/>
-        <default field="ID" expression=""/>
-        <default field="NOM_DEPT" expression=""/>
-        <default field="INSEE_DEPT" expression=""/>
-        <default field="X_DEPT" expression=""/>
-        <default field="Y_DEPT" expression=""/>
-        <default field="INSEE_REG" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="ID_BDCARTO">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
         <edittype widgetv2type="TextEdit" name="ID">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -884,13 +1139,12 @@
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="ID_BDCARTO" index="0" name=""/>
-        <alias field="ID" index="1" name=""/>
-        <alias field="NOM_DEPT" index="2" name=""/>
-        <alias field="INSEE_DEPT" index="3" name=""/>
-        <alias field="X_DEPT" index="4" name=""/>
-        <alias field="Y_DEPT" index="5" name=""/>
-        <alias field="INSEE_REG" index="6" name=""/>
+        <alias field="ID" index="0" name=""/>
+        <alias field="NOM_DEPT" index="1" name=""/>
+        <alias field="INSEE_DEPT" index="2" name=""/>
+        <alias field="X_DEPT" index="3" name=""/>
+        <alias field="Y_DEPT" index="4" name=""/>
+        <alias field="INSEE_REG" index="5" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -934,8 +1188,23 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="ID" expression=""/>
+        <default field="NOM_DEPT" expression=""/>
+        <default field="INSEE_DEPT" expression=""/>
+        <default field="X_DEPT" expression=""/>
+        <default field="Y_DEPT" expression=""/>
+        <default field="INSEE_REG" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>503536.02399999997578561</xmin>
+        <ymin>6842995.95199999958276749</ymin>
+        <xmax>612852.95700000005308539</xmax>
+        <ymax>6934614.0530000003054738</ymax>
+      </extent>
       <id>N_URBAINE_AIRE_ZSUP_027_201020161122161342011</id>
       <datasource>//10.27.8.61/gb_cons/FONCIER_SOL/N_OCCUPATION_SOL/N_URBAINE_AIRE_ZSUP_027_2010.TAB</datasource>
       <keywordList>
@@ -955,17 +1224,9 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="System">ogr</provider>
-      <previewExpression>COALESCE("COMMUNE", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="ID_ZAIRURB" expression=""/>
-        <default field="Code_AIRURBAIN" expression=""/>
-        <default field="Nom_AIRURBAIN" expression=""/>
-        <default field="TAU2010" expression=""/>
-        <default field="Cat_AU" expression=""/>
-      </defaults>
       <map-layer-style-manager current="aire_urbaine_style">
         <map-layer-style name="">
           <qgis version="2.18.0" simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
@@ -1832,10 +2093,24 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="ID_ZAIRURB" expression=""/>
+        <default field="Code_AIRURBAIN" expression=""/>
+        <default field="Nom_AIRURBAIN" expression=""/>
+        <default field="TAU2010" expression=""/>
+        <default field="Cat_AU" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE("COMMUNE", '&lt;NULL>')</previewExpression>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>502989.40625</xmin>
+        <ymin>6842538</ymin>
+        <xmax>613399.5625</xmax>
+        <ymax>6935072</ymax>
+      </extent>
       <id>commune20161122145032562</id>
-      <datasource>dbname='travail' host=10.27.9.30 port=5432 user='postgres' password='Aster_27' sslmode=disable key='id' srid=2154 type=MultiPolygon table="fiche"."commune" (geom) sql=</datasource>
+      <datasource>dbname='ref' host=10.27.8.64 port=8765 user='ddtm_admin' password='Aster_27' sslmode=disable key='id' srid=2154 type=MultiPolygon table="admin_express"."commune_ade_s_027" (geom) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1853,17 +2128,9 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="id" expression=""/>
-        <default field="nom" expression=""/>
-        <default field="insee" expression=""/>
-        <default field="population" expression=""/>
-        <default field="siren_epci" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -1871,16 +2138,37 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="id">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="nom">
+        <edittype widgetv2type="TextEdit" name="nom_com">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="insee">
+        <edittype widgetv2type="TextEdit" name="nom_com_m">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="insee_com">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="statut">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="population">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="siren_epci">
+        <edittype widgetv2type="TextEdit" name="insee_arr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nom_dep">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="insee_dep">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nom_reg">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="insee_reg">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="code_epci">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -1922,26 +2210,10 @@ def my_form_open(dialog, layer, feature):
           </symbol>
         </symbols>
       </renderer-v2>
-      <labeling type="rule-based">
-        <rules key="{6b9e84ae-77df-46b0-93d8-eef3d404ccf5}">
-          <rule description="etiquette de commune dans entité atlas en cours" filter="intersects(centroid($geometry),  @atlas_geometry )" key="{8285a89f-c34f-44ed-bead-f3b28726f197}">
-            <settings>
-              <text-style fontItalic="0" fontFamily="MS Shell Dlg 2" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="1" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="6" fieldName=" wordwrap( &quot;nom&quot;,13,'-')" namedStyle="Normal" fontWordSpacing="0" useSubstitutions="0">
-                <substitutions/>
-              </text-style>
-              <text-format placeDirectionSymbol="0" multilineAlign="4294967295" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
-              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
-              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
-              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="0" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
-              <placement repeatDistanceUnit="1" placement="0" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="4" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
-              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
-              <data-defined/>
-            </settings>
-          </rule>
-        </rules>
-      </labeling>
+      <labeling type="simple"/>
       <customproperties>
         <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
         <property key="labeling/blendMode" value="0"/>
@@ -2079,8 +2351,8 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -2139,15 +2411,22 @@ def my_form_open(dialog, layer, feature):
       <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
-        <alias field="nom" index="1" name=""/>
-        <alias field="insee" index="2" name=""/>
-        <alias field="population" index="3" name=""/>
-        <alias field="siren_epci" index="4" name=""/>
+        <alias field="nom_com" index="1" name=""/>
+        <alias field="nom_com_m" index="2" name=""/>
+        <alias field="insee_com" index="3" name=""/>
+        <alias field="statut" index="4" name=""/>
+        <alias field="population" index="5" name=""/>
+        <alias field="insee_arr" index="6" name=""/>
+        <alias field="nom_dep" index="7" name=""/>
+        <alias field="insee_dep" index="8" name=""/>
+        <alias field="nom_reg" index="9" name=""/>
+        <alias field="insee_reg" index="10" name=""/>
+        <alias field="code_epci" index="11" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1749060320">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
           <column width="-1" hidden="0" type="field" name="nom"/>
@@ -2179,11 +2458,45 @@ def my_form_open(dialog, layer, feature):
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
+      <widgets>
+        <widget name="insee">
+          <config>
+            <option key="IsMultiline" value="false"/>
+            <option key="UseHtml" value="false"/>
+          </config>
+        </widget>
+        <widget name="nom">
+          <config>
+            <option key="IsMultiline" value="false"/>
+            <option key="UseHtml" value="false"/>
+          </config>
+        </widget>
+        <widget name="siren_epci">
+          <config>
+            <option key="IsMultiline" value="false"/>
+            <option key="UseHtml" value="false"/>
+          </config>
+        </widget>
+      </widgets>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="nom_com" expression=""/>
+        <default field="nom_com_m" expression=""/>
+        <default field="insee_com" expression=""/>
+        <default field="statut" expression=""/>
+        <default field="population" expression=""/>
+        <default field="insee_arr" expression=""/>
+        <default field="nom_dep" expression=""/>
+        <default field="insee_dep" expression=""/>
+        <default field="nom_reg" expression=""/>
+        <default field="insee_reg" expression=""/>
+        <default field="code_epci" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>competence20161201142239932</id>
@@ -2206,138 +2519,9 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <customproperties/>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression>COALESCE("id", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="id" expression=""/>
-        <default field="Région siège" expression=""/>
-        <default field="Département siège" expression=""/>
-        <default field="Arrondissement siège" expression=""/>
-        <default field="Commune siège" expression=""/>
-        <default field="N° SIREN" expression=""/>
-        <default field="Nom du groupement" expression=""/>
-        <default field="Nature juridique" expression=""/>
-        <default field="Syndicat à la carte" expression=""/>
-        <default field="Groupement interdépartemental" expression=""/>
-        <default field="Date de création" expression=""/>
-        <default field="Date d'effet" expression=""/>
-        <default field="Mode de répartition des sièges" expression=""/>
-        <default field="Autre mode de répartition des sièges" expression=""/>
-        <default field="Nombre de membres" expression=""/>
-        <default field="Population" expression=""/>
-        <default field="Nombre de compétences exercées" expression=""/>
-        <default field="Mode de financement" expression=""/>
-        <default field="DGF Bonifiée" expression=""/>
-        <default field="DSC" expression=""/>
-        <default field="REOM" expression=""/>
-        <default field="Autre redevance" expression=""/>
-        <default field="TEOM" expression=""/>
-        <default field="Autre taxe" expression=""/>
-        <default field="Civilité Président" expression=""/>
-        <default field="Prénom Président" expression=""/>
-        <default field="Nom Président" expression=""/>
-        <default field="Adresse du siège_1" expression=""/>
-        <default field="Adresse du siège_2" expression=""/>
-        <default field="Adresse du siège_3" expression=""/>
-        <default field="Code postal du siège Ville du siège" expression=""/>
-        <default field="Téléphone du siège" expression=""/>
-        <default field="Fax du siège" expression=""/>
-        <default field="Courriel du siège" expression=""/>
-        <default field="Site internet" expression=""/>
-        <default field="Adresse annexe_1" expression=""/>
-        <default field="Adresse annexe_2" expression=""/>
-        <default field="Adresse annexe_3" expression=""/>
-        <default field="Code postal annexe Ville annexe" expression=""/>
-        <default field="Téléphone annexe" expression=""/>
-        <default field="Fax annexe" expression=""/>
-        <default field="C1004" expression=""/>
-        <default field="C1010" expression=""/>
-        <default field="C1015" expression=""/>
-        <default field="C1020" expression=""/>
-        <default field="C1025" expression=""/>
-        <default field="C1030" expression=""/>
-        <default field="C1502" expression=""/>
-        <default field="C1505" expression=""/>
-        <default field="C1507" expression=""/>
-        <default field="C1510" expression=""/>
-        <default field="C1515" expression=""/>
-        <default field="C1520" expression=""/>
-        <default field="C1525" expression=""/>
-        <default field="C1530" expression=""/>
-        <default field="C1540" expression=""/>
-        <default field="C2005" expression=""/>
-        <default field="C2010" expression=""/>
-        <default field="C2015" expression=""/>
-        <default field="C2510" expression=""/>
-        <default field="C2515" expression=""/>
-        <default field="C2520" expression=""/>
-        <default field="C2525" expression=""/>
-        <default field="C3005" expression=""/>
-        <default field="C3015" expression=""/>
-        <default field="C3020" expression=""/>
-        <default field="C3025" expression=""/>
-        <default field="C3210" expression=""/>
-        <default field="C3220" expression=""/>
-        <default field="C3505" expression=""/>
-        <default field="C3510" expression=""/>
-        <default field="C3515" expression=""/>
-        <default field="C4005" expression=""/>
-        <default field="C4006" expression=""/>
-        <default field="C4007" expression=""/>
-        <default field="C4010" expression=""/>
-        <default field="C4015" expression=""/>
-        <default field="C4017" expression=""/>
-        <default field="C4020" expression=""/>
-        <default field="C4025" expression=""/>
-        <default field="C4505" expression=""/>
-        <default field="C4510" expression=""/>
-        <default field="C4515" expression=""/>
-        <default field="C4520" expression=""/>
-        <default field="C4525" expression=""/>
-        <default field="C4530" expression=""/>
-        <default field="C4531" expression=""/>
-        <default field="C4532" expression=""/>
-        <default field="C4535" expression=""/>
-        <default field="C4540" expression=""/>
-        <default field="C4545" expression=""/>
-        <default field="C4550" expression=""/>
-        <default field="C4555" expression=""/>
-        <default field="C4560" expression=""/>
-        <default field="C5005" expression=""/>
-        <default field="C5010" expression=""/>
-        <default field="C5015" expression=""/>
-        <default field="C5210" expression=""/>
-        <default field="C5220" expression=""/>
-        <default field="C5505" expression=""/>
-        <default field="C5510" expression=""/>
-        <default field="C5515" expression=""/>
-        <default field="C5520" expression=""/>
-        <default field="C5525" expression=""/>
-        <default field="C5530" expression=""/>
-        <default field="C5535" expression=""/>
-        <default field="C5540" expression=""/>
-        <default field="C5545" expression=""/>
-        <default field="C5550" expression=""/>
-        <default field="C5555" expression=""/>
-        <default field="C7005" expression=""/>
-        <default field="C7010" expression=""/>
-        <default field="C7015" expression=""/>
-        <default field="C7020" expression=""/>
-        <default field="C7025" expression=""/>
-        <default field="C7030" expression=""/>
-        <default field="C9905" expression=""/>
-        <default field="C9910" expression=""/>
-        <default field="C9915" expression=""/>
-        <default field="C9920" expression=""/>
-        <default field="C9922" expression=""/>
-        <default field="C9925" expression=""/>
-        <default field="C9930" expression=""/>
-        <default field="C9935" expression=""/>
-        <default field="C9950" expression=""/>
-        <default field="C9999" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -2853,7 +3037,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="523108352">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
           <column width="-1" hidden="0" type="field" name="Région siège"/>
@@ -2996,6 +3180,135 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="Région siège" expression=""/>
+        <default field="Département siège" expression=""/>
+        <default field="Arrondissement siège" expression=""/>
+        <default field="Commune siège" expression=""/>
+        <default field="N° SIREN" expression=""/>
+        <default field="Nom du groupement" expression=""/>
+        <default field="Nature juridique" expression=""/>
+        <default field="Syndicat à la carte" expression=""/>
+        <default field="Groupement interdépartemental" expression=""/>
+        <default field="Date de création" expression=""/>
+        <default field="Date d'effet" expression=""/>
+        <default field="Mode de répartition des sièges" expression=""/>
+        <default field="Autre mode de répartition des sièges" expression=""/>
+        <default field="Nombre de membres" expression=""/>
+        <default field="Population" expression=""/>
+        <default field="Nombre de compétences exercées" expression=""/>
+        <default field="Mode de financement" expression=""/>
+        <default field="DGF Bonifiée" expression=""/>
+        <default field="DSC" expression=""/>
+        <default field="REOM" expression=""/>
+        <default field="Autre redevance" expression=""/>
+        <default field="TEOM" expression=""/>
+        <default field="Autre taxe" expression=""/>
+        <default field="Civilité Président" expression=""/>
+        <default field="Prénom Président" expression=""/>
+        <default field="Nom Président" expression=""/>
+        <default field="Adresse du siège_1" expression=""/>
+        <default field="Adresse du siège_2" expression=""/>
+        <default field="Adresse du siège_3" expression=""/>
+        <default field="Code postal du siège Ville du siège" expression=""/>
+        <default field="Téléphone du siège" expression=""/>
+        <default field="Fax du siège" expression=""/>
+        <default field="Courriel du siège" expression=""/>
+        <default field="Site internet" expression=""/>
+        <default field="Adresse annexe_1" expression=""/>
+        <default field="Adresse annexe_2" expression=""/>
+        <default field="Adresse annexe_3" expression=""/>
+        <default field="Code postal annexe Ville annexe" expression=""/>
+        <default field="Téléphone annexe" expression=""/>
+        <default field="Fax annexe" expression=""/>
+        <default field="C1004" expression=""/>
+        <default field="C1010" expression=""/>
+        <default field="C1015" expression=""/>
+        <default field="C1020" expression=""/>
+        <default field="C1025" expression=""/>
+        <default field="C1030" expression=""/>
+        <default field="C1502" expression=""/>
+        <default field="C1505" expression=""/>
+        <default field="C1507" expression=""/>
+        <default field="C1510" expression=""/>
+        <default field="C1515" expression=""/>
+        <default field="C1520" expression=""/>
+        <default field="C1525" expression=""/>
+        <default field="C1530" expression=""/>
+        <default field="C1540" expression=""/>
+        <default field="C2005" expression=""/>
+        <default field="C2010" expression=""/>
+        <default field="C2015" expression=""/>
+        <default field="C2510" expression=""/>
+        <default field="C2515" expression=""/>
+        <default field="C2520" expression=""/>
+        <default field="C2525" expression=""/>
+        <default field="C3005" expression=""/>
+        <default field="C3015" expression=""/>
+        <default field="C3020" expression=""/>
+        <default field="C3025" expression=""/>
+        <default field="C3210" expression=""/>
+        <default field="C3220" expression=""/>
+        <default field="C3505" expression=""/>
+        <default field="C3510" expression=""/>
+        <default field="C3515" expression=""/>
+        <default field="C4005" expression=""/>
+        <default field="C4006" expression=""/>
+        <default field="C4007" expression=""/>
+        <default field="C4010" expression=""/>
+        <default field="C4015" expression=""/>
+        <default field="C4017" expression=""/>
+        <default field="C4020" expression=""/>
+        <default field="C4025" expression=""/>
+        <default field="C4505" expression=""/>
+        <default field="C4510" expression=""/>
+        <default field="C4515" expression=""/>
+        <default field="C4520" expression=""/>
+        <default field="C4525" expression=""/>
+        <default field="C4530" expression=""/>
+        <default field="C4531" expression=""/>
+        <default field="C4532" expression=""/>
+        <default field="C4535" expression=""/>
+        <default field="C4540" expression=""/>
+        <default field="C4545" expression=""/>
+        <default field="C4550" expression=""/>
+        <default field="C4555" expression=""/>
+        <default field="C4560" expression=""/>
+        <default field="C5005" expression=""/>
+        <default field="C5010" expression=""/>
+        <default field="C5015" expression=""/>
+        <default field="C5210" expression=""/>
+        <default field="C5220" expression=""/>
+        <default field="C5505" expression=""/>
+        <default field="C5510" expression=""/>
+        <default field="C5515" expression=""/>
+        <default field="C5520" expression=""/>
+        <default field="C5525" expression=""/>
+        <default field="C5530" expression=""/>
+        <default field="C5535" expression=""/>
+        <default field="C5540" expression=""/>
+        <default field="C5545" expression=""/>
+        <default field="C5550" expression=""/>
+        <default field="C5555" expression=""/>
+        <default field="C7005" expression=""/>
+        <default field="C7010" expression=""/>
+        <default field="C7015" expression=""/>
+        <default field="C7020" expression=""/>
+        <default field="C7025" expression=""/>
+        <default field="C7030" expression=""/>
+        <default field="C9905" expression=""/>
+        <default field="C9910" expression=""/>
+        <default field="C9915" expression=""/>
+        <default field="C9920" expression=""/>
+        <default field="C9922" expression=""/>
+        <default field="C9925" expression=""/>
+        <default field="C9930" expression=""/>
+        <default field="C9935" expression=""/>
+        <default field="C9950" expression=""/>
+        <default field="C9999" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE("id", '&lt;NULL>')</previewExpression>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>competence20161201154117976</id>
@@ -3018,15 +3331,9 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <customproperties/>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression>COALESCE("id", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="id" expression=""/>
-        <default field="siren" expression=""/>
-        <default field="competence" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -3070,8 +3377,15 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="siren" expression=""/>
+        <default field="competence" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE("id", '&lt;NULL>')</previewExpression>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer embedded="1" id="epci20161122111229304" project="./0_couverture.qgs"/>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>502992.5625</xmin>
         <ymin>6842535</ymin>
@@ -3079,7 +3393,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>6935035</ymax>
       </extent>
       <id>epci_copier20161122134055894</id>
-      <datasource>dbname='travail' host=10.27.9.30 port=5432 user='postgres' password='Aster_27' sslmode=disable key='id' srid=2154 type=MultiPolygon table="fiche"."epci" (geom) sql=</datasource>
+      <datasource>dbname='gb' host=10.27.8.64 port=8765 user='ddtm_admin' password='Aster_27' sslmode=disable key='id' srid=2154 type=MultiPolygon table="donnee_generique"."l_epci_bdp_s_027" (geom) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -3097,15 +3411,9 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="id" expression=""/>
-        <default field="nom" expression=""/>
-        <default field="siren" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -3116,7 +3424,22 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="nom">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="nature">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="siren">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="adresse">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="date_creat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nb_commune">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pop">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -3406,15 +3729,20 @@ def my_form_open(dialog, layer, feature):
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="nom" index="1" name=""/>
-        <alias field="siren" index="2" name=""/>
+        <alias field="nature" index="2" name=""/>
+        <alias field="siren" index="3" name=""/>
+        <alias field="adresse" index="4" name=""/>
+        <alias field="date_creat" index="5" name=""/>
+        <alias field="nb_commune" index="6" name=""/>
+        <alias field="pop" index="7" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1749060320">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="nom"/>
+          <column width="301" hidden="0" type="field" name="nom"/>
           <column width="-1" hidden="0" type="field" name="siren"/>
           <column width="-1" hidden="1" type="actions"/>
         </columns>
@@ -3446,6 +3774,17 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="nom" expression=""/>
+        <default field="nature" expression=""/>
+        <default field="siren" expression=""/>
+        <default field="adresse" expression=""/>
+        <default field="date_creat" expression=""/>
+        <default field="nb_commune" expression=""/>
+        <default field="pop" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>presentation20161122133842663</id>
@@ -3468,17 +3807,9 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <customproperties/>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression>COALESCE("id", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="id" expression=""/>
-        <default field="siren" expression=""/>
-        <default field="nom_siren" expression=""/>
-        <default field="nb_com" expression=""/>
-        <default field="nb_com_inf_2000" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
@@ -3510,7 +3841,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1749060320">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
           <column width="-1" hidden="0" type="field" name="siren"/>
@@ -3532,6 +3863,14 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="siren" expression=""/>
+        <default field="nom_siren" expression=""/>
+        <default field="nb_com" expression=""/>
+        <default field="nb_com_inf_2000" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE("id", '&lt;NULL>')</previewExpression>
     </maplayer>
   </projectlayers>
   <properties>
@@ -3649,8 +3988,31 @@ def closeProject():
       <value></value>
     </WMSKeywordList>
     <Variables>
-      <variableNames type="QStringList"/>
-      <variableValues type="QStringList"/>
+      <variableNames type="QStringList">
+        <value>base</value>
+      </variableNames>
+      <variableValues type="QStringList">
+        <value>&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+  &lt;title>Template&lt;/title>
+  &lt;meta charset="utf-8">
+  &lt;link rel="stylesheet" href="../../styles/bs/css/bootstrap.css">
+&lt;/head>
+&lt;script src="../../styles/bs/js/jquery.js">&lt;/script> 
+    &lt;script> 
+    $(function(){
+      $("#custom").load("../../styles/bs/css/custom.css"); 
+    });
+    &lt;/script> 
+&lt;style id="custom">
+/*load with jquery the content of custom.css because add an other stylesheets link in the
+header does not work
+&lt;link rel="stylesheet" href="../styles/bs/css/bootstrap.css">
+&lt;link rel="stylesheet" href="../styles/bs/css/custom.css">
+*/
+&lt;/style></value>
+      </variableValues>
     </Variables>
     <Paths>
       <Absolute type="bool">false</Absolute>
@@ -3676,18 +4038,19 @@ def closeProject():
       <Ellipsoid type="QString">NONE</Ellipsoid>
     </Measure>
     <WFSUrl type="QString"></WFSUrl>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
     <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
   </properties>
   <visibility-presets>
     <visibility-preset name="carte aire influence">
-      <layer style="" id="epci20161122111229304"/>
       <layer style="aire_urbaine_style" id="N_URBAINE_AIRE_ZSUP_027_201020161122161342011"/>
       <layer style="" id="presentation20161122133842663"/>
       <layer style="" id="competence20161201142239932"/>
     </visibility-preset>
     <visibility-preset name="carte de présentation">
-      <layer style="" id="epci20161122111229304"/>
+      <layer style="" id="commune_etiquette_copier20170515151453475"/>
+      <layer style="" id="commune_etiquette_copier20170515153628885"/>
+      <layer style="" id="L_Label_commune_fusion20170824124214570"/>
       <layer style="" id="commune20161122145032562"/>
       <layer style="" id="presentation20161122133842663"/>
       <layer style="" id="competence20161201142239932"/>

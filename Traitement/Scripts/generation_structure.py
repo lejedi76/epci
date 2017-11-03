@@ -22,8 +22,7 @@ __copyright__ = '(C) 2016, ASTER'
     
 import os
 import shutil
-# import win32file
-import win32com.client
+# import win32com.client
 
 from config_path import *
 

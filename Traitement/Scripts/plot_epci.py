@@ -20,7 +20,11 @@ __author__ = 'ASTER'
 __date__ = '2016-05-20 08:55:06'
 __copyright__ = '(C) 2016, ASTER'
 
-
+import pdb
+from PyQt4.QtCore import pyqtRemoveInputHook
+# These lines allow you to set a breakpoint in the app
+pyqtRemoveInputHook()
+pdb.set_trace()
 import os
 import pandas as pd
 import numpy as np
@@ -148,7 +152,7 @@ def add_value_label(ax, df, i):
     y_height = y_top - y_bottom
 
     for k, height in enumerate(df.iloc[i]):
-        ax.annotate(str(height), (k , height+ y_height*0.02),
+        ax.annotate(str(int(height)), (k , height+ y_height*0.02),
              size=10,
              path_effects=[pe.withStroke(linewidth=2, foreground="white")],
             #bbox=dict(boxstyle='round,pad=0.2', fc='yellow', alpha=0.3),
@@ -234,7 +238,8 @@ class Diagram(object):
             options = {
             'autopct' : '%1.1f%%',
             'startangle' : 180,
-            'shadow' : False }
+            'shadow' : False,
+            'startangle' : 0 }
             # if legend = True put the label in legend
         elif self.kind in ('bar', 'barh'):
             options = { 'width': 0.3, 
@@ -348,7 +353,7 @@ class Diagram(object):
         for i in range(len(df)):
             fig = self.plot(i)
             if fig is None:
-                return None
+                continue
             self.save_plot_default(fig)
             if not self.legend:
                 #print the legend of all potential axes in separate files
@@ -369,7 +374,7 @@ diagram_property = {'filepath' : filepath,
                     'erase_y_label': True,
                     'figsize':cm2inch(15,15)
                     }
-
+pdb.set_trace()
 dg = Diagram(**diagram_property)
 # dg.plot_and_save_all()
 
