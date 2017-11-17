@@ -20,3 +20,7 @@
 .c3-texts .c3-text text {
   transform: translate(0, -200px);
 }
+
+.c3-area{
+     opacity: 0.6 !important;
+}

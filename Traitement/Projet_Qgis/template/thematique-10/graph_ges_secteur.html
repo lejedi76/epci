@@ -1,0 +1,80 @@
+[% @base_graph%]
+<html>
+<body>
+  <h3>Émission des GES par secteur (kteq CO<sub>2</sub>)</h3>
+  <div id="emission_ges_secteur"></div>
+  <span class="source">Source : Biomasse Normandie</span>
+</body>
+</html>
+
+<!-- graphique -->
+<script>
+var chart = c3.generate({
+  bindto: '#emission_ges_secteur',
+    size: {
+        height: 300,
+        // width: 400
+    },
+    padding:{
+      bottom:20,
+      top:10,
+      left:80,
+      right:80
+    },
+  data: {
+     x: 'x',
+     xFormat: '%Y',
+      columns: [
+          ['x', '2008', '2010', '2012', '2014'],
+          ["Déchets",   [% "ges_dechet_1" %],  [% "ges_dechet_2" %],  [% "ges_dechet_3" %],  [% "ges_dechet_4" %]],
+          ["Industrie",   [% "ges_industrie_1" %],  [% "ges_industrie_2" %],  [% "ges_industrie_3" %],  [% "ges_industrie_4" %]],
+          ["Transports routiers",  [% "ges_transport_1" %],  [% "ges_transport_2" %],  [% "ges_transport_3" %],  [% "ges_transport_4" %]],
+          ["Agriculture",   [% "ges_agriculture_1" %],  [% "ges_agriculture_2" %],  [% "ges_agriculture_3" %],  [% "ges_agriculture_4" %]],
+          ["Tertaire",   [% "ges_tertiaire_1" %],  [% "ges_tertiaire_2" %],  [% "ges_tertiaire_3" %],  [% "ges_tertiaire_4" %]],
+          ["Résidentiel",   [% "ges_residentiel_1" %],  [% "ges_residentiel_2" %],  [% "ges_residentiel_3" %],  [% "ges_residentiel_4" %]],
+        ]
+      , order:null
+      , type: 'area'
+      , groups: [
+            ['Déchets',
+            'Industrie', 
+            'Transports routiers',
+            'Agriculture',
+            'Tertaire',
+            'Résidentiel'
+            ]
+        ]
+  },
+  bar: {
+      width: {
+          ratio: 0.3 // this makes bar width 50% of length between ticks
+      }
+      // or
+      //width: 100 // this makes bar width 100px
+  },
+  color: {pattern: ['#BF7F3F','#3F3FBF','#BF3F3F', '#3FBF7F', '#BFBF3F', '#BF3FBF' ]}
+  ,
+      grid: {
+      y: {
+          show: true
+        }
+  },
+   axis: {
+      x: {
+          // min: '2008',
+          // max:'2014',
+          type: 'timeseries',
+          tick : {
+            format : '%Y'
+          }
+          // categories: ['2009', '2011', '2013', '2015'],
+      },
+      // y:{
+      //   tick: {
+      //     count : 4,
+      //     format: function (d) { return Math.round(100*d) + '%' ; }
+      //       }
+      // }
+  }
+});
+</script>

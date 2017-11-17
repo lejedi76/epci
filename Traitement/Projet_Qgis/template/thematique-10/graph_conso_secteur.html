@@ -1,0 +1,70 @@
+[% @base_graph%]
+<html>
+<body>
+  <h3>Consommation d'énergie par secteur en GWh</h3>
+  <div id="consommation_energie_secteur"></div>
+  <span class="source">Source : Biomasse Normandie</span>
+</body>
+</html>
+
+<!-- graphique -->
+<script>
+var chart = c3.generate({
+  bindto: '#consommation_energie_secteur',
+    size: {
+        height: 300,
+        // width: 400
+    },
+    padding:{
+      bottom:20,
+      top:10,
+      left:80,
+      right:80
+    },
+  data: {
+      columns: [
+          ["Industrie",   [% "conso_ges_industrie_1" %],  [% "conso_ges_industrie_2" %],  [% "conso_ges_industrie_3" %],  [% "conso_ges_industrie_4" %]],
+          ["Transports routiers",   [% "conso_ges_transport_1" %],  [% "conso_ges_transport_2" %],  [% "conso_ges_transport_3" %],  [% "conso_ges_transport_4" %]],
+          ["Agriculture",  [% "conso_ges_agriculture_1" %],  [% "conso_ges_agriculture_2" %],  [% "conso_ges_agriculture_3" %],  [% "conso_ges_agriculture_4" %]],
+          ["Tertaire",   [% "conso_ges_tertiaire_1" %],  [% "conso_ges_tertiaire_2" %],  [% "conso_ges_tertiaire_3" %],  [% "conso_ges_tertiaire_4" %]],
+          ["Résidentiel",   [% "conso_ges_residentiel_1" %],  [% "conso_ges_residentiel_2" %],  [% "conso_ges_residentiel_3" %],  [% "conso_ges_residentiel_4" %]],
+        ]
+      , order:null
+      , type: 'bar'
+      , groups: [
+            ['Industrie',
+            'Transports routiers', 
+            'Agriculture',
+            'Tertaire',
+            'Résidentiel'
+            ]
+        ]
+  },
+  bar: {
+      width: {
+          ratio: 0.3 // this makes bar width 50% of length between ticks
+      }
+      // or
+      //width: 100 // this makes bar width 100px
+  },
+  // color: {pattern: ['#ffff00','009999', '#994c00', 'ff8000', '#66cc00' ]}
+  // ,
+      grid: {
+      y: {
+          show: true
+        }
+  },
+   axis: {
+      x: {
+          type: 'category',
+          categories: ['2008', '2010', '2012', '2014'],
+      },
+      // y:{
+      //   tick: {
+      //     count : 4,
+      //     format: function (d) { return Math.round(100*d) + '%' ; }
+      //       }
+      // }
+  }
+});
+</script>

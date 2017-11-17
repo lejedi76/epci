@@ -1,0 +1,91 @@
+[% @base_graph%]
+<html>
+<body>
+  <h3>Émission des GES par énergie (kteq CO<sub>2</sub>)</h3>
+  <div id="emission_ges_energie"></div>
+  <span class="source">Source : Biomasse Normandie</span>
+</body>
+</html>
+
+<!-- graphique -->
+<script>
+var chart = c3.generate({
+  bindto: '#emission_ges_energie',
+    size: {
+        height: 300,
+        // width: 400
+    },
+    padding:{
+      bottom:20,
+      top:10,
+      left:80,
+      right:80
+    },
+  data: {
+     x: 'x',
+     xFormat: '%Y',
+      columns: [
+          ['x', '2008', '2010', '2012', '2014'],
+          ["Non énergétique",   [% "ges_non_energetique_1" %],  [% "ges_non_energetique_2" %],  [% "ges_non_energetique_3" %],  [% "ges_non_energetique_4" %]],
+          ["Produits pétroliers",   [% "ges_petrole_1" %],  [% "ges_petrole_2" %],  [% "ges_petrole_3" %],  [% "ges_petrole_4" %]],
+          ["Electricité",   [% "ges_electricite_1" %],  [% "ges_electricite_2" %],  [% "ges_electricite_3" %],  [% "ges_electricite_4" %]],
+          ["Gaz naturel",   [% "ges_gaz_1" %],  [% "ges_gaz_2" %],  [% "ges_gaz_3" %],  [% "ges_gaz_4" %]],
+          ["Autre",   [% "ges_autre_1" %],  [% "ges_autre_2" %],  [% "ges_autre_3" %],  [% "ges_autre_4" %]],
+          ["Chaleur",  [% "ges_chaleur_1" %],  [% "ges_chaleur_2" %],  [% "ges_chaleur_3" %],  [% "ges_chaleur_4" %]],
+          ["EnR",   [% "ges_enr_1" %],  [% "ges_enr_2" %],  [% "ges_enr_3" %],  [% "ges_enr_4" %]],
+        ]
+      , order:null
+      , type: 'area'
+      , groups: [
+            [
+            'Non énergétique',
+            'Autre', 
+            'Chaleur',
+            'EnR',
+            'Produits pétroliers',
+            'Electricité',
+            'Gaz naturel'
+            ]
+        ]
+  },
+  bar: {
+      width: {
+          ratio: 0.3 // this makes bar width 50% of length between ticks
+      }
+      // or
+      //width: 100 // this makes bar width 100px
+  },
+  color: {pattern: [
+          'A806D9', //non energetique
+          '#251203', //petrole 
+          '#216FAA', //electricite
+          '#21AA5C', //gaz
+          '#D9061F', //autre
+          '#DE7016', //chaleur
+          '#6BED44', //Enr,
+        ]}
+  ,
+      grid: {
+      y: {
+          show: true
+        }
+  },
+   axis: {
+      x: {
+          // min: '2008',
+          // max:'2014',
+          type: 'timeseries',
+          tick : {
+            format : '%Y'
+          }
+          // categories: ['2009', '2011', '2013', '2015'],
+      },
+      // y:{
+      //   tick: {
+      //     count : 4,
+      //     format: function (d) { return Math.round(100*d) + '%' ; }
+      //       }
+      // }
+  }
+});
+</script>
