@@ -1,7 +1,7 @@
-#Fiche EPCI
-##But
+# Fiche EPCI
+## But
 Automatiser la création de fiche EPCI grâce à QGIS et Python
-##Données
+## Données
 Les données sont extraites en majorité de GéoKit
-##Informations
+## Informations
 Les scripts sont en majorité basés sur les librairies pandas et matplotlib
