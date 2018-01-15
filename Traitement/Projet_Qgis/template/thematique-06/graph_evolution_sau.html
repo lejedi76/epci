@@ -1,0 +1,61 @@
+[% @base_graph%]
+<html>
+<body>
+  <h3>Evolution de la sau (en ha) selon les principales orientations technico-économiques</h3>
+  <div id="evolution_sau"></div>
+  <span class="source">Source : Agreste, RA 2010</span>
+</body>
+</html>
+
+<!-- graphique -->
+<script>
+var chart = c3.generate({
+  bindto: '#evolution_sau',
+    size: {
+        height: 250,
+        // width: 400
+    },
+    padding:{
+      bottom:20,
+      top:10,
+      left:80,
+      right:80
+    },
+  data: {
+      columns: [
+        ['2000',  [% "sau_culture1_2000" %],  [% "sau_culture2_2000" %],  [% "sau_culture3_2000" %]],
+        ['2010',  [% "sau_culture1_2010" %],  [% "sau_culture2_2010" %],  [% "sau_culture3_2010" %]]
+        ]
+  , type: 'bar'
+  },
+  legend: {
+    position : 'right'
+  }
+  ,
+  color: {pattern: ['#69ccf0','#1f78b4']},
+  bar: {
+      width: {
+          ratio: 0.3 // this makes bar width 50% of length between ticks
+      }
+      // or
+      //width: 100 // this makes bar width 100px
+  },
+      grid: {
+      y: {
+          show: true
+        }
+  },
+   axis: {
+      x: {
+          type: 'category',
+          categories: ["[% "Culture1" %]", "[% "Culture2" %]","[% "Culture3" %]"],
+      },
+      // y:{
+      //   tick: {
+      //     count : 4,
+      //     format: function (d) { return Math.round(100*d) + '%' ; }
+      //       }
+      // }
+  }
+});
+</script>

@@ -1,0 +1,53 @@
+[% @base %]
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<div class="panel-group">
+			<div class="panel panel-theme8">
+				<div class="panel-body">
+					<h3>Chiffres-clés</h3>
+					<table class="table table-striped">
+
+					<colgroup>
+				            <col class="col-xs-3">
+				            <col class="col-xs-4">
+				            <col class="col-xs-3">
+				            <col class="col-xs-1">
+				    </colgroup>
+				    <thead>
+				      <tr>
+				        <th></th>
+				        <th>[% nom_epci %]</th>
+				        <th>Eure</th>
+				        <th>Normandie</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>Part de la SAU*</td>
+				        <td>[% format_number(part_sau_2,1) || ' %' %]</td> 
+				        <td>64,5 %</td>
+				        <td>68,8 %</td>
+				      </tr>
+				      <tr>
+				        <td>Part des forêts</td>
+				        <td> [% format_number(part_foret_2,1) || ' %' %]</td>
+				        <td> 20 %</td>
+				        <td> 12,7 %</td>
+				      </tr>
+				    </tbody>
+					</table>
+					<div class="note">*SAU : Surface Agricole Utile</div>
+					<div class="source">
+					Source : OSCOM 2015
+					</div>
+		  		</div>
+		  	</div>
+		</div>
+	</div>
+</body>
+</html>

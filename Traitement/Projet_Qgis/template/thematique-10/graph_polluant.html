@@ -1,9 +1,12 @@
 [% @base_graph%]
 <html>
 <body>
-  <h3>Emissions de polluants atmophériques (en tonne)</h3>
+  <h3>Emissions de polluants atmophériques (en t)</h3>
   <div id="emission_polluant_atmospherique"></div>
-  <span class="note">Note : Données secrétsées pour Bois énergie</span><br>
+  <span class="note">COVNM (composés organiques volatils non méthaniques) - NH3 (amoniac) - NOX (oxyde d'azote)
+    PM10 (particules < 10 &micro;m) - PM2,5 (particules < 2,5 &micro;m) - SO2 (dioxyde de soufre)
+  </span>
+  <br>
   <span class="source">Source : Biomasse Normandie</span>
 </body>
 </html>
@@ -15,57 +18,64 @@ var chart = c3.generate({
     size: {
         height: 300,
         // width: 400
-    },
+    }, 
     padding:{
-      bottom:20,
+      bottom:0,
       top:10,
       left:80,
       right:80
     },
-  data: {
-      columns: [
-          ["Solaire",   [% "production_enr_solaire_1" %],  [% "production_enr_solaire_2" %],  [% "production_enr_solaire_3" %],  [% "production_enr_solaire_4" %]],
-          ["Hydraulique",   0,  null,  null,  [% if("production_enr_hydraulique_4"='s','null',"production_enr_hydraulique_4") %]],
-          ["Bois-énergie collectif et industriel",  [% "production_enr_bois_coll_1" %],  [% "production_enr_bois_coll_2" %],  [% "production_enr_bois_coll_3" %],  [% "production_enr_bois_coll_4" %]],
-          ["Bois-énergie des ménages",   [% "production_enr_bois_1" %],  [% "production_enr_bois_2" %],  [% "production_enr_bois_3" %],  [% "production_enr_bois_4" %]],
-          ["Biogaz",   [% "production_enr_biogaz_1" %],  [% "production_enr_biogaz_2" %],  [% "production_enr_biogaz_3" %],  [% "production_enr_biogaz_4" %]],
-        ]
-      , order:null
-      , type: 'bar'
-      , groups: [
-            ['Hydraulique',
-            'Bois-énergie collectif et industriel', 
-            'Bois-énergie des ménages',
-            'Biogaz',
-            'Solaire'
-            ]
-        ]
-  },
-  bar: {
-      width: {
-          ratio: 0.3 // this makes bar width 50% of length between ticks
-      }
-      // or
-      //width: 100 // this makes bar width 100px
-  },
-  color: {pattern: ['#ffff00','009999', '#994c00', '#ff8000', '#66cc00' ]}
-  ,
-      grid: {
+    data: {
+        columns: [
+            ["COVNM",   [% "COVNM_1" %],  [% "COVNM_2" %],  [% "COVNM_3" %],  [% "COVNM_4" %]],
+            ["NH3",   [% "NH3_1" %],  [% "NH3_2" %],  [% "NH3_3" %],  [% "NH3_4" %]],
+            ["NOX",  [% "NOX_1" %],  [% "NOX_2" %],  [% "NOX_3" %],  [% "NOX_4" %]],
+            ["PM10",   [% "PM10_1" %],  [% "PM10_2" %],  [% "PM10_3" %],  [% "PM10_4" %]],
+            ["PM2,5",   [% "PM25_1" %],  [% "PM25_2" %],  [% "PM25_3" %],  [% "PM25_4" %]],
+            ["SO2",   [% "SO2_1" %],  [% "SO2_2" %],  [% "SO2_3" %],  [% "SO2_4" %]]
+        ],
+        order: null,
+        type:'bar',
+        groups: [
+              [
+              'SO2',
+              'PM2,5',
+              'PM10', 
+              'NOX',
+              'NH3',
+              'COVNM'
+              ]
+          ]
+    },
+    bar: {
+        width: {
+            ratio: 0.3 // this makes bar width 50% of length between ticks
+        }
+
+        // or
+        //width: 100 // this makes bar width 100px
+    },
+    // legend: {
+    //     position: 'right'
+    // },
+    color: {pattern: [
+      '#87CEEB', //bleu
+      '#FF7F50', //corail
+      '#FFD700', //jaune
+      '#6B8E23', //vert
+      '#8B0000', //rouge
+      '#20B2AA' // turquoise
+       ]},
+    grid: {
       y: {
           show: true
         }
-  },
-   axis: {
+    },
+    axis: {
       x: {
           type: 'category',
           categories: ['2009', '2011', '2013', '2015'],
-      },
-      // y:{
-      //   tick: {
-      //     count : 4,
-      //     format: function (d) { return Math.round(100*d) + '%' ; }
-      //       }
-      // }
-  }
+      }
+    }
 });
 </script>

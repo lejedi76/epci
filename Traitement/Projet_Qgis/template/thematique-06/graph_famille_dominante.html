@@ -1,0 +1,65 @@
+[% @base_graph%]
+<html>
+<body>
+  <h3>Les 2 principales familles dominantes</h3>
+  <div id="famille_dominante"></div>
+  <span class="source">Source : RPG 2016</span>
+</body>
+</html>
+
+<!-- graphique -->
+<script>
+
+var chart = c3.generate({
+  bindto: '#famille_dominante',
+    size: {
+        height: 200,
+        // width: 400
+    },
+    padding:{
+      bottom:20,
+      top:10,
+      left:0,
+      right:20
+    },
+  data: {
+      columns: [
+        ['[% attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_1'),'categorie_culture')%]',  
+        '[% attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_1'),'surface_culture')%]'],
+        ['[% attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci" || '_2'),'categorie_culture')%]',  
+        '[% attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_2'),'surface_culture')%]'],
+        ['[% attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_3'),'categorie_culture')%]',  
+        '[% attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_3'),'surface_culture')%]']
+        ]
+  , type: 'donut'
+  },
+  legend: {
+    position : 'bottom'
+  }
+  ,
+  //cereale : #fce988
+  //paturage : #6eb306
+  //oleagineux : #72e6cf
+  //autre : #c4bcb9
+  color: {pattern: [
+    '[% case 
+    when attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_1'),'categorie_culture') LIKE '%Céréales%' then '#fce988' 
+    when attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_1'),'categorie_culture') LIKE '%Oléagineux%' then '#72e6cf' 
+    when attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_1'),'categorie_culture') LIKE '%Prairies%' then '#6eb306' else '#c4bcb9' end %]', 
+        '[% case 
+    when attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_2'),'categorie_culture') LIKE '%Céréales%' then '#fce988' 
+    when attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_2'),'categorie_culture') LIKE '%Oléagineux%' then '#72e6cf' 
+    when attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_2'),'categorie_culture') LIKE '%Prairies%' then '#6eb306'else '#c4bcb9' end %]',
+        '[% case 
+    when attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_3'),'categorie_culture') LIKE '%Céréales%' then '#fce988' 
+    when attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_3'),'categorie_culture') LIKE '%Oléagineux%' then '#72e6cf' 
+    when attribute(get_feature('m_famille_epci_classe', 'code_epci_rang',  "code_epci"  || '_3'),'categorie_culture') LIKE '%Prairies%' then '#6eb306'else '#c4bcb9' end %]']},
+  donut: {
+      label: {
+          show: false // this makes bar width 50% of length between ticks
+      }
+      // or
+      //width: 100 // this makes bar width 100px
+  }
+});
+</script>

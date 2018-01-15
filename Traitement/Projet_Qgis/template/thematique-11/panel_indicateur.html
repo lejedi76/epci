@@ -1,0 +1,37 @@
+[% @base %]
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<div class="panel-group">
+			<div class="panel panel-theme10">
+				<div class="panel-body">
+					<h3>Quelques indicateurs</h3>
+					<table class="table table-striped">
+					    <thead>
+					      <tr>
+					        <th>Consommation totale d'énergie</th>
+					        <th>Production totale d'énergie renouvelable</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td> [% format_number(conso_totale_energie,1) || ' GWh' %]
+	 						</td>
+					        <td> [% format_number(prod_total_enr,1) || ' GWh' %]
+	 						</td>
+					      </tr>
+					    </tbody>
+	  				</table>
+		  			<div class="source">
+		  			Source : Biomasse Normandie(janv. 2017)
+		  			</div>
+		  		</div>
+		  	</div>
+		</div>
+	</div>
+</body>
+</html>

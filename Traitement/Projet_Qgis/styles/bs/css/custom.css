@@ -6,7 +6,7 @@ html * {
     color:black;
 }
 table * {
-  font-size:14px;
+  font-size:10px;
 }
 
 h1 {
@@ -97,9 +97,23 @@ li {
     border-color: #99005a;
 }
 
+/*theme6*/
+.theme6 {
+  background: -webkit-linear-gradient(left, #800080 , white 90%);/*violet*/
+}
+
+#theme6 {
+  font-size: 16px;
+  font-weight: bold;
+  color:#800080;
+}
+.panel-theme6 {
+    border-color: #800080;
+}
+
 /*theme7*/
 .theme7 {
-  background: -webkit-linear-gradient(left, #9999ff , white 90%);/*violet*/
+  background: -webkit-linear-gradient(left, #9999ff , white 90%);/*bleu*/
 }
 
 #theme7 {
@@ -111,11 +125,23 @@ li {
     border-color: #9999ff;
 }
 
+/*theme8*/
+.theme8 {
+  background: -webkit-linear-gradient(left, #00cc66 , white 90%);/*violet*/
+}
 
+#theme8 {
+  font-size: 16px;
+  font-weight: bold;
+  color:#00cc66;
+}
+.panel-theme8 {
+    border-color: #00cc66;
+}
 
 
 .theme9 {
-  background: -webkit-linear-gradient(left, #ADD705 , white 90%); /*vert fluo*/
+  background: -webkit-linear-gradient(left, #006400 , white 90%); /*vert foncé*/
 }
 
 /*theme10*/
@@ -130,6 +156,21 @@ li {
 }
 .panel-theme10 {
     border-color: #ADD705;
+}
+
+
+/*theme11*/
+.theme11 {
+  background: -webkit-linear-gradient(left, #8B0000, white 90%);/*rouge fonce*/
+}
+
+#theme11 {
+  font-size: 16px;
+  font-weight: bold;
+  color:#8B0000;
+}
+.panel-theme11 {
+    border-color: #8B0000;
 }
 
 /*class to have column with same heigth*/
