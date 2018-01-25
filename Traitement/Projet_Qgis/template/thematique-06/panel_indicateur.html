@@ -13,37 +13,38 @@
 					<table class="table table-striped">
 
 					<colgroup>
-				            <col class="col-xs-3">
-				            <col class="col-xs-4">
-				            <col class="col-xs-3">
 				            <col class="col-xs-1">
+<!-- 				            <col class="col-xs-2">
+				            <col class="col-xs-2">
+				            <col class="col-xs-1"> -->
 				    </colgroup>
 				    <thead>
 				      <tr>
 				        <th></th>
-				        <th>[% nom_epci %]</th>
+				        <th>[% nom_court %]</th>
 				        <th>Eure</th>
 				        <th>Normandie</th>
 				      </tr>
 				    </thead>
 				    <tbody>
 				      <tr>
-				        <td>Part de la SAU*</td>
-				        <td>[% format_number(part_sau_2,1) || ' %' %]</td> 
-				        <td>64,5 %</td>
-				        <td>68,8 %</td>
+				        <td>Nombre d'hectares consommés (en ha)*</td>
+				        <td> <span id="theme6"> [% format_number(total_urba_ha_2,0) %]</span> [% '<br><br>&#8599; ' || 
+				        format_number(evolution_urba_pourcent,1) || ' %' %]</td>
+				        <td> 53 213 <br><br>&#8599; 7.0 %</td>
+				        <td> 258 903 <br><br>&#8599; 5.7 % </td>
 				      </tr>
 				      <tr>
-				        <td>Part des forêts</td>
-				        <td> [% format_number(part_foret_2,1) || ' %' %]</td>
-				        <td> 20 %</td>
-				        <td> 12,7 %</td>
+				        <td>Part des zones urbanisées et bâties</td>
+				        <td><span id="theme6">[% format_number(part_urba_2,1) || ' %' %]</span></td> 
+				        <td>8,8 %</td>
+				        <td>8,6 %</td>
 				      </tr>
 				    </tbody>
 					</table>
-					<div class="note">*SAU : Surface Agricole Utile</div>
+					<div class="note">*L'évolution est calculée entre 2010 et 2015</div>
 					<div class="source">
-					Source : OSCOM 2015
+					Source : OSCOM 2010 - 2015 
 					</div>
 		  		</div>
 		  	</div>

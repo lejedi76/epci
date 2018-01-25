@@ -1,0 +1,56 @@
+[% @base_graph%]
+<html>
+  <body>
+    <h3>Taux d'évolution de la tâche urbaine entre 1945 et 2012 et taux moyen annuel sur trois périodes </h3>
+    <div id="evolution_tache_urbaine"></div>
+    <div class="note">Note : L'évolution est calculée en fonction des taux de variation annuels</div>
+    <span class="source">Source : DDTM 27</span>
+  </body>
+</html>
+<!-- graphique -->
+<script>
+var chart = c3.generate({
+  bindto: '#evolution_tache_urbaine',
+    size: {
+        height: 280,
+        // width: 320
+    },
+    padding:{
+      bottom:0,
+      top:0,
+      right:10,
+      left:50,
+    },
+    data: {
+        xs: {
+            "taux d'évolution": 'x1',
+            '1945-1965': 'x2',
+            '1965-1975': 'x3',
+            '1975-2012': 'x4'
+        },
+        columns: [
+            ['x1', 1950, 1955, 1960, 1965, 1970, 1975, 1990, 2012],
+            ['x2', 1945, 1965],
+            ['x3', 1965, 1975],
+            ['x4', 1975, 2012],
+            ["taux d'évolution", [% tvar_1950 %], [% tvar_1955 %], [% tvar_1960 %], [% tvar_1965 %], [% tvar_1970 %], 
+            [% tvar_1975 %], [% tvar_1990 %], [% tvar_2012 %]],
+            ['1945-1965', [% tvar_1945_1965 %], [% tvar_1945_1965 %]],
+            ['1965-1975', [% tvar_1965_1975 %], [% tvar_1965_1975 %]],
+            ['1975-2012', [% tvar_1975_2012 %], [% tvar_1975_2012 %]]
+        ]
+    },
+    axis: {
+      x : {
+        tick : {
+          values: [ '1945', '1965', '1975','2012']
+        }
+      },
+      y : {
+        tick : {
+          format: function (d) { return d3.format(".2f")(d) + '%' }
+        }
+      }
+    }
+});
+</script>
