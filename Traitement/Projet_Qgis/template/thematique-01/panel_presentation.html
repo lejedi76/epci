@@ -63,10 +63,11 @@
 					<div class="panel-body">
 							<h3>Quelques indicateurs</h3>
 							<div class="row">
-								<div class="col-xs-12">Nombre de communes : <span id="theme1">[%aggregate('commune_ade_s_027', 'count', 1,filter:="code_epci"=attribute( @atlas_feature,'code_epci'))%]</span>  dont <span id="theme1">[%aggregate('commune_ade_s_027', 'count', 1,filter:="code_epci"=attribute( @atlas_feature,'code_epci') AND "population" <= 2000) %]</span>
+								<div class="col-xs-12">Nombre de communes : <span id="theme1">[%aggregate('commune', 'count', 1,filter:="code_epci"=attribute( @atlas_feature,'code_epci'))%]</span><br> dont <span id="theme1">[%aggregate('commune', 'count', 1,filter:="code_epci"=attribute( @atlas_feature,'code_epci') AND "population" <= 2000) %]</span>
 								 ont moins de 2000 habitants</div>
-								<div class="col-xs-12">Nombre d'habitants : <span id="theme1">[%format_number(aggregate('commune_ade_s_027', 'sum',"population",filter:="code_epci"=attribute( @atlas_feature,'code_epci')),0) %]</span> hab.</div>
+								<div class="col-xs-12">Nombre d'habitants : <span id="theme1">[%format_number(aggregate('commune', 'sum',"population",filter:="code_epci"=attribute( @atlas_feature,'code_epci')),0) %]</span> hab.</div>
 								<div class="col-xs-12">Superficie : <span id="theme1"> [% format_number($area/1000000,1) %]</span> km²</div>
+								<div class="col-xs-12">Densité : <span id="theme1"> [%format_number(aggregate('commune', 'sum',"population",filter:="code_epci"=attribute( @atlas_feature,'code_epci'))/($area/1000000),0) %]</span> hab/km²</div>
 							</div>
 							<div class="source">Source : IGN, Admin Express (2017)</div>
 					</div>

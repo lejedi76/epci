@@ -1,0 +1,35 @@
+[% @base %]
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<div class="panel-group">
+			<div class="panel panel-theme1">
+				<div class="panel-body">
+					<table class="table table-striped">
+					<colgroup>
+				            <col class="col-xs-6">
+				            <col class="col-xs-6">
+				    </colgroup>
+				    <thead>
+				      <tr>
+				        <th style="font-size: 15px;">Atouts</th>
+				        <th style="font-size: 15px;">Faiblesses</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td class="success"> [% regexp_replace(atout, '\\*','<li style="margin-bottom:5px;font-size: 12px;list-style-type: square;">') %]</td>
+				        <td class="danger">[% regexp_replace(faiblesse,'\\*','<li style="margin-bottom:5px;font-size: 12px;list-style-type: square;">') %]</td>
+				      </tr>
+				    </tbody>
+					</table>
+		  		</div>
+		  	</div>
+		</div>
+	</div>
+</body>
+</html>
