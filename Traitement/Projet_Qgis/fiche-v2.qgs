@@ -74,7 +74,7 @@
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="04 - amenagement numerique">
+    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="04 - amenagement numerique">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="carte niveau de service">
         <customproperties/>
@@ -100,9 +100,9 @@
       <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="epci_ade_s_027_copier20171122155224840" source="dbname='gb' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='id' srid=2154 type=MultiPolygon table=&quot;ref&quot;.&quot;m_epci_ade_s_027&quot; (geom) sql=&quot;code_epci&quot; NOT IN ('200069730','200066827','200040277')" name="04_amenagement_numerique_couverture">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-group expanded="1" checked="Qt::Checked" name="carte couverture haut debit">
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="carte couverture haut debit">
         <customproperties/>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="m_commune_epci_ade_s_02720180125150130525" source="dbname='gb' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='id' srid=2154 type=MultiPolygon table=&quot;ref&quot;.&quot;m_commune_epci_ade_s_027&quot; (geom) sql=" name="couverture">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="m_commune_epci_ade_s_02720180125150130525" source="dbname='gb' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='id' srid=2154 type=MultiPolygon table=&quot;ref&quot;.&quot;m_commune_epci_ade_s_027&quot; (geom) sql=" name="couverture">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FranceTHD_Open_Data_Observatoire_2017_T2_2017_T22018012514591170910437" source="D:\OPENDATA\FranceTHD_Open_Data_Observatoire_2017_T2.xlsx|layerid=9" name="04_FranceTHD_Open_Data_Observatoire">
@@ -155,12 +155,12 @@
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="07 - transport">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="07 - transport">
       <customproperties/>
       <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="7_ligne_bus20180124140615079" source="U:/5_Patrimoine_commun/ETUDES/1_fiches_territoriales_EPCI/Extraction_donnees/transport/7_ligne_bus.ods" name="7_ligne_bus">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="carte infrastructure">
+      <layer-tree-group expanded="1" checked="Qt::Unchecked" name="carte infrastructure">
         <customproperties/>
         <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Unchecked" id="L_GARE_FERROVIAIRE_RFF_SNCF_P_027_copier2017092716501951015715" source="U:/5_Patrimoine_commun/ETUDES/1_fiches_territoriales_EPCI/Extraction_donnees/L_GARE_FERROVIAIRE_RFF_SNCF_P_027.shp" name="L_GARE_FERROVIAIRE_RFF_SNCF_DANS_ATLAS">
           <customproperties/>
@@ -183,7 +183,7 @@
         <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="N_DEP_BDC_027201709271650195187663" source="\\10.27.8.61\gb_ref\BDCARTO\ADMINISTRATIF\N_DEP_BDC_027.tab" name="N_DEP_BDC_027">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="echangeur20180124135546205" source="?layer=ogr:%5C%5C10.27.8.61%5Cgb_cons%5CTRANSPORT_INFRASTRUCTURE%5CN_ROUTIER%5CL_RN_27.shp:l_rn_27:UTF-8&amp;layer=ogr:U%3A%5C5_Patrimoine_commun%5CETUDES%5C1_fiches_territoriales_EPCI%5CExtraction_donnees%5Cechangeur_darwin.shp:echangeur_darwin:UTF-8&amp;query=select%20route,%20st_centroid(st_union(geometry))%20geometry%0D%0Afrom%20l_rn_27%0D%0Awhere%20nom_plo_in%20like%20'DB%25'%0D%0Agroup%20by%20route%0D%0Ahaving%20count(*)%20%3E%201%0D%0AUNION%20ALL%0D%0Aselect%20route,%20geometry%20from%20echangeur_darwin&amp;geometry=geometry:1:2154" name="echangeur">
+        <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="echangeur20180125154709028" source="?layer=ogr:%5C%5C10.27.8.61%5Cgb_cons%5CTRANSPORT_INFRASTRUCTURE%5CN_ROUTIER%5CL_RN_27.shp:l_rn_27:UTF-8&amp;layer=ogr:U%3A%5C5_Patrimoine_commun%5CETUDES%5C1_fiches_territoriales_EPCI%5CExtraction_donnees%5Ctransport%5Cechangeur_darwin.shp:echangeur_darwin:UTF-8&amp;query=select%20route,%20st_centroid(st_union(geometry))%20geometry%0D%0Afrom%20l_rn_27%0D%0Awhere%20nom_plo_in%20like%20'DB%25'%0D%0Agroup%20by%20route%0D%0Ahaving%20count(*)%20%3E%201%0D%0AUNION%20ALL%0D%0Aselect%20route,%20geometry%20from%20echangeur_darwin&amp;geometry=geometry:1:2154" name="echangeur">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="L_Autoroutes_bdc__tab_2017092716501951829179" source="\\10.27.8.61\gb_cons\TRANSPORT_INFRASTRUCTURE\N_ROUTIER\L_Autoroutes_bdc.TAB" name="Autoroutes">
@@ -505,6 +505,7 @@
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="l_correspondance_commune_epci_20162018012514591170914203"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="sirene20170913161023695"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="n_tache_urbaine_bdt_r23_p194520180112122014613"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="echangeur20180125154709028"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="n_epci_ade_000__shp_2017100411284713425697"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="L_PROCEDURE_PLUI__tab_2018011511500761025401"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="N_LIGNE_ELECTRIQUE_BDT_02720171106134636703"/>
@@ -662,7 +663,6 @@
       <item>L_Departementales_bdc_0272018012410540385931639</item>
       <item>0_liste_commune_habillage20180124105528970</item>
       <item>m_commune_epci_ade_p_02720180124105933999</item>
-      <item>echangeur20180124135546205</item>
       <item>7_ligne_bus20180124140615079</item>
       <item>commune_copier20180125110156923</item>
       <item>site_mobiles_2g_3g_4g201801251459117096226</item>
@@ -673,6 +673,7 @@
       <item>Orange_2G_TBC_2017_07_012018012514591170913485</item>
       <item>FranceTHD_Open_Data_Observatoire_2017_T2_2017_T22018012514591170910437</item>
       <item>m_commune_epci_ade_s_02720180125150130525</item>
+      <item>echangeur20180125154709028</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -767,7 +768,7 @@
         </legendlayer>
       </legendgroup>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="04 - amenagement numerique">
+    <legendgroup open="false" checked="Qt::PartiallyChecked" name="04 - amenagement numerique">
       <legendgroup open="false" checked="Qt::Unchecked" name="carte niveau de service">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="site_mobiles_2g_3g_4g" showFeatureCount="0">
           <filegroup open="true" hidden="false">
@@ -805,9 +806,9 @@
           <legendlayerfile isInOverview="0" layerid="epci_ade_s_027_copier20171122155224840" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendgroup open="true" checked="Qt::Checked" name="carte couverture haut debit">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="couverture" showFeatureCount="0">
-          <filegroup open="true" hidden="false">
+      <legendgroup open="false" checked="Qt::Checked" name="carte couverture haut debit">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="couverture" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="m_commune_epci_ade_s_02720180125150130525" visible="1"/>
           </filegroup>
         </legendlayer>
@@ -884,13 +885,13 @@
         </legendlayer>
       </legendgroup>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Unchecked" name="07 - transport">
+    <legendgroup open="true" checked="Qt::Unchecked" name="07 - transport">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="7_ligne_bus" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="7_ligne_bus20180124140615079" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendgroup open="false" checked="Qt::Unchecked" name="carte infrastructure">
+      <legendgroup open="true" checked="Qt::Unchecked" name="carte infrastructure">
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="L_GARE_FERROVIAIRE_RFF_SNCF_DANS_ATLAS" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="L_GARE_FERROVIAIRE_RFF_SNCF_P_027_copier2017092716501951015715" visible="0"/>
@@ -928,7 +929,7 @@
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="echangeur" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="echangeur20180124135546205" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="echangeur20180125154709028" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Autoroutes" showFeatureCount="0">
@@ -1990,7 +1991,7 @@
     </Composition>
     <Atlas hideCoverage="false" coverageLayer="epci_couverture_copier20170918110030033" singleFile="false" filenamePattern="code_epci" enabled="true" coverageLayerName="01_presentation_couverture" filterFeatures="false" coverageLayerProvider="postgres" sortFeatures="true" pageNameExpression="&quot;nom_epci&quot;" sortKey="code_epci" coverageLayerSource="dbname='gb' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='id' srid=2154 type=MultiPolygon table=&quot;ref&quot;.&quot;m_epci_ade_s_027&quot; (geom) sql=&quot;code_epci&quot; NOT IN ('200069730','200066827','200040277')" sortAscending="true"/>
   </Composer>
-  <Composer title="02 - Démographie" visible="0">
+  <Composer title="02 - Démographie" visible="1">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="210" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -2099,7 +2100,7 @@
     </Composition>
     <Atlas hideCoverage="false" featureFilter="length( &quot;Siren&quot; ) = 9" coverageLayer="2_demographie20170911081438650" singleFile="false" filenamePattern="&quot;Siren&quot;" enabled="true" coverageLayerName="02_demographie" filterFeatures="true" coverageLayerProvider="ogr" sortFeatures="true" pageNameExpression="&quot;nom&quot;" sortKey="Siren" coverageLayerSource="U:/5_Patrimoine_commun/ETUDES/1_fiches_territoriales_EPCI/Extraction_donnees/2_demographie.ods|layerid=0|subset=&quot;Siren&quot; NOT IN ('200069730','200066827','200040277')" sortAscending="true"/>
   </Composer>
-  <Composer title="03 - Economie" visible="0">
+  <Composer title="03 - Economie" visible="1">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="210" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -2878,7 +2879,7 @@
                 <property key="legend/title-label" value="Aire de covoiturage$(recensée par le CD27)"/>
               </customproperties>
             </layer-tree-layer>
-            <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Checked" id="echangeur20180124135546205" source="?layer=ogr:%5C%5C10.27.8.61%5Cgb_cons%5CTRANSPORT_INFRASTRUCTURE%5CN_ROUTIER%5CL_RN_27.shp:l_rn_27:UTF-8&amp;layer=ogr:U%3A%5C5_Patrimoine_commun%5CETUDES%5C1_fiches_territoriales_EPCI%5CExtraction_donnees%5Cechangeur_darwin.shp:echangeur_darwin:UTF-8&amp;query=select%20route,%20st_centroid(st_union(geometry))%20geometry%0D%0Afrom%20l_rn_27%0D%0Awhere%20nom_plo_in%20like%20'DB%25'%0D%0Agroup%20by%20route%0D%0Ahaving%20count(*)%20%3E%201%0D%0AUNION%20ALL%0D%0Aselect%20route,%20geometry%20from%20echangeur_darwin&amp;geometry=geometry:1:2154" name="echangeur">
+            <layer-tree-layer expanded="1" checked="Qt::Checked" id="echangeur20180124135546205" name="echangeur">
               <customproperties>
                 <property key="legend/title-label" value="Echangeur"/>
               </customproperties>
@@ -3008,7 +3009,7 @@
     </Composition>
     <Atlas hideCoverage="false" coverageLayer="epci_couverture_copier20170927165412830" singleFile="false" filenamePattern="code_epci" enabled="true" coverageLayerName="07-transport_couverture" filterFeatures="false" coverageLayerProvider="postgres" sortFeatures="true" pageNameExpression="&quot;nom_epci&quot;" sortKey="code_epci" coverageLayerSource="dbname='gb' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='id' srid=2154 type=MultiPolygon table=&quot;ref&quot;.&quot;m_epci_ade_s_027&quot; (geom) sql=&quot;code_epci&quot; NOT IN ('200069730','200066827','200040277')" sortAscending="true"/>
   </Composer>
-  <Composer title="10 - Energie et climat" visible="0">
+  <Composer title="10 - Energie et climat" visible="1">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{ef49a5ff-ef7d-43c3-baf2-61b981e377b1}" alignmentSnap="1" printResolution="300" paperWidth="210" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="2" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -4680,7 +4681,7 @@
     </Composition>
     <Atlas hideCoverage="false" featureFilter="" coverageLayer="epci_ade_s_027_copier20171121091630642" singleFile="false" filenamePattern="code_epci" enabled="true" coverageLayerName="8_agriculture_forets_couverture" filterFeatures="true" coverageLayerProvider="postgres" sortFeatures="true" pageNameExpression="&quot;nom_epci&quot;" sortKey="code_epci" coverageLayerSource="dbname='gb' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='id' srid=2154 type=MultiPolygon table=&quot;ref&quot;.&quot;m_epci_ade_s_027&quot; (geom) sql=&quot;code_epci&quot; NOT IN ('200069730','200066827','200040277')" sortAscending="true"/>
   </Composer>
-  <Composer title="08 - Agriculture et forêts" visible="0">
+  <Composer title="08 - Agriculture et forêts" visible="1">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="210" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -6456,6 +6457,659 @@
       <customproperties/>
     </Composition>
     <Atlas hideCoverage="false" featureFilter="" coverageLayer="epci_ade_s_027_copier20180112121702747" singleFile="false" filenamePattern="code_epci" enabled="true" coverageLayerName="06-urbanisme_couverture" filterFeatures="true" coverageLayerProvider="postgres" sortFeatures="true" pageNameExpression="&quot;nom_epci&quot;" sortKey="code_epci" coverageLayerSource="dbname='gb' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='id' srid=2154 type=MultiPolygon table=&quot;ref&quot;.&quot;m_epci_ade_s_027&quot; (geom) sql=&quot;code_epci&quot; NOT IN ('200069730','200066827','200040277')" sortAscending="true"/>
+  </Composer>
+  <Composer title="04 - Aménagement numérique" visible="1">
+    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{fd805618-b0b2-4bdb-bf5d-c4ae59e29a56}" alignmentSnap="1" printResolution="300" paperWidth="210" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="color" v="255,255,255,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <ComposerLegend symbolWidth="7" title="" rasterBorderWidth="0" titleAlignment="1" map="3" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="$" fontColor="#000000" legendFilterByAtlas="0" columnCount="1" wmsLegendHeight="25" columnSpace="5" symbolHeight="4" equalColumnWidth="0" resizeToContents="0" splitLayer="1" boxSpace="2" rasterBorder="1">
+        <styles>
+          <style name="title">
+            <styleFont description="Arial,8,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="Arial,10,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="Arial,8,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="1.5" name="symbol">
+            <styleFont description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="1.5" marginLeft="2" name="symbolLabel">
+            <styleFont description="Arial,8,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+          <customproperties/>
+          <layer-tree-group expanded="1" checked="Qt::Checked" name="8 - Agriculture et forêts">
+            <customproperties>
+              <property key="legend/title-style" value="hidden"/>
+            </customproperties>
+            <layer-tree-group expanded="1" checked="Qt::Checked" name="carte cuture dominante">
+              <customproperties>
+                <property key="legend/title-style" value="hidden"/>
+              </customproperties>
+              <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="rpg_parcelle20171128145518581" source="dbname='gb' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='id' srid=2154 type=MultiPolygon table=&quot;agriculture&quot;.&quot;rpg_parcelle&quot; (geom) sql=&quot;bio&quot; = 1" name="Agriculture_bio">
+                <customproperties>
+                  <property key="legend/title-style" value="hidden"/>
+                </customproperties>
+              </layer-tree-layer>
+              <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="m_culture_dominante20171128145213349" source="dbname='gb' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='pacage_ilot' srid=2154 type=MultiPolygon table=&quot;agriculture&quot;.&quot;m_culture_dominante&quot; (geom) sql=" name="Culture dominante">
+                <customproperties/>
+              </layer-tree-layer>
+            </layer-tree-group>
+          </layer-tree-group>
+        </layer-tree-group>
+        <ComposerItem pagey="204.366" page="1" id="Légende carte culture" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="72.3984" y="204.366" visibility="1" zValue="24" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="39" outlineWidth="0.3" excludeFromExports="0" uuid="{b0b6ed8a-6426-4e20-a36c-d79693f3a600}" height="56.249" itemRotation="0" frame="false" pagex="72.3984">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="234" blue="234" green="234"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0" pictureRotation="0" pictureWidth="5.77247" svgFillColor="151,151,151,255" svgBorderColor="0,0,0,255" northMode="0" file="//10.27.8.62/DDT_commun/5_Patrimoine_commun/LOGO/NorthArrow_02.svg" northOffset="0" pictureHeight="9.17917" mapId="3" anchorPoint="4">
+        <ComposerItem pagey="189.215" page="1" id="" lastValidViewScaleFactor="2.50308" positionMode="0" positionLock="false" x="197.395" y="189.215" visibility="1" zValue="22" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="10.2061" outlineWidth="0.3" excludeFromExports="0" uuid="{10450523-8918-42a3-bea5-d5246dff09af}" height="9.17917" itemRotation="0" frame="false" pagex="197.395">
+          <FrameColor alpha="255" red="101" blue="101" green="101"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerScaleBar lineCapStyle="square" style="Line Ticks Up" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="1" alignment="0" numSegments="2" segmentMillimeters="5.13023" lineJoinStyle="miter" minBarWidth="10" numUnitsPerSegment="2000" units="1" labelBarSpace="2" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="15" height="1" boxContentSpace="0" mapId="3" unitLabel=" km">
+        <scaleBarFont description="Arial,7,-1,5,50,0,0,0,0,0" style=""/>
+        <fillColor alpha="255" red="151" blue="151" green="151"/>
+        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+        <strokeColor alpha="255" red="0" blue="0" green="0"/>
+        <textColor alpha="255" red="0" blue="0" green="0"/>
+        <ComposerItem pagey="259.615" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="183.287" y="259.615" visibility="1" zValue="21" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="16.9605" outlineWidth="0.3" excludeFromExports="0" uuid="{734d14e5-db4f-41cc-b107-be99d3b3cdbd}" height="7.5271" itemRotation="0" frame="false" pagex="183.287">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerScaleBar>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="17.0367" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="//10.27.8.62/DDT_commun/5_Patrimoine_commun/LOGO/logoMarianne_75.png" northOffset="0" pictureHeight="10.1347" mapId="3" anchorPoint="4">
+        <ComposerItem pagey="275.292" page="1" id="" lastValidViewScaleFactor="2.50308" positionMode="0" positionLock="false" x="2.6633" y="275.292" visibility="1" zValue="20" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="17.0367" outlineWidth="0.3" excludeFromExports="0" uuid="{ea463e93-cca1-4b05-95fd-7edc9c16a74c}" height="12.169" itemRotation="0" frame="false" pagex="2.6633">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerLabel valign="64" marginX="2" marginY="0" labelText="Sources : © IGN BD TOPO ® 2016&#xa;BRGM (études 2006)" htmlState="0" halign="2">
+        <LabelFont description="Arial,6,-1,5,50,1,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="278.656" page="1" id="" lastValidViewScaleFactor="1.9327" positionMode="0" positionLock="false" x="32.6078" y="278.656" visibility="1" zValue="19" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="41.5132" outlineWidth="0.3" excludeFromExports="0" uuid="{38639a6f-697b-4733-b346-282112d8412d}" height="6.34416" itemRotation="0" frame="false" pagex="32.6078">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0" pictureRotation="0" pictureWidth="5.52979" svgFillColor="151,151,151,255" svgBorderColor="0,0,0,255" northMode="0" file="//10.27.8.62/DDT_commun/5_Patrimoine_commun/LOGO/NorthArrow_02.svg" northOffset="0" pictureHeight="8.79328" mapId="3" anchorPoint="4">
+        <ComposerItem pagey="14.2835" page="1" id="" lastValidViewScaleFactor="2.50308" positionMode="0" positionLock="false" x="160.544" y="14.2835" visibility="1" zValue="17" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="9.81995" outlineWidth="0.3" excludeFromExports="0" uuid="{e3ad64ac-b536-4941-88e3-04969d871f5d}" height="8.79328" itemRotation="0" frame="false" pagex="160.544">
+          <FrameColor alpha="255" red="101" blue="101" green="101"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerLabel valign="64" marginX="2" marginY="0" labelText="Source : © OSCOM ® 2015&#xa;" htmlState="0" halign="1">
+        <LabelFont description="Arial,6,-1,5,50,1,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="86.2894" page="1" id="" lastValidViewScaleFactor="1.9327" positionMode="0" positionLock="false" x="174.554" y="86.2894" visibility="1" zValue="16" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="35.4456" outlineWidth="0.3" excludeFromExports="0" uuid="{8537e3b2-294d-4a2d-afe7-6c6356f708e3}" height="7.7106" itemRotation="0" frame="false" pagex="174.554">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerScaleBar lineCapStyle="square" style="Line Ticks Up" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="1" alignment="0" numSegments="2" segmentMillimeters="5.13023" lineJoinStyle="miter" minBarWidth="10" numUnitsPerSegment="2000" units="1" labelBarSpace="2" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="15" height="1" boxContentSpace="0" mapId="3" unitLabel=" km">
+        <scaleBarFont description="Arial,7,-1,5,50,0,0,0,0,0" style=""/>
+        <fillColor alpha="255" red="151" blue="151" green="151"/>
+        <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+        <strokeColor alpha="255" red="0" blue="0" green="0"/>
+        <textColor alpha="255" red="0" blue="0" green="0"/>
+        <ComposerItem pagey="86.2894" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="148.405" y="86.2894" visibility="1" zValue="15" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="16.9605" outlineWidth="0.3" excludeFromExports="0" uuid="{eeb0b0ae-7de9-4681-920d-22477186d33b}" height="7.21067" itemRotation="0" frame="false" pagex="148.405">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerScaleBar>
+      <ComposerLabel valign="64" marginX="2" marginY="0" labelText="Sources : © RPG ® 2016&#xa;DDTM27" htmlState="0" halign="2">
+        <LabelFont description="Arial,6,-1,5,50,1,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="260.866" page="1" id="" lastValidViewScaleFactor="1.9327" positionMode="0" positionLock="false" x="67.0854" y="260.866" visibility="1" zValue="14" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="41.5246" outlineWidth="0.3" excludeFromExports="0" uuid="{40272b9a-8635-44a9-a84f-bfa483f6ef87}" height="6.52667" itemRotation="0" frame="false" pagex="67.0854">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLabel valign="128" marginX="1" marginY="1" labelText="Provisoire" htmlState="0" halign="4">
+        <LabelFont description="Arial Narrow,90,-1,5,75,1,0,0,0,0" style=""/>
+        <FontColor red="128" blue="128" green="128"/>
+        <ComposerItem pagey="119.498" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="302.914" y="119.498" visibility="1" zValue="13" background="false" transparency="78" frameJoinStyle="miter" blendMode="0" width="222.019" outlineWidth="0.3" excludeFromExports="0" uuid="{4fa05d8f-7055-45bc-a3f3-31e69ac7bb35}" height="77.8" itemRotation="320" frame="false" pagex="302.914">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedExcludeExports expr="@provisoire" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLegend symbolWidth="7" title="" rasterBorderWidth="0" titleAlignment="1" map="3" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="$" fontColor="#000000" legendFilterByAtlas="0" columnCount="1" wmsLegendHeight="25" columnSpace="5" symbolHeight="4" equalColumnWidth="0" resizeToContents="0" splitLayer="1" boxSpace="2" rasterBorder="1">
+        <styles>
+          <style name="title">
+            <styleFont description="Arial,8,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="Arial,10,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="Arial,8,-1,5,75,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="1.5" name="symbol">
+            <styleFont description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="1.5" marginLeft="2" name="symbolLabel">
+            <styleFont description="Arial,8,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+          <customproperties/>
+          <layer-tree-group expanded="1" checked="Qt::Checked" name="8 - Agriculture et forêts">
+            <customproperties>
+              <property key="legend/title-style" value="hidden"/>
+            </customproperties>
+            <layer-tree-group expanded="1" checked="Qt::Checked" name="carte agriculture foret">
+              <customproperties>
+                <property key="legend/title-style" value="hidden"/>
+              </customproperties>
+              <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="oscom2015_027_agr20171128121226637" source="\\10.27.8.61\gb_cons\FONCIER_SOL\N_OCCUPATION_SOL\OSCOM\oscom2015_027_agr.shp" name="Surfaces agricoles et forestières">
+                <customproperties>
+                  <property key="legend/title-style" value="hidden"/>
+                </customproperties>
+              </layer-tree-layer>
+            </layer-tree-group>
+          </layer-tree-group>
+        </layer-tree-group>
+        <ComposerItem pagey="53.7106" page="1" id="Légende carte agriculture foret" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="171" y="53.7106" visibility="1" zValue="9" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="39" outlineWidth="0.3" excludeFromExports="0" uuid="{cdc9e92a-97b2-4649-b32f-e1ba52e749a7}" height="32.5788" itemRotation="0" frame="false" pagex="171">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="234" blue="234" green="234"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="11-2-carte-retrait-gonflement-argile" id="3" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="6891007.11652048584073782" xmin="548119.51929601433221251" ymax="6922197.37702622916549444" xmax="585157.95364658499602228"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{b526ef46-85c5-4ba0-a4f4-c0b1a1caa33a}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.20000000000000001"/>
+        <ComposerItem pagey="205" page="1" id="carte_risque_secheresse" lastValidViewScaleFactor="1.29082" positionMode="0" positionLock="false" x="76.6581" y="205" visibility="0" zValue="8" background="true" transparency="0" frameJoinStyle="round" blendMode="0" width="95" outlineWidth="0.5" excludeFromExports="0" uuid="{fd805618-b0b2-4bdb-bf5d-c4ae59e29a56}" height="80" itemRotation="0" frame="false" pagex="76.6581">
+          <FrameColor alpha="255" red="139" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedMapXMin expr="x_min(geometry(get_feature( 'epci','siren', &quot;siren&quot; )))" field="" active="false" useExpr="true"/>
+          <dataDefinedMapYMin expr="y_min(geometry(get_feature( 'epci','siren', &quot;siren&quot; )))" field="" active="false" useExpr="true"/>
+          <dataDefinedMapXMax expr="x_max(geometry(get_feature( 'epci','siren', &quot;siren&quot; )))" field="" active="false" useExpr="true"/>
+          <dataDefinedMapYMax expr="y_max(geometry(get_feature( 'epci','siren', &quot;siren&quot; )))" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerLabel valign="128" marginX="5" marginY="0" labelText="Niveau de couverture de l'opérateur le mieux disant" htmlState="0" halign="1">
+        <LabelFont description="Tahoma,10,-1,5,75,0,0,0,0,0" style=""/>
+        <FontColor red="255" blue="255" green="255"/>
+        <ComposerItem pagey="17.215" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="3" y="17.215" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="81.542" outlineWidth="0.3" excludeFromExports="0" uuid="{027c723e-f22b-4523-9cd6-7b66714a48c2}" height="14" itemRotation="0" frame="false" pagex="3">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="153" red="0" blue="102" green="51"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerShape shapeType="1" cornerRadius="0">
+        <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+          <layer pass="0" class="GradientFill" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="0,0,255,255"/>
+            <prop k="color1" v="0,0,255,0"/>
+            <prop k="color2" v="186,186,186,255"/>
+            <prop k="color_type" v="1"/>
+            <prop k="coordinate_mode" v="0"/>
+            <prop k="discrete" v="0"/>
+            <prop k="gradient_color2" v="255,255,255,255"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="reference_point1" v="0.5,0"/>
+            <prop k="reference_point1_iscentroid" v="0"/>
+            <prop k="reference_point2" v="0.5,1"/>
+            <prop k="reference_point2_iscentroid" v="0"/>
+            <prop k="spread" v="0"/>
+            <prop k="stops" v="0.895433;0,229,26,0:0.967548;0,247,8,0:0.967548;0,247,8,0:0.96875;186,186,186,255"/>
+            <prop k="type" v="0"/>
+            <effect enabled="1" type="effectStack">
+              <effect type="dropShadow">
+                <prop k="blend_mode" v="13"/>
+                <prop k="blur_level" v="10"/>
+                <prop k="color" v="186,186,186,255"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="1"/>
+                <prop k="offset_angle" v="135"/>
+                <prop k="offset_distance" v="1"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="outerGlow">
+                <prop k="blend_mode" v="0"/>
+                <prop k="blur_level" v="3"/>
+                <prop k="color1" v="0,0,255,255"/>
+                <prop k="color2" v="0,255,0,255"/>
+                <prop k="color_type" v="0"/>
+                <prop k="discrete" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="single_color" v="255,255,255,255"/>
+                <prop k="spread" v="2"/>
+                <prop k="spread_unit" v="MM"/>
+                <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0.5"/>
+              </effect>
+              <effect type="drawSource">
+                <prop k="blend_mode" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="innerShadow">
+                <prop k="blend_mode" v="13"/>
+                <prop k="blur_level" v="10"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="offset_angle" v="135"/>
+                <prop k="offset_distance" v="2"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="innerGlow">
+                <prop k="blend_mode" v="0"/>
+                <prop k="blur_level" v="3"/>
+                <prop k="color1" v="0,0,255,255"/>
+                <prop k="color2" v="0,255,0,255"/>
+                <prop k="color_type" v="0"/>
+                <prop k="discrete" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="single_color" v="255,255,255,255"/>
+                <prop k="spread" v="2"/>
+                <prop k="spread_unit" v="MM"/>
+                <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0.5"/>
+              </effect>
+            </effect>
+          </layer>
+          <layer pass="0" class="GradientFill" locked="0">
+            <prop k="angle" v="90"/>
+            <prop k="color" v="0,0,255,255"/>
+            <prop k="color1" v="0,0,255,0"/>
+            <prop k="color2" v="186,186,186,255"/>
+            <prop k="color_type" v="1"/>
+            <prop k="coordinate_mode" v="0"/>
+            <prop k="discrete" v="0"/>
+            <prop k="gradient_color2" v="255,255,255,255"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="reference_point1" v="0.5,0"/>
+            <prop k="reference_point1_iscentroid" v="0"/>
+            <prop k="reference_point2" v="0.5,1"/>
+            <prop k="reference_point2_iscentroid" v="0"/>
+            <prop k="spread" v="0"/>
+            <prop k="stops" v="0.895433;0,229,26,0:0.967548;0,247,8,0:0.967548;0,247,8,0:0.96875;186,186,186,255"/>
+            <prop k="type" v="0"/>
+            <effect enabled="1" type="effectStack">
+              <effect type="dropShadow">
+                <prop k="blend_mode" v="13"/>
+                <prop k="blur_level" v="10"/>
+                <prop k="color" v="186,186,186,255"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="1"/>
+                <prop k="offset_angle" v="135"/>
+                <prop k="offset_distance" v="1"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="outerGlow">
+                <prop k="blend_mode" v="0"/>
+                <prop k="blur_level" v="3"/>
+                <prop k="color1" v="0,0,255,255"/>
+                <prop k="color2" v="0,255,0,255"/>
+                <prop k="color_type" v="0"/>
+                <prop k="discrete" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="single_color" v="255,255,255,255"/>
+                <prop k="spread" v="2"/>
+                <prop k="spread_unit" v="MM"/>
+                <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0.5"/>
+              </effect>
+              <effect type="drawSource">
+                <prop k="blend_mode" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="innerShadow">
+                <prop k="blend_mode" v="13"/>
+                <prop k="blur_level" v="10"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="offset_angle" v="135"/>
+                <prop k="offset_distance" v="2"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="innerGlow">
+                <prop k="blend_mode" v="0"/>
+                <prop k="blur_level" v="3"/>
+                <prop k="color1" v="0,0,255,255"/>
+                <prop k="color2" v="0,255,0,255"/>
+                <prop k="color_type" v="0"/>
+                <prop k="discrete" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="single_color" v="255,255,255,255"/>
+                <prop k="spread" v="2"/>
+                <prop k="spread_unit" v="MM"/>
+                <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0.5"/>
+              </effect>
+            </effect>
+          </layer>
+        </symbol>
+        <ComposerItem pagey="187.393" page="1" id="ombre_portee" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="111.398" y="187.393" visibility="1" zValue="5" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="95" outlineWidth="0.3" excludeFromExports="0" uuid="{c9033de4-96b1-4147-9198-553ff166a5b9}" height="80" itemRotation="0" frame="false" pagex="111.398">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerShape>
+      <ComposerShape shapeType="1" cornerRadius="0">
+        <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+          <layer pass="0" class="GradientFill" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="0,0,255,255"/>
+            <prop k="color1" v="0,0,255,0"/>
+            <prop k="color2" v="186,186,186,255"/>
+            <prop k="color_type" v="1"/>
+            <prop k="coordinate_mode" v="0"/>
+            <prop k="discrete" v="0"/>
+            <prop k="gradient_color2" v="255,255,255,255"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="reference_point1" v="0.5,0"/>
+            <prop k="reference_point1_iscentroid" v="0"/>
+            <prop k="reference_point2" v="0.5,1"/>
+            <prop k="reference_point2_iscentroid" v="0"/>
+            <prop k="spread" v="0"/>
+            <prop k="stops" v="0.895433;0,229,26,0:0.967548;0,247,8,0:0.967548;0,247,8,0:0.96875;186,186,186,255"/>
+            <prop k="type" v="0"/>
+            <effect enabled="1" type="effectStack">
+              <effect type="dropShadow">
+                <prop k="blend_mode" v="13"/>
+                <prop k="blur_level" v="10"/>
+                <prop k="color" v="186,186,186,255"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="1"/>
+                <prop k="offset_angle" v="135"/>
+                <prop k="offset_distance" v="1"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="outerGlow">
+                <prop k="blend_mode" v="0"/>
+                <prop k="blur_level" v="3"/>
+                <prop k="color1" v="0,0,255,255"/>
+                <prop k="color2" v="0,255,0,255"/>
+                <prop k="color_type" v="0"/>
+                <prop k="discrete" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="single_color" v="255,255,255,255"/>
+                <prop k="spread" v="2"/>
+                <prop k="spread_unit" v="MM"/>
+                <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0.5"/>
+              </effect>
+              <effect type="drawSource">
+                <prop k="blend_mode" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="innerShadow">
+                <prop k="blend_mode" v="13"/>
+                <prop k="blur_level" v="10"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="offset_angle" v="135"/>
+                <prop k="offset_distance" v="2"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="innerGlow">
+                <prop k="blend_mode" v="0"/>
+                <prop k="blur_level" v="3"/>
+                <prop k="color1" v="0,0,255,255"/>
+                <prop k="color2" v="0,255,0,255"/>
+                <prop k="color_type" v="0"/>
+                <prop k="discrete" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="single_color" v="255,255,255,255"/>
+                <prop k="spread" v="2"/>
+                <prop k="spread_unit" v="MM"/>
+                <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0.5"/>
+              </effect>
+            </effect>
+          </layer>
+          <layer pass="0" class="GradientFill" locked="0">
+            <prop k="angle" v="90"/>
+            <prop k="color" v="0,0,255,255"/>
+            <prop k="color1" v="0,0,255,0"/>
+            <prop k="color2" v="186,186,186,255"/>
+            <prop k="color_type" v="1"/>
+            <prop k="coordinate_mode" v="0"/>
+            <prop k="discrete" v="0"/>
+            <prop k="gradient_color2" v="255,255,255,255"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="reference_point1" v="0.5,0"/>
+            <prop k="reference_point1_iscentroid" v="0"/>
+            <prop k="reference_point2" v="0.5,1"/>
+            <prop k="reference_point2_iscentroid" v="0"/>
+            <prop k="spread" v="0"/>
+            <prop k="stops" v="0.895433;0,229,26,0:0.967548;0,247,8,0:0.967548;0,247,8,0:0.96875;186,186,186,255"/>
+            <prop k="type" v="0"/>
+            <effect enabled="1" type="effectStack">
+              <effect type="dropShadow">
+                <prop k="blend_mode" v="13"/>
+                <prop k="blur_level" v="10"/>
+                <prop k="color" v="186,186,186,255"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="1"/>
+                <prop k="offset_angle" v="135"/>
+                <prop k="offset_distance" v="1"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="outerGlow">
+                <prop k="blend_mode" v="0"/>
+                <prop k="blur_level" v="3"/>
+                <prop k="color1" v="0,0,255,255"/>
+                <prop k="color2" v="0,255,0,255"/>
+                <prop k="color_type" v="0"/>
+                <prop k="discrete" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="single_color" v="255,255,255,255"/>
+                <prop k="spread" v="2"/>
+                <prop k="spread_unit" v="MM"/>
+                <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0.5"/>
+              </effect>
+              <effect type="drawSource">
+                <prop k="blend_mode" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="innerShadow">
+                <prop k="blend_mode" v="13"/>
+                <prop k="blur_level" v="10"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="offset_angle" v="135"/>
+                <prop k="offset_distance" v="2"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0"/>
+              </effect>
+              <effect type="innerGlow">
+                <prop k="blend_mode" v="0"/>
+                <prop k="blur_level" v="3"/>
+                <prop k="color1" v="0,0,255,255"/>
+                <prop k="color2" v="0,255,0,255"/>
+                <prop k="color_type" v="0"/>
+                <prop k="discrete" v="0"/>
+                <prop k="draw_mode" v="2"/>
+                <prop k="enabled" v="0"/>
+                <prop k="single_color" v="255,255,255,255"/>
+                <prop k="spread" v="2"/>
+                <prop k="spread_unit" v="MM"/>
+                <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="transparency" v="0.5"/>
+              </effect>
+            </effect>
+          </layer>
+        </symbol>
+        <ComposerItem pagey="14" page="1" id="ombre_portee" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="76" y="14" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="95" outlineWidth="0.3" excludeFromExports="0" uuid="{32375ad4-13d0-49a4-bea3-024b9d95a062}" height="80" itemRotation="0" frame="false" pagex="76">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerShape>
+      <ComposerLabel valign="128" marginX="5" marginY="1" labelText="Part des locaux éligibles toutes technologies&#xa;(DSL, câble et Fibre FttH) à un débit supérieur à 3Mb/s" htmlState="0" halign="1">
+        <LabelFont description="Tahoma,10,-1,5,75,0,0,0,0,0" style=""/>
+        <FontColor red="237" blue="237" green="237"/>
+        <ComposerItem pagey="190.393" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="2.39845" y="190.393" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="129.374" outlineWidth="0.3" excludeFromExports="0" uuid="{93c9b1e4-a3ba-409c-a918-ba0f9595da6c}" height="14" itemRotation="0" frame="false" pagex="2.39845">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="153" red="0" blue="102" green="51"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerHtml maxBreakDistance="10" contentMode="0" resizeMode="0" url="" useSmartBreaks="true" evaluateExpressions="true" html="" stylesheetEnabled="false" stylesheet="">
+        <ComposerFrame sectionWidth="210" sectionHeight="7" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="290" page="1" id="Footer" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="290" visibility="1" zValue="11" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{5fed9402-2bab-49ac-91df-d90c13e72b6f}" height="7" itemRotation="0" frame="false" pagex="0">
+            <FrameColor alpha="255" red="0" blue="0" green="0"/>
+            <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            <customproperties/>
+          </ComposerItem>
+        </ComposerFrame>
+        <dataDefinedSourceUrl expr="format('file:///%1/template/thematique-%3/%2.html',@project_folder,'footer','04')" field="" active="true" useExpr="true"/>
+        <customproperties/>
+      </ComposerHtml>
+      <ComposerHtml maxBreakDistance="10" contentMode="0" resizeMode="0" url="" useSmartBreaks="true" evaluateExpressions="true" html="" stylesheetEnabled="false" stylesheet="">
+        <ComposerFrame sectionWidth="76" sectionHeight="68.64" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="43.6038" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="43.6038" visibility="1" zValue="23" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="76" outlineWidth="0.3" excludeFromExports="0" uuid="{c7003a98-9525-42c2-b9aa-050a8d5682e8}" height="68.676" itemRotation="0" frame="false" pagex="0">
+            <FrameColor alpha="255" red="0" blue="0" green="0"/>
+            <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            <customproperties/>
+          </ComposerItem>
+        </ComposerFrame>
+        <dataDefinedSourceUrl expr="format('file:///%1/template/thematique-%3/%2.html',@project_folder,'panel_indicateur','08')" field="" active="true" useExpr="true"/>
+        <customproperties/>
+      </ComposerHtml>
+      <ComposerHtml maxBreakDistance="10" contentMode="0" resizeMode="0" url="file:///U:/Patrimoine_commun/ETUDES/1_fiches_territoriales_EPCI/Traitement/Projet_Qgis/template/presentation.html" useSmartBreaks="true" evaluateExpressions="true" html="" stylesheetEnabled="false" stylesheet="h1 { &#xd;&#xa;&#x9;font-size:90px;&#xd;&#xa;&#x9;}">
+        <ComposerFrame sectionWidth="210" sectionHeight="13.68" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="0" page="1" id="Header" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="10" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{3984592c-1e4b-4fad-9f71-62120d425c3c}" height="14.5" itemRotation="0" frame="false" pagex="0">
+            <FrameColor alpha="255" red="0" blue="0" green="0"/>
+            <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            <customproperties/>
+          </ComposerItem>
+        </ComposerFrame>
+        <dataDefinedSourceUrl expr="format('file:///%1/template/thematique-%3/%2.html',@project_folder,'header','04')" field="" active="true" useExpr="true"/>
+        <customproperties/>
+      </ComposerHtml>
+      <customproperties/>
+    </Composition>
+    <Atlas hideCoverage="false" featureFilter="" coverageLayer="epci_ade_s_027_copier20171121091630642" singleFile="false" filenamePattern="code_epci" enabled="true" coverageLayerName="8_agriculture_forets_couverture" filterFeatures="true" coverageLayerProvider="postgres" sortFeatures="true" pageNameExpression="&quot;nom_epci&quot;" sortKey="code_epci" coverageLayerSource="dbname='gb' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='id' srid=2154 type=MultiPolygon table=&quot;ref&quot;.&quot;m_epci_ade_s_027&quot; (geom) sql=&quot;code_epci&quot; NOT IN ('200069730','200066827','200040277')" sortAscending="true"/>
   </Composer>
   <projectlayers>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
@@ -31252,8 +31906,8 @@ def my_form_open(dialog, layer, feature):
         <xmax>1064459.62199999997392297</xmax>
         <ymax>7093820.0849999999627471</ymax>
       </extent>
-      <id>echangeur20180124135546205</id>
-      <datasource>?layer=ogr:%5C%5C10.27.8.61%5Cgb_cons%5CTRANSPORT_INFRASTRUCTURE%5CN_ROUTIER%5CL_RN_27.shp:l_rn_27:UTF-8&amp;layer=ogr:U%3A%5C5_Patrimoine_commun%5CETUDES%5C1_fiches_territoriales_EPCI%5CExtraction_donnees%5Cechangeur_darwin.shp:echangeur_darwin:UTF-8&amp;query=select%20route,%20st_centroid(st_union(geometry))%20geometry%0D%0Afrom%20l_rn_27%0D%0Awhere%20nom_plo_in%20like%20'DB%25'%0D%0Agroup%20by%20route%0D%0Ahaving%20count(*)%20%3E%201%0D%0AUNION%20ALL%0D%0Aselect%20route,%20geometry%20from%20echangeur_darwin&amp;geometry=geometry:1:2154</datasource>
+      <id>echangeur20180125154709028</id>
+      <datasource>?layer=ogr:%5C%5C10.27.8.61%5Cgb_cons%5CTRANSPORT_INFRASTRUCTURE%5CN_ROUTIER%5CL_RN_27.shp:l_rn_27:UTF-8&amp;layer=ogr:U%3A%5C5_Patrimoine_commun%5CETUDES%5C1_fiches_territoriales_EPCI%5CExtraction_donnees%5Ctransport%5Cechangeur_darwin.shp:echangeur_darwin:UTF-8&amp;query=select%20route,%20st_centroid(st_union(geometry))%20geometry%0D%0Afrom%20l_rn_27%0D%0Awhere%20nom_plo_in%20like%20'DB%25'%0D%0Agroup%20by%20route%0D%0Ahaving%20count(*)%20%3E%201%0D%0AUNION%20ALL%0D%0Aselect%20route,%20geometry%20from%20echangeur_darwin&amp;geometry=geometry:1:2154</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -32648,6 +33302,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>504866</xmin>
+        <ymin>6842996</ymin>
+        <xmax>612853</xmax>
+        <ymax>6934614</ymax>
+      </extent>
       <id>epci_ade_s_027_copier20171122155224840</id>
       <datasource>dbname='gb' host=10.27.8.64 port=8765 sslmode=disable authcfg=dys6ubb key='id' srid=2154 type=MultiPolygon table="ref"."m_epci_ade_s_027" (geom) sql="code_epci" NOT IN ('200069730','200066827','200040277')</datasource>
       <keywordList>
@@ -45495,8 +46155,8 @@ def closeProject():
         <value>Oursins_7_flux_domicile_travail20171004113603230</value>
         <value>Oursins_7_flux_domicile_travail20171005152926648</value>
         <value>commune20161122145032562</value>
+        <value>commune_copier20180125110156923</value>
         <value>download_format_GeoJSON_projection_WGS8420171106163057503</value>
-        <value>echangeur20180124135546205</value>
         <value>epci20161122111229304</value>
         <value>epci_ade_s_02720170928114413120</value>
         <value>epci_ade_s_027_copier20171121091630642</value>
@@ -45524,8 +46184,22 @@ def closeProject():
         <value>rpg_parcelle20171128145518581</value>
         <value>sirene20170913161023695</value>
         <value>voies_verte20142017092716501952425739</value>
+        <value>site_mobiles_2g_3g_4g201801251459117096226</value>
+        <value>l_correspondance_commune_epci_20162018012514591170914203</value>
+        <value>Orange_2G_CL_2017_07_01201801251459117094144</value>
+        <value>Orange_2G_BC_2017_07_012018012514591170930781</value>
+        <value>Orange_2G_TBC_2017_07_012018012514591170913485</value>
+        <value>m_commune_epci_ade_s_02720180125150130525</value>
+        <value>echangeur20180125154709028</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
@@ -45680,8 +46354,22 @@ def closeProject():
         <value>2</value>
         <value>2</value>
         <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -45761,6 +46449,13 @@ def closeProject():
       <DefaultSnapType type="QString">off</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
@@ -46025,7 +46720,6 @@ $("#table").jsonTableUpdate(options);
       <layer style="" id="L_deperiph2017092716501951622710"/>
       <layer style="" id="NOM_deperiph2017092716501951728025"/>
       <layer style="" id="N_DEP_BDC_027201709271650195187663"/>
-      <layer style="" id="echangeur20180124135546205"/>
       <layer style="" id="L_Autoroutes_bdc__tab_2017092716501951829179"/>
       <layer style="" id="L_Nationales_bdc__tab_2017092716501952124015"/>
       <layer style="" id="N_RGC_L_027__tab_2017092716501951928798"/>

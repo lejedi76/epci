@@ -96,6 +96,20 @@ li {
 .panel-theme3 {
     border-color: #99005a;
 }
+/*theme4*/
+.theme4 {
+  background: -webkit-linear-gradient(left, #003366 , white 90%);/*bleu foncé*/
+}
+
+#theme4 {
+  font-size: 16px;
+  font-weight: bold;
+  color:#003366;
+}
+.panel-theme4 {
+    border-color: #003366;
+}
+
 
 /*theme6*/
 .theme6 {
